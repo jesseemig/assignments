@@ -1,0 +1,53 @@
+* {
+    font-family: "super mario 256";
+}
+
+body {
+    font-family: SuperMario;  
+}
+.header {
+    
+    background-color: yellow;
+    color: red;
+    font-size: 5em;    
+}
+
+.luigi {
+    margin-left: 10%;
+    padding-top: 1%;
+}
+
+.luigiPic {
+    margin: auto;
+    background-color: red; 
+}
+
+.pic {
+    margin-left: 43%;
+}
+
+.about {
+    text-align: center;
+    font-size: 350%;
+    margin-top: 1%;
+    color: red;
+}
+
+.me {
+    text-align: center;
+    font-size: 120%;
+   
+    margin-bottom: 1%;
+    color: red;
+}
+.footer {
+    height: 90px;
+    background-color: yellow;
+    
+}
+
+.mushroom {
+margin-left: 85%;
+    height: 100%;
+}
+

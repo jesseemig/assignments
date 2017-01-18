@@ -1,0 +1,18 @@
+.row div{
+    font-size: 0px;
+    background-color: aqua;
+    border-color: white;
+    border-style: solid;
+    border-width: 10px;
+    line-height: 40px;
+    
+}
+
+.row1 div {
+    font-size: 0px;
+    background-color: red;
+    border-color: white;
+    border-style: solid;
+    border-width: 10px;
+    line-height: 40px;
+}

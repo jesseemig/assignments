@@ -1,0 +1,51 @@
+header {
+    font-size: 400%;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.alert {
+    color: red;
+}
+
+img {
+    height: 300px;
+    width: 300px;
+    
+}
+.para1 {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    display: inline;
+    vertical-align: left;
+}
+
+.para2 {
+  float:  left;
+    width: 30%;
+    padding: 10px;
+    display: inline;
+    vertical-align: middle;
+}
+
+.para3 {
+   float:  left;
+    width: 30%;
+    padding: 10px;
+    display: inline;
+    vertical-align: right;
+}
+
+.snow {
+    float: right;
+}
+
+.man {
+    float: right;
+}

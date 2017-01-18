@@ -1,0 +1,42 @@
+header {
+    text-align: center;
+    font-size: 100px;
+    color: blue;
+    padding: 35px;   
+}
+
+body {
+    background-color: burlywood;
+}
+
+nav {
+   
+    width: 150px;
+    text-align: center;
+    float: left;
+    font-size: 130% 
+}
+
+.first {
+    margin-left: 100px;
+}
+
+.sec {
+    margin-left: 35%;
+    padding-top: 10px;
+    
+}
+
+.third {
+    margin-left: 18%;
+    margin-top: 10px;
+}
+
+.fourth {
+    margin-left: 40px;
+}
+
+footer {
+    text-align: center;
+    font-size: 200%
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Mario</title>
+    <link href="mario.css" rel="stylesheet">
+</head>
+
+<body> 
+    
+<header>Mario's Pest Control</header>
+    
+    <p>Baddies</p>
+    <div class="ok">
+   <div class="g"> 
+       <img src="http://vignette3.wikia.nocookie.net/nintendo/images/d/d5/GoombaNSMB.png/revision/latest/scale-to-width-down/200?cb=20110724131649&path-prefix=en"><br><br><br><br>
+  <li class="goombas">Goombas</li>
+    <ul>
+    <li>Caught: <span id="goomba-caught">12</span></li>
+    <li>Total: <span id="goomba-price">60</span></li></ul>
+   </div>
+    
+    <div class="b">
+        <img src="http://vignette3.wikia.nocookie.net/fantendo/images/6/63/BobombNSMBU.png/revision/latest/scale-to-width-down/250?cb=20121106225051"><br><br><br><br>
+    <li class="bob">Bob-ombs</li>
+    <ul>
+    <li>Caught: <span id="bob-caught">8</span></li>
+    <li>Total: <span id="bob-price">56</span></li></ul>
+    </div> 
+    
+    
+    <div class="c">
+        <img class="cimg" src="http://vignette2.wikia.nocookie.net/fantendo/images/6/63/CheepCheepNSMBU.png/revision/latest/scale-to-width-down/200?cb=20121026230730"><br><br><br><br><br>
+    <li class="cheep">Cheep-cheep</li>
+    <ul>
+    <li>Caught: <span id="cheep-caught">5</span></li>
+    <li>Total: <span id="cheep-price">55</span></li>
+    </ul>
+    </div>
+    </div>
+    <button type="button" class="btn btn-primary">Calculate</button>
+    <p class="total">Total price: <span id="totalPrice"></span>
+    
+    <footer>mariopc@gmail.com<br>
+       mariopc.com<br>
+    150 S State street<br>
+    SLC UT, 84001<br>
+    </footer>
+    
+  
+<script src="mario.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+var goombasCaught = 12;
+var goombaCost = document.getElementById("goombas-price");
+var bobCaught = 8;
+var bobCost = document.getElementById("bob-price");
+var cheepCaught = 5;
+var cheepCost = document.getElementById("cheep-price");
+var total = document.getElementById("totalPrice");
