@@ -3,51 +3,63 @@
 }
 
 body {
-    font-family: SuperMario;  
-}
-.header {
+    font-family: SuperMario; 
     
+}
+
+.header {
+    height: 20%;
     background-color: yellow;
     color: red;
-    font-size: 5em;    
+    font-size: 5em;
+    line-height: 150%
 }
 
 .luigi {
-    margin-left: 10%;
+    padding-left: 9%;
     padding-top: 1%;
 }
 
 .luigiPic {
     margin: auto;
-    background-color: red; 
+    background-color: red;
+    position: relative;
+    
 }
 
 .pic {
-    margin-left: 43%;
+    padding-top: 1%;
+    padding-bottom: 1%;  
 }
+
 
 .about {
     text-align: center;
-    font-size: 350%;
+    font-size: 300%;
     margin-top: 1%;
     color: red;
+    line-height: 150%
 }
 
 .me {
     text-align: center;
     font-size: 120%;
-   
+   line-height: 150%;
     margin-bottom: 1%;
     color: red;
+    font-family: sans-serif;
+    font-weight: bolder;
 }
 .footer {
-    height: 90px;
+    height: 130px;
     background-color: yellow;
+
     
 }
 
 .mushroom {
-margin-left: 85%;
-    height: 100%;
+    margin-left: 85%;
+    height: 80%;
+    margin-top: 1.1%
 }
 
