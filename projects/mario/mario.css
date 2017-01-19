@@ -1,11 +1,12 @@
 header {
     text-align: center;
-    font-size: 1000%;
+    font-size: 700%;
     font-family: sans-serif;
 }
 
 body {
-    background-image: url("http://www.umnet.com/pic/diy/screensaver/5a4d8736-1df9.jpg");
+    background-image: url(mario.jpg);
+    background-size: 100%;
 
 }
 
@@ -44,6 +45,6 @@ footer {
 }
 
 button{
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 50%;
+    margin-bottom: 1%
 }

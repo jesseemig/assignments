@@ -1,10 +1,18 @@
+@font-face {
+    font-family: "bohemiantypewriter";
+    src: url()
+    )
+}
 body {
     background-image: url(./barn.jpg);
     background-size: 100%;
 }
 
 header {
+    font-family: BohemianTypewriter;
     font-size: 800%;
-    color: 
+    color: white;
+    text-align: center;
+    color: #c0643f;
 }
     
