@@ -1,3 +1,8 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+}
+
 header {
     text-align: center;
     font-size: 700%;

@@ -1,18 +1,42 @@
 @font-face {
-    font-family: "bohemiantypewriter";
-    src: url()
-    )
+    font-family: "type";
+    src: url('type.ttf');
 }
+
 body {
     background-image: url(./barn.jpg);
     background-size: 100%;
 }
 
-header {
-    font-family: BohemianTypewriter;
-    font-size: 800%;
-    color: white;
+.rockwell {
+    font-family: type;
+    font-size: 830%;
+    color: black;
     text-align: center;
-    color: #c0643f;
-}
+    letter-spacing: 10px;
+    text-shadow:  1px 1px #241100;
+    margin-top: 2%;
+    position: relative;
     
+}
+
+
+.motto {
+    font-family: type;
+    font-size: 17%;
+    color: black;
+    text-align: center;
+    letter-spacing: 7px;
+    text-shadow:  1px 1px #241100;
+    margin-left: 37%;
+    position: absolute;
+    
+}    
+
+.since {
+    margin-top: 2%;
+}
+
+header {
+    
+}
