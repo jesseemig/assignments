@@ -1,3 +1,16 @@
 td {
-    background-color: aqua
+    background-color: darkseagreen;
+}
+
+.all {
+    margin-left: 36%;
+    margin-top: 15%;
+    width: 30%;
+    line-height: 300%;
+    text-align: center;
+}
+
+th {
+    border-style: solid;
+    background-color: cornflowerblue
 }

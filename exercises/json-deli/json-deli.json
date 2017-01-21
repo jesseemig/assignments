@@ -1,0 +1,62 @@
+{
+  "appetizers":[
+    {
+        "name": "french fries",
+        "ingredients": ["potatoes", "starch", "oil"],
+        "description": "Good enough"
+    },
+     {  "name": "onion rings",
+        "ingredients": ["stuff","some good stuff", "other things"],
+        "description": "just shut up and eat it"
+     }
+    ],
+ "cold Sandwhiches":[
+    {
+        "name": "turkey",
+        "ingredients": ["lettice", "tomato", "mustard"],
+        "description": "It doesn't tast like cardboard"
+    },
+     {
+         "name": "ham",
+         "ingredients": ["pig parts", "gross vegtables", "mustard"],
+         "desecription": "its a big ol mess"
+     }
+    ],
+ "hot sandwhiches":[
+    {
+        "name": "hot turkey",
+        "ingredients": ["lettice", "tomato", "mustard"],
+        "description": "it tastes like the turkey sandwhich but its hot"
+    },
+     {
+         "name": "grilled cheese",
+         "ingredients": ["bread", "cheese", "butter"],
+         "desecription": "this is obviously for children"
+     }
+    ],
+    "desserts":[
+    {
+        "name": "pecan pie",
+        "ingredients": ["pecans", "sugar", "flout"],
+        "description": "it tastes like the turkey sandwhich but its hot"
+    },
+     {
+         "name": "ice cream",
+         "ingredients": ["chocolate", "milk", "sugar"],
+         "desecription": "first good decision you've made today"
+     }
+    ],
+     "drinks":[
+    {
+        "name": "soda",
+        "ingredients": ["sugar", "more sugar", "some water"],
+        "description": "you know what soda tastes like, idiot"
+    },
+     {
+        "name": "coffee",
+         "ingredients": ["beans", "water", "creamer"],
+         "desecription": "it tastes like burnt water"
+     }
+    ]
+    
+}

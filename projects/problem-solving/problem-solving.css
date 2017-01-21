@@ -40,3 +40,18 @@ body {
 header {
     
 }
+
+.container {
+    margin-left: 0%;
+    display: inline-block;
+    margin-top: 10%;
+}
+
+.nav {
+    display: inline-block;
+    font-size: 380%;
+    margin-left: 1.8%;
+    margin-top: 8%;
+    color: white;
+}
+
