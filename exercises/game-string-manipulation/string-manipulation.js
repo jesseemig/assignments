@@ -12,6 +12,26 @@ var readlineSync = require('readline-sync');
 //  console.log("Hi " + name.toUpperCase());
 
 
+
+
+
+
+//  when walk chance
+
+//  if chance 1-4, x < 2 w to walk- tell user to press w again and run the chance function when they do
+//  if chance x is less than 2 alert "Confronted by"- 
+//  function for type and return type to user
+//  user choose run or fight
+//  if run- 1/2
+//  if caught - fight function
+//  fight assign type properties
+//  engage battle
+
+
+
+// dev/assignments/exercises/game-string-manipulation $ node string-manipulation.js
+
+
 var walk = readlineSync.question("Enter 'w' to walk ");
     console.log(chance());
 
@@ -19,81 +39,69 @@ var walk = readlineSync.question("Enter 'w' to walk ");
 
 function chance() {
      var x = Math.floor((Math.random() * 3) + 1);
-    if (x < 2) {
-        console.log(proceed()); 
+     if (x <= 2) {
+        return(proceed());
+             
         
     } else { 
-        console.log(determineType());
+        return(determineType());
+            
     }
 }
 
 
-  function proceed() {
+function proceed() {
     readlineSync.question("Enter 'w' to walk ");
-    console.log(chance());
-  }
+    return(chance());
+}
 
 
 function determineType(enemies, rando) {
-    var enemyTypes = ["ogre", "monster", "bandit"];
     var rando = Math.floor((Math.random() * 3) + 1);
-    console.log("You are confronted by a " + enemyTypes[rando];
+    if (rando === 1) {
+        return("You are confronted by an angry ogre")
+    } else if (rando === 2) {
+        return("You are confronted by an angry monster")
+    } else {
+    return ("You are confronted by a bandit")
+    }
 }
 
 
-function choice() {         
-    readlineSync.question("Press 'f' to fight or ", + run());
-    console.log(choice());
+var decision = readlineSync.question("If you want to fight enter 'fight' " + "if you want to run enter 'run' ");  
+      if (decision === "fight") {
+          return(FIGHT SEQUENCE)
+      } RETURN RUN RESULT
+      
+
+
+
+function determineDamage(type) {
+    if (type === "monster") {
+         return getRandomInt(80, 100);
+    } else if(type === "ogre"){
+         return getRandomInt(50, 79);
+     } else(type === "bandit") 
+        return getRandomInt(20, 49);
 }
 
-function run() {
-      console.log("r to run away");
+
+function Enemy(hitPoints, defense) {                   
+    this.hitPoints = determineDamage;
+    this.defense = this.hitPoints * 3;
 }
+
+
+	
+
+ 
+
+
+//  function run() {
+//      console.log("r to run away");
+//  }
 
 
 
 // **** if player chooses between options (x for yes,  a for no- and functions for each situation) 
 
-        
-//      
-//        
-//      
-//      
-//                            
- //     function Enemy(type, hitPoints, defense) {                   
- //         this.type = determineType();
- //         this.hitPoints =determineDamage();
- //         this.defense = this.hitPoints * 3;
-//      }
-//          
-//          
-//       function determineType() {
-//           var enemyTypes = ["ogre", "monster", "bandit"];
-//           var rand = getRandomInt(0, 2);
-//           return enemyTypes[rand];
- //     }
-//         
-//          
-//      function determineHitPoints(type) {
-//          if (type === "monster") {
-//               return getRandomInt(80, 100);
-//          } else if(type === "ogre"){
-//               return getRandomInt(50, 79);
-//           } else(type === "bandit") 
-//              return getRandomInt(20, 49);
-//      }
-//       
-//      function enemy() {
-//          this.type = determineType();
-//          this.hitPoints = determineHitPoints(this.type);
-//          this.defense = this.hitPoints * 3;
-//      }
-//      
-//      function makeEnemies(num) {
-//          for(var i = 0; i < num; i++) {
-//              var newEnemy = new Enemy();
-//              enemies.push(newEnemy);
-//          }
-//      }
-//      makeEnemies(10);
-//      console.log(enemies);

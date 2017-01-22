@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "type";
+    src: url('type.ttf');  
+}
+
+body {
+    background-image: url(wood.jpg);
+    background-size: 100%;
+    
+}
+
+
+
+.top {
+    font-family: type;
+    text-align: center;
+    color: #075E7D;
+    margin-top: 3%;
+    display: block;
+
+}
+
+.selection {
+    font-family: type;
+    font-size: 300%;
+    text-align: center;
+    color: #075E7D;
+    margin-top: 3%;
+    display: block;
+
+}
+
+@media only screen and (min-width: 768px) {
+.selection {
+    font-family: type;
+    font-size: 600%;
+    text-align: center;
+    color: #075E7D;
+    margin-top: 3%;
+    display: block;
+
+}
+}
+
+
+.row1 {
+    margin-top: 5%;
+    display: block;
+    
+}
+
+
+@media only screen and (min-width: 768px) {
+.row1 {
+    margin-top: 5%;
+    display: block;
+}
+}
+
+.boot1 {
+    margin-left: 5%;
+    height: 200px;
+    display: inline-block;
+}
+
+
+boot1 {
+    margin-left: 5%;
+    height: 200px;
+    display: inline-block;
+}
+
+
+.boot2 {
+    margin-left: 20%;
+    max-height: 200px;
+    display: inline-block;
+}
+
+.boot3 {
+    margin-left: 18%;
+    height: 200px;
+    display: inline-block;
+}
