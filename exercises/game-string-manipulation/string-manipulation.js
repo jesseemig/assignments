@@ -1,15 +1,23 @@
 var readlineSync = require('readline-sync');
 
+var player = 100;
+
+function playerDamage() {
+    var damageDone = Math.floor((Math.random() * 100) + 1);
+    if(player > enemyLife) {
+        console.log("You won! You delivered " + damageDone + "You were injured and your life is down to " player());
+    } else {
+        console.log("You were killed!");
+    }
+}
 //  console.log("Welcome to the Dark Forrest! Many have entered, few have survived. The forrest is full of ogres, monsters, bandits, and pitfalls.");
-//  
+
 //  var name = readlineSync.question('What is your name, stranger? ');
+
 //  console.log("Hi " + name.toUpperCase());
 
 
-//  console.log("Welcome to the Dark Forrest! Many have entered, few have survived. The forrest is full of ogres, monsters, bandits, and pitfalls.");
-//  
-//  var name = readlineSync.question('What is your name, stranger? ');
-//  console.log("Hi " + name.toUpperCase());
+
 
 
 
@@ -40,11 +48,11 @@ var walk = readlineSync.question("Enter 'w' to walk ");
 function chance() {
      var x = Math.floor((Math.random() * 3) + 1);
      if (x <= 2) {
-        return(proceed());
+        return (proceed());
              
         
-    } else { 
-        return(determineType());
+    } else {
+        return (determineType());
             
     }
 }
@@ -52,56 +60,63 @@ function chance() {
 
 function proceed() {
     readlineSync.question("Enter 'w' to walk ");
-    return(chance());
+    return (chance());
 }
 
 
-function determineType(enemies, rando) {
+function determineType(rando) {
     var rando = Math.floor((Math.random() * 3) + 1);
     if (rando === 1) {
-        return("You are confronted by an angry ogre")
+        console.log("You are confronted by an angry ogre ");
+        fightRun();
     } else if (rando === 2) {
-        return("You are confronted by an angry monster")
+        console.log("You are confronted by an angry monster ");
+        fightRun();
     } else {
-    return ("You are confronted by a bandit")
+        console.log("You are confronted by a bandit ");
+        fightRun();
     }
 }
 
 
-var decision = readlineSync.question("If you want to fight enter 'fight' " + "if you want to run enter 'run' ");  
-      if (decision === "fight") {
-          return(FIGHT SEQUENCE)
-      } RETURN RUN RESULT
-      
 
+function fightRun() {
+ var decision = readlineSync.question("If you want to fight enter 'fight' " + "if you want to run enter 'run' ");
+       if (decision === "run") {
+            console.log(run());
+       } else {
+            console.log(test());
+       }
+}
 
+function run() {
+    var y = Math.floor((Math.random() * 2) + 1);
+     if (y === 2) {
+        console.log("You escaped! ");
+        proceed();
+     }
+}
+        
 
-function determineDamage(type) {
-    if (type === "monster") {
+function fight(player) {
+    var damage = Math.floor((Math.random() * 100) + 1);
+    if (damage)****
+}
+
+function determineDamage(determineType) {
+    if (determineType === "monster") {
          return getRandomInt(80, 100);
-    } else if(type === "ogre"){
+    } else if (determineType === "ogre") {
          return getRandomInt(50, 79);
-     } else(type === "bandit") 
+     } else (determineType === "bandit");
         return getRandomInt(20, 49);
 }
 
 
-function Enemy(hitPoints, defense) {                   
-    this.hitPoints = determineDamage;
-    this.defense = this.hitPoints * 3;
-}
-
-
-	
-
- 
-
-
-//  function run() {
-//      console.log("r to run away");
+//  function Enemy(hitPoints, defense) {                   
+//      this.hitPoints = determineDamage;
+//      this.defense = this.hitPoints * 3;
 //  }
 
 
-
-// **** if player chooses between options (x for yes,  a for no- and functions for each situation) 
 

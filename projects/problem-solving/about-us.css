@@ -9,8 +9,10 @@
 }
 
 body {
-    background-image: url(./barn.jpg);
-    background-size: 100%;
+    background-image: url(farm.jpg);
+    height: 100%;
+    width: 100%;
+    
 }
 
 
@@ -80,7 +82,7 @@ body {
 .nav {
     list-style-type: none;
     font-size: 100%;
-    margin-left: 3%;
+    margin-left: 1%;
 }
 }
 
@@ -95,11 +97,29 @@ li {
     margin-top: 10%;
 }
 
-img {
-    height: 300px;
-    float: right;
-    margin-right: 3%;
-    margin-top: 5%;
+p {
     display: inline-block;
+    background-color: aliceblue;
+    width: 50%;
+    margin-top: 8%;
+    margin-left: 5%;
+    text-align: center;
+    font-family: type;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    font-size: 120%;
+    float: right;
+    margin-right: 24%;
+    
+}
+
+.issac {
+    display: inline-block;
+    ;
+    margin-top: 7.5%;
+    text-align: center;
+    color: aliceblue;
 }
 
