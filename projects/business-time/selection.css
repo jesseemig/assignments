@@ -50,72 +50,35 @@ body {
 }
 
 
-
 @media only screen and (min-width: 768px) {
-.boot1 {
-    margin-left: 10%;
-    height: 200px;
-    display: inline-block;
-}
-}
-
-
-.boot1 {
-    margin-left: 10%;
-    height: 200px;
-    display: inline-block;
-}
-
-
-@media only screen and (min-width: 768px) {
-.boot1 {
-    margin-left: 15%;
-    height: 200px;
-    display: inline-block;
+.row1 {
+    margin-top: 5%;
+    display: block;
     
 }
 }
 
-
-.boot2 {
-    margin-left: 20%;
-    max-height: 200px;
-    display: inline-block;
-}
-
-
-@media only screen and (min-width: 768px) {
-.boot2 {
-    margin-left: 10%;
-    max-height: 200px;
-    display: inline-block;
-}
-}
-    
-
-@media only screen and (min-width: 768px) {
-.boot3 {
-    margin-left: 10%;
-    height: 200px;
-    display: inline-block;
-}
-}
-
-.boot3 {
-    margin-left: 10%;
-    height: 200px;
-    display: inline-block;
-}
 
 .nav {
-    font-size: 170%;
     display: block;
     margin: 0%;
     margin-top: 10%
 }
 
+
 a {
-    margin-left: 20%;
-   color: aliceblue;
+    display: inline;
+    color: aliceblue;
     text-shadow: 2px 2px black;
+    font-size: 170%;
+}
+
+
+@media only screen and (min-width: 768px) {
+a {
+    display: inline;
+    color: aliceblue;
+    text-shadow: 2px 2px black;
+    font-size: 170%;
+}
 }

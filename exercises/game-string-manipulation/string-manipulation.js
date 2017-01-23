@@ -5,7 +5,7 @@ var player = 100;
 function playerDamage() {
     var damageDone = Math.floor((Math.random() * 100) + 1);
     if(player > enemyLife) {
-        console.log("You won! You delivered " + damageDone + "You were injured and your life is down to " player());
+        console.log("You won! You delivered " + damageDone + "You were injured and your life is down to " + player);
     } else {
         console.log("You were killed!");
     }
@@ -83,10 +83,14 @@ function determineType(rando) {
 function fightRun() {
  var decision = readlineSync.question("If you want to fight enter 'fight' " + "if you want to run enter 'run' ");
        if (decision === "run") {
-            console.log(run());
+            return(run());
        } else {
-            console.log(test());
+            return(test());
        }
+}
+
+function test(){
+    console.log("test");
 }
 
 function run() {
@@ -94,14 +98,31 @@ function run() {
      if (y === 2) {
         console.log("You escaped! ");
         proceed();
+     } else {
+         console.log("You weren't fast enough. Prepare to fight");
+         fight();
      }
 }
         
 
-function fight(player) {
-    var damage = Math.floor((Math.random() * 100) + 1);
-    if (damage)****
+function fight(player, enemy) {
+    player = 100;
+    enemy = 100;
+    // if player > enemy CL("you won! But you've been injured. Your life is down to " + player)
+    // function that assigns player to random 1-100 and substracts; //result. AND function that does same to enemy
+    // } else {
+    //CL("You lost! Thanks for playing")
+    
 }
+
+
+function randomDamage() {
+    return Math.floor((Math.random() * 100) + 1);
+}    
+
+
+
+
 
 function determineDamage(determineType) {
     if (determineType === "monster") {

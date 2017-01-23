@@ -14,12 +14,6 @@ body {
 }
 
 
-@media only screen and (min-width: 768px) {
-.top {
-    display: block;
-    text-align: center;
-    }
-}
 
 .rockwell {
     font-family: type;
@@ -28,8 +22,6 @@ body {
     text-align: center;
     letter-spacing: 10px;
     text-shadow:  1px 1px #241100;
-    margin-top: 2%;
-    display: block;
     
 }
 
@@ -42,13 +34,10 @@ body {
     letter-spacing: 10px;
     text-shadow:  1px 1px #241100;
     margin-top: 2%;
-    display: block;
     
 }
 }
 
-
-@media only screen and (min-width: 768px) {
 .motto {
     font-size: 150%;
     color: black;
@@ -56,31 +45,27 @@ body {
     letter-spacing: 7px;
     text-shadow:  1px 1px #241100;
     font-family: western;
-    display: block;
     
 } 
-}
 
 
 
 .nav {
     list-style-type: none;
-    margin-top: 5%;
-    margin-left: 25%;
-    font-size: 50%;
+    font-size: 70%;
     text-shadow: 3px 3px black;
-    display: inline-block;
     text-align: center;
     
 }
 
 
-
 @media only screen and (min-width: 768px) {
 .nav {
     list-style-type: none;
-    font-size: 100%;
-    margin-left: 3%;
+    font-size: 150%;
+    text-shadow: 3px 3px black;
+    text-align: center;
+    
 }
 }
 
@@ -93,6 +78,7 @@ a {
 
 li {
     margin-top: 10%;
+    color: snow;
 }
 
 img {
