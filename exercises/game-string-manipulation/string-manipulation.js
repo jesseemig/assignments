@@ -19,18 +19,7 @@ function playerDamage() {
 
 
 
-
-
-
-
-
-//  when walk chance
-
-//  if chance 1-4, x < 2 w to walk- tell user to press w again and run the chance function when they do
-//  if chance x is less than 2 alert "Confronted by"- 
-//  function for type and return type to user
-//  user choose run or fight
-//  if run- 1/2
+// 
 //  if caught - fight function
 //  fight assign type properties
 //  engage battle

@@ -17,7 +17,7 @@ body {
 
 .rockwell {
     font-family: type;
-    font-size: 300%;
+    font-size: 350%;
     color: black;
     text-align: center;
     letter-spacing: 10px;
@@ -51,6 +51,7 @@ body {
 
 
 .nav {
+    display: block;
     list-style-type: none;
     font-size: 70%;
     text-shadow: 3px 3px black;
@@ -59,33 +60,33 @@ body {
 }
 
 
-@media only screen and (min-width: 768px) {
-.nav {
-    list-style-type: none;
-    font-size: 150%;
-    text-shadow: 3px 3px black;
-    text-align: center;
-    
-}
-}
 
 a {
+    display: block;
     color: snow;
     text-decoration: none;
-    font-size: 400%;
-   
+    font-size: 500%;
+    margin-top: 15%;
 }
 
-li {
-    margin-top: 10%;
+
+@media only screen and (min-width: 768px) {
+a {
+    display: block;
     color: snow;
+    text-decoration: none;
+    font-size: 500%;
+    margin-top: 15%;
+   
 }
+}
+
+
 
 img {
     height: 300px;
-    float: right;
-    margin-right: 3%;
-    margin-top: 5%;
+    margin-left: 210%;
+    margin-top: 35%;
     display: inline-block;
 }
 
