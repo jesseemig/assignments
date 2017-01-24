@@ -3,9 +3,12 @@
     src: url('type.ttf');
 }
 
-body {
-    background-image: url(wood.jpg);
-    background-size: 100%;
+body { 
+  background: url(wood.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .top {

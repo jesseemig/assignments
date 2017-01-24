@@ -8,11 +8,12 @@
     src: url("western.ttf")
 }
 
-body {
-    background-image: url(farm.jpg);
-    height: 100%;
-    width: 100%;
-    
+body { 
+  background: url(farm.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 
@@ -64,45 +65,34 @@ body {
 }
 
 
-
 .nav {
-    list-style-type: none;
-    margin-top: 5%;
-    margin-left: 25%;
-    font-size: 50%;
-    text-shadow: 3px 3px black;
-    display: inline-block;
-    text-align: center;
-    
-}
-
-
-
-@media only screen and (min-width: 768px) {
-.nav {
-    list-style-type: none;
-    font-size: 100%;
-    margin-left: 1%;
-}
+    display: block;
+    margin: 0%;
+    margin-top: 10%
 }
 
 a {
-    color: snow;
-    text-decoration: none;
-    font-size: 400%;
-   
+    display: inline;
+    color: aliceblue;
+    text-shadow: 2px 2px black;
+    font-size: 170%;
 }
 
-li {
-    margin-top: 10%;
+@media only screen and (min-width: 768px) {
+    a {
+        display: inline;
+        color: aliceblue;
+        text-shadow: 2px 2px black;
+        font-size: 270%;
+    }
 }
 
-p {
-    display: inline-block;
+
+.para {
+    margin-left: 9%;
+    display: block;
     background-color: aliceblue;
-    width: 50%;
     margin-top: 8%;
-    margin-left: 5%;
     text-align: center;
     font-family: type;
     padding-left: 1%;
@@ -110,9 +100,25 @@ p {
     padding-bottom: 1%;
     padding-top: 1%;
     font-size: 120%;
-    float: right;
-    margin-right: 24%;
     
+}
+
+
+@media only screen and (min-width: 768px) {
+.para {
+    margin-left: 25%;
+    display: block;
+    background-color: aliceblue;
+    margin-top: 8%;
+    text-align: center;
+    font-family: type;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    font-size: 120%;
+    
+    }
 }
 
 .issac {
