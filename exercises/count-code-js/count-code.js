@@ -15,7 +15,7 @@ function codeCount() {
         if (string[i] === "c") {
             if (string[i +1] === "o") {
                 if (string[i] === "e") {
-                    codeCounter +=1;
+                    codeCounter += 1;
                 }
             }
         }

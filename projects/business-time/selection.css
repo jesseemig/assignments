@@ -44,20 +44,43 @@ body {
     display: block;
 }
 
+
 @media only screen and (min-width: 768px) {
-    .row1 {
-        margin-top: 5%;
-        display: block;
+.row1 {
+    margin-top: 5%;
+    display: block;
     }
 }
 
-.nav {
+.row2 {
+    margin-top: 5%;
     display: block;
+}
+
+
+@media only screen and (min-width: 768px) {
+.row2 {
+    margin-top: 1%;
+    display: block;
+    }
+}
+
+.boot6 {
+    padding-bottom: 18%;
+}
+
+.boot4 {
+    padding-bottom: 4%;
+}
+.nav {
+    display: inline;
     margin: 0%;
-    margin-top: 10%
+    margin-top: 5%;
+   
 }
 
 a {
+    padding-bottom: 10%;
     display: inline;
     color: aliceblue;
     text-shadow: 2px 2px black;

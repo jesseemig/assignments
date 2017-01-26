@@ -1,29 +1,12 @@
 var readlineSync = require('readline-sync');
 
-var player = 100;
+var player = 0;
 
-function playerDamage() {
-    var damageDone = Math.floor((Math.random() * 100) + 1);
-    if(player > enemyLife) {
-        console.log("You won! You delivered " + damageDone + "You were injured and your life is down to " + player);
-    } else {
-        console.log("You were killed!");
-    }
-}
 //  console.log("Welcome to the Dark Forrest! Many have entered, few have survived. The forrest is full of ogres, monsters, bandits, and pitfalls.");
 
 //  var name = readlineSync.question('What is your name, stranger? ');
 
 //  console.log("Hi " + name.toUpperCase());
-
-
-
-
-// 
-//  if caught - fight function
-//  fight assign type properties
-//  engage battle
-
 
 
 // dev/assignments/exercises/game-string-manipulation $ node string-manipulation.js
@@ -32,7 +15,11 @@ function playerDamage() {
 var walk = readlineSync.question("Enter 'w' to walk ");
     console.log(chance());
 
-
+function randomItem() {
+    var items = ["sword", "knife", "shield", "crossbow"]
+    var pick = Math.floor((Math.random() * 4) + 1);
+    ///
+}
 
 function chance() {
      var x = Math.floor((Math.random() * 3) + 1);
@@ -52,6 +39,10 @@ function proceed() {
     return (chance());
 }
 
+
+function cont() {
+    readlineSync.question("Press 'c' to continue ")
+}
 
 function determineType(rando) {
     var rando = Math.floor((Math.random() * 3) + 1);
@@ -74,13 +65,10 @@ function fightRun() {
        if (decision === "run") {
             return(run());
        } else {
-            return(test());
+            return(fight());
        }
 }
 
-function test(){
-    console.log("test");
-}
 
 function run() {
     var y = Math.floor((Math.random() * 2) + 1);
@@ -89,38 +77,79 @@ function run() {
         proceed();
      } else {
          console.log("You weren't fast enough. Prepare to fight");
+         cont();
          fight();
      }
 }
         
 
-function fight(player, enemy) {
-    player = 100;
-    enemy = 100;
-    // if player > enemy CL("you won! But you've been injured. Your life is down to " + player)
-    // function that assigns player to random 1-100 and substracts; //result. AND function that does same to enemy
-    // } else {
-    //CL("You lost! Thanks for playing")
+
+function fight() {
+    player += strike();
+    console.log("He struck first and delivered " + player + " damage points. ");
+    cont();
+}
+   
+        } else if (enemy > 99) {
+        enemy += strike();
+        console.log("Your blow delivered " + enemy + "  damage points");
+            else if (player <= 99) {
+        console.log("You slayed your enemy you have been awaraded a ");
+        randomItem();
+        walkAway;
+        } 
+    }
     
+    Function playerTotal(player) {
+        if (player > 99){
+            console.log("You failed! You fought with honor but the forrest always wins.");
+        }
+    }
+     
+    enemy += strike();
+    console.log("Your blow delivered " + enemy + "  damage points");
+    if (player > 99) {
+            console.log("You failed! You fought with honor but the forrest always wins.");
+    } else if (enemy > 99) {
+        console.log("You slayed your enemy you have been awaraded a ");
+        randomItem();
+        walkAway;
+    } else if (player >= 99) {
+     function playerHurt() {    
+        damage = Math.floor((Math.random() * 100) + 1);
+        player += damage;
+    console.log("Your opponent's strike caused " + player + " damage points ");
+         if (player > 99) {
+            console.log("You failed! You fought with honor but the forrest always wins.");
+         } else if (enemy > 99){
+        console.log("You slayed your enemy you have been awaraded a ");
+        cont();
+        walkAway();
+     } 
+         
+     }
+    }
 }
 
-
-function randomDamage() {
-    return Math.floor((Math.random() * 100) + 1);
-}    
-
-
-
-
-
-function determineDamage(determineType) {
-    if (determineType === "monster") {
-         return getRandomInt(80, 100);
-    } else if (determineType === "ogre") {
-         return getRandomInt(50, 79);
-     } else (determineType === "bandit");
-        return getRandomInt(20, 49);
+function strike() {
+    damage = Math.floor((Math.random() * 100) + 1); 
 }
+         
+
+
+
+ 
+
+         
+
+    function walkAway() {
+        readlineSync.question("Enter 'c' to continue on your way ");
+    console.log(chance());
+    }
+
+
+
+
 
 
 //  function Enemy(hitPoints, defense) {                   
