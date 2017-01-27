@@ -1,55 +1,74 @@
-var readlineSync = require('readline-sync');
+var ask = require("readline-sync");
 
-var player = 0;
+var player = 100;
+var enemy = 100000000;
 
-//  console.log("Welcome to the Dark Forrest! Many have entered, few have survived. The forrest is full of ogres, monsters, bandits, and pitfalls.");
-
-//  var name = readlineSync.question('What is your name, stranger? ');
-
-//  console.log("Hi " + name.toUpperCase());
+console.log("Welcome to the Dark Forrest! Many have entered, few have survived. The forrest is full of ogres, monsters, bandits, and pitfalls.");
 
 
-// dev/assignments/exercises/game-string-manipulation $ node string-manipulation.js
 
+var name = ask.question('What is your name, stranger? ');
 
-var walk = readlineSync.question("Enter 'w' to walk ");
-    console.log(chance());
+console.log("Welcome " + name.toUpperCase());
+proceed();
 
-function randomItem() {
-    var items = ["sword", "knife", "shield", "crossbow"]
-    var pick = Math.floor((Math.random() * 4) + 1);
-    ///
+function seeIn() {
+    console.log(name + " " + playerItems);
+var inventory = ask.question("Enter 'w' to continue- ");
+    proceed();
 }
 
-function chance() {
-     var x = Math.floor((Math.random() * 3) + 1);
-     if (x <= 2) {
-        return (proceed());
-             
-        
+var playerItems = [];
+
+function random(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+
+function walk() {
+ var ugh =   ask.question("Enter 'w' to walk, 'i' for inventory ");
+   if (ugh === "w") {
+    random(1, 5) === 1;
+    determineType();
+    } else if (ugh === "i") {
+        seeIn();
     } else {
-        return (determineType());
-            
+        proceed();
     }
 }
 
 
+var items = ["sword", "knife", "rusty spoon", "shield"];
+
+function recieve() {
+    var items = ["sword", "knife", "rusty spoon", "shield"];
+    var youGot = items[Math.floor(Math.random()* items.length)];
+    console.log("Congratulations! You are victorious! You recieved a " + youGot);
+    playerItems += youGot;
+    proceed();
+}
+
+
+
 function proceed() {
-    readlineSync.question("Enter 'w' to walk ");
-    return (chance());
+ var err =  ask.question("Enter 'w' to walk, 'i' for inventory ");
+    if (err === "w") {
+        random(1, 5) === 1;
+        determineType();
+    } else if (err === "i") {
+        seeIn();
+    } else {
+       walk();
+    }
 }
 
 
-function cont() {
-    readlineSync.question("Press 'c' to continue ")
-}
-
-function determineType(rando) {
-    var rando = Math.floor((Math.random() * 3) + 1);
-    if (rando === 1) {
+function determineType() {
+    var assign = random(1, 3);
+    if (assign === 1) {
         console.log("You are confronted by an angry ogre ");
         fightRun();
-    } else if (rando === 2) {
+    } else if (assign === 2) {
         console.log("You are confronted by an angry monster ");
         fightRun();
     } else {
@@ -61,101 +80,62 @@ function determineType(rando) {
 
 
 function fightRun() {
- var decision = readlineSync.question("If you want to fight enter 'fight' " + "if you want to run enter 'run' ");
+ var decision = ask.question("If you want to fight enter 'fight' " + "if you want to run enter 'run' ");
        if (decision === "run") {
-            return(run());
+            run();
        } else {
-            return(fight());
+           fight();
        }
 }
 
 
 function run() {
-    var y = Math.floor((Math.random() * 2) + 1);
-     if (y === 2) {
+     if (random(1, 2) === 2) {
         console.log("You escaped! ");
         proceed();
      } else {
-         console.log("You weren't fast enough. Prepare to fight");
-         cont();
+         console.log("You weren't fast enough.");
          fight();
      }
 }
-        
+     
+var enemyAttack = 0;
+var playerAttack = 0;
 
 
 function fight() {
-    player += strike();
-    console.log("He struck first and delivered " + player + " damage points. ");
-    cont();
-}
-   
-        } else if (enemy > 99) {
-        enemy += strike();
-        console.log("Your blow delivered " + enemy + "  damage points");
-            else if (player <= 99) {
-        console.log("You slayed your enemy you have been awaraded a ");
-        randomItem();
-        walkAway;
-        } 
-    }
-    
-    Function playerTotal(player) {
-        if (player > 99){
-            console.log("You failed! You fought with honor but the forrest always wins.");
+    ask.question("The fight is on! ")
+    enemyAttack = random(1, 100);
+    var cost = enemyAttack;
+    player -= cost
+    console.log("He struck first and delivered " + enemyAttack + " damage points. You have " + player + " health left");
+    if (player < 1) {
+        console.log("It was a fatal blow! Your lifeless corpse now belongs to the forrest. GAME OVER");
+         } else if (player > 0) {
+        playerAttack = random(1, 100);
+        console.log("Your blow delivered " + playerAttack + "  damage points");
+             outCome();
+        } else {
+            outCome();
         }
-    }
-     
-    enemy += strike();
-    console.log("Your blow delivered " + enemy + "  damage points");
-    if (player > 99) {
-            console.log("You failed! You fought with honor but the forrest always wins.");
-    } else if (enemy > 99) {
-        console.log("You slayed your enemy you have been awaraded a ");
-        randomItem();
-        walkAway;
-    } else if (player >= 99) {
-     function playerHurt() {    
-        damage = Math.floor((Math.random() * 100) + 1);
-        player += damage;
-    console.log("Your opponent's strike caused " + player + " damage points ");
-         if (player > 99) {
-            console.log("You failed! You fought with honor but the forrest always wins.");
-         } else if (enemy > 99){
-        console.log("You slayed your enemy you have been awaraded a ");
-        cont();
-        walkAway();
-     } 
-         
-     }
-    }
 }
 
-function strike() {
-    damage = Math.floor((Math.random() * 100) + 1); 
-}
-         
-
-
-
+function outCome(){
+    if (playerAttack > enemyAttack) {
+        recieve();
+    } else {
+        console.log("You lost but you manage to flee before he can attack again. ");
+            proceed();
+    }
+}  
  
 
-         
 
-    function walkAway() {
-        readlineSync.question("Enter 'c' to continue on your way ");
-    console.log(chance());
-    }
+function walkAway() {
+    ask("Enter 'c' to continue on your way ");
+    walk();
+}
+    
 
-
-
-
-
-
-//  function Enemy(hitPoints, defense) {                   
-//      this.hitPoints = determineDamage;
-//      this.defense = this.hitPoints * 3;
-//  }
-
-
+ 
 
