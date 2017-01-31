@@ -70,4 +70,3 @@ while (penguins.isAlive() && communists.isAlive()) {
 
 
 console.log("Game over");
-

@@ -7,7 +7,7 @@ body {
     color: white;
     font-family: "Arcade Interlaced";
     background-attachment: fixed;
-    background-position: bottom 250% center;
+    background-position: bottom 100% center;
 }
 
 header {
@@ -43,41 +43,56 @@ button {
 
 .nm {
     display: inline;
+    background-color: white;
+    color: black;
 }
 
 .g {
     display: inline;
     margin-top: 50%;
+    background-color: white;
+    color: black;
 }
 
 .date {
     display: inline;
     margin-top: 50%;
+    background-color: white;
+    color: black;
 }
 .pc {
     display: inline;
     margin-top: 50%;
+    background-color: white;
+    color: black;
 }
 
 table {
     display: inline-block;
     float: right;
     margin-top: 4%;
-    color: white;
+    color: red;
     font-size: 100%;
     text-align: center;
     margin-right: 5%;
+    
    
 }
 
 th {
     height: 100px;
     color: #FFEB8E;
+    background-color: black;
 }
 
 tr {
     height: 50px;
-    
-
+    color: black;
+    background-color: white;
 }
+
+
+
+
+
 
