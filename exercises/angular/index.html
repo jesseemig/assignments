@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body ng-controller="MainController">
+  
+  <!-- If you want Object Property use person.name -->
+   <h1>ng-model- {{ name }}</h1>
+   <input type="text" placeholder="Words" ng-model="name">
+   
+   
+   <h2>Object.value- {{person.firstName}}</h2>
+   <input type="text" placeholder="More words" ng-model="person.firstName">
+   
+   
+    <h2>Array Object- {{menu.appetizers.name}}</h2>
+   <input type="text" placeholder="And more words" ng-model="menu.appetizers.name">
+   
+   
+   <h2>ng-repeat- </h2>
+   
+    
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
