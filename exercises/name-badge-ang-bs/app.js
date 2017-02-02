@@ -8,22 +8,28 @@ app.controller("MainController", function($scope) {
     $scope.person = {
         firstName: "Jesse",
         lastName: "Emig"
-    }
+    };
     
     
     
-    $scope.addSandwich = function() {
-        sandwhiches.push({
-            name: $scope.name,
-            description: $scope
-        
+    $scope.menu = {
 
         appetizers: [
             {  
-            name: "Turkey Club",
+            name: "onion rings",
             ingredients: ["stuff", "some good stuff", "other things"],
             description: "just shut up and eat it"
             }
         ],
     };
 });
+
+var badge = angular.module("ReturnBadge", [])
+
+badge.controller("SecondController", function($scope) {
+    
+    
+    
+})
+
+    

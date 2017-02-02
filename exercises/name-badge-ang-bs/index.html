@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Angular</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body ng-controller="MainController">
+
+    <div class="container-fluid">
+        <div class="row">
+
+        <form class="col-xs-12">
+
+
+            <div class="row">
+                <div class="row1 col-xs-8">
+                    <input type="text" class="form-control" placeholder="First Name" ng-model="firstName">
+                </div>
+
+
+                <div class="row1 col-xs-4">
+                    <input type="text" placeholder="Last Name" ng-model="firstName">
+                </div>
+            </div>
+
+
+
+
+     
+
+
+            <div class="row space">
+                <div class="well">
+                    <h1 class="col-sm-5 top">City: {{city}} </h1>
+                </div>
+                <input class="col-sm-5 bottom" type="text" placeholder="New value" ng-model="city">
+            </div>
+
+        </form>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
