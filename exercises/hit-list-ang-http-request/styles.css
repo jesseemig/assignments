@@ -1,0 +1,73 @@
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 1.3em;
+    }
+}
+.container-fluid {
+    position: relative;
+}
+
+h3 {
+    font-size: 280%;
+    display: inline;
+    margin-left: 10%;
+    color: red;
+    font-family: sans-serif;
+}
+
+.donPic {
+    display: inline;
+    margin-left: 5%;
+}
+
+.top {
+    background-image: url(gun.jpg);
+    padding-bottom: 3%;
+}
+
+.dpic {
+    margin-top: 2%;
+}
+
+img { 
+   vertical-align: middle;
+    box-sizing: border-box;
+    display: inline;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    max-width: 200px;
+    height: 
+}
+.row {
+    height: 300px;
+}
+
+.here {
+    margin-top: 60px;
+    position: relative;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.vicNames {
+    width: 200px;
+}

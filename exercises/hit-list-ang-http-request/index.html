@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hit List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body ng-controller="MainController">
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="row">
+                <div class="top">
+                    <div class="donPic">
+                        <img width="190" height="120" class="dpic" src="don.jpg">
+                    </div>
+                    <h3>Don Corleone's Hit List</h3>
+                </div>
+            </div>
+
+           <section class="here">
+            <div class="row">
+                <div class="col-sm-4" ng-repeat="list in lists">
+                    <img class="victims" src="{{list.image}}">
+                    <h1 class="vicNames">{{list.name}}</h1>
+                </div>
+            </div>
+            </section>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

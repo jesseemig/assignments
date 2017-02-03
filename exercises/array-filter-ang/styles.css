@@ -21,38 +21,3 @@
         font-size: 1.3em;
     }
 }
-
-.no {
-    background-image: none;
-}
-
-.row1 {
-    padding-top: 3%;
-}
-
-.row2 {
-    padding-top: 2%;
-}
-
-.row3 {
-    padding-top: 2%;
-}
-
-.row4 {
-    padding-top: 2%;
-}
-
-.row5 {
-   padding-top: 2%;
-    margin-left: 46%;
-}
-
-.row12 {
-    padding-top: 2%
-}
-
-
-.top2 {
-    color: white;
-    background-color: gray;
-}

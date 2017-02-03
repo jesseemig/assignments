@@ -14,38 +14,112 @@
     <div class="container-fluid">
         <div class="row">
 
-        <form class="col-xs-12">
+            
+<form class="total col-xs-12">
+
+                <div class="row">
+                    <div class="row1 col-xs-5 col-xs-offset-1">
+                        <input type="text" class="form-control no" placeholder="First name" ng-model="firstName">
+                    </div>
 
 
+                    <div class="row1 col-xs-5">
+                        <input type="text" class="form-control" placeholder="Last name" ng-model="lastName">
+                    </div>
+                </div>
+                
+
+                <div class="row">
+                    <div class="row2 col-xs-5 col-xs-offset-1">
+                        <input type="text" class="form-control" placeholder="Email address" ng-model="email" required>
+                    </div>
+
+
+                    <div class="row2 col-xs-5 ">
+                        <input type="text" class="form-control" placeholder="Place of birth" ng-model="place" required>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="row3 col-xs-5 col-xs-offset-1">
+                        <input type="text" class="form-control" placeholder="Phone" ng-model="phNum" required>
+                    </div>
+
+
+                    <div class="row3 col-xs-5">
+                        <input type="text" class="form-control" placeholder="Favorite food" ng-model="food" required>
+                    </div>
+                </div>
+
+           
             <div class="row">
-                <div class="row1 col-xs-8">
-                    <input type="text" class="form-control" placeholder="First Name" ng-model="firstName">
+                    <div class="row4 col-xs-10 col-xs-offset-1">
+                          <textarea rows="8" class="form-control" placeholder="Tell us about yourself" ng-model="aboutThem" required></textarea>
+                    </div>
                 </div>
-
-
-                <div class="row1 col-xs-4">
-                    <input type="text" placeholder="Last Name" ng-model="firstName">
+                
+                
+                 <div class="row">
+                    <div class="row5">
+                          <button type="button" class="complete btn col-xs-2" id="btn">Submit</button>
+                    </div>
                 </div>
-            </div>
-
-
-
-
-     
-
-
-            <div class="row space">
-                <div class="well">
-                    <h1 class="col-sm-5 top">City: {{city}} </h1>
-                </div>
-                <input class="col-sm-5 bottom" type="text" placeholder="New value" ng-model="city">
-            </div>
-
-        </form>
+                
+            </form>
         </div>
     </div>
+    
+    
+    
+    <div class="container-fluid">
+        <div class="row">
 
-
+       <div class="page2">
+        <div class="well">
+         <p class="top2 col-xs-12">Badge:</p>
+            </div>
+    </div>
+            
+            
+          <div class="row">
+                    <div class="row12 col-xs-5 col-xs-offset-1">
+                        <h5 class="nameHere">Name: {{ firstName }} 
+                        {{ lastName }}</h5>
+                    </div>
+                    <div class="row12 col-xs-5 col-xs-offset-1">
+                        <h5 class="phoneHere">Phone:</h5>
+                    </div>
+            </div>
+            
+            <div class="row">
+            <div class="row21 col-xs-5 col-xs-offset-1">
+                        <h5 class="birthHere">Place of birth: </h5>
+                    </div>
+            <div class="row22 col-xs-5 col-xs-offset-1">
+                        <h5 class="foodsHere">Favorite food: </h5>
+                    </div>
+            </div>
+            
+            <div class="row">
+            <div class="row31 col-xs-5 col-xs-offset-1">
+                        <h5 class="emailHere">Email: </h5>
+                    </div>
+            </div>
+            
+                
+            <div class="row">
+            <div class="row6 col-xs-10 col-xs-offset-1">
+            <p class="textHere"></p>
+        </div>
+    </div>
+    
+       
+        </div>
+    </div>
+   
+   
+   
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
     <script src="app.js"></script>
 </body>
