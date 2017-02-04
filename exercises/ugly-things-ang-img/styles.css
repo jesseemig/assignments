@@ -56,3 +56,11 @@ form {
     margin-top: 5%;
     margin-bottom: 2%;
 }
+
+.output {
+    left: 0;
+    right: 0;
+    position: absolute;
+    margin: auto;
+}
+

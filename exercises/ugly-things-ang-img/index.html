@@ -34,17 +34,16 @@
 
         </form>
 
-        <section>
-            <div class="row">
+        <section ng-repeat="something in uploaded">
+           
+               
+                 <h4> {{something.title}} </h4>
 
+                    <h6> {{something.desc}} </h6>
+
+                    <img ng-src="{{ something.img }}">
+                   
                 
-
-                    <img  src="{{ tada.img }}">
-
-                    <h4> {{tada.title}} </h4>
-
-                    <h6> {{tada.desc}} </h6>
-                </div>
             
         </section>
 
