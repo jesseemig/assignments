@@ -21,19 +21,3 @@
         font-size: 1.3em;
     }
 }
-
-.form-control {
-    margin-top: 4%;
-}
-
-
-form {
-    background-color: white;
-    background-image: none;
-}
-
-.top {
-    margin-top: 5%;
-    background-color: gray;
-    color: white;
-}

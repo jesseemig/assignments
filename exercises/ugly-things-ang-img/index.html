@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ugly</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+</head>
+
+<body ng-controller="UploadController" class="container">
+
+    <div class="row">
+
+        <form class="row">
+
+
+            <div class="col-sm-4 form-group">
+                <input type="text" class="form-control" placeholder="Title" ng-model="pic.title">
+            </div>
+
+            <div class="col-sm-4 form-group">
+                <input type="url" class="form-control" placeholder="Img URL" ng-model="pic.img">
+            </div>
+
+            <div class="col-sm-4 form-group">
+                <input type="text" class="form-control" placeholder="Title" ng-model="pic.desc">
+            </div>
+
+            <button class="btn col-xs-2 col-xs-offset-5" ng-click="addPic()">Submit</button>
+
+
+        </form>
+
+        <section>
+            <div class="row">
+
+                
+
+                    <img  src="{{ tada.img }}">
+
+                    <h4> {{tada.title}} </h4>
+
+                    <h6> {{tada.desc}} </h6>
+                </div>
+            
+        </section>
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

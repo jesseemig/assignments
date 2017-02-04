@@ -7,120 +7,97 @@
     <title>Angular</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
 </head>
 
-<body ng-controller="MainController">
-
-    <div class="container-fluid">
-        <div class="row">
-
-            
-<form class="total col-xs-12">
-
-                <div class="row">
-                    <div class="row1 col-xs-5 col-xs-offset-1">
-                        <input type="text" class="form-control no" placeholder="First name" ng-model="firstName">
-                    </div>
+<body ng-controller="MainController" class="container">
 
 
-                    <div class="row1 col-xs-5">
-                        <input type="text" class="form-control" placeholder="Last name" ng-model="lastName">
-                    </div>
-                </div>
-                
+    <div class="row">
 
-                <div class="row">
-                    <div class="row2 col-xs-5 col-xs-offset-1">
-                        <input type="text" class="form-control" placeholder="Email address" ng-model="email" required>
-                    </div>
+        <form class="row">
 
 
-                    <div class="row2 col-xs-5 ">
-                        <input type="text" class="form-control" placeholder="Place of birth" ng-model="place" required>
-                    </div>
-                </div>
-
-
-                <div class="row">
-                    <div class="row3 col-xs-5 col-xs-offset-1">
-                        <input type="text" class="form-control" placeholder="Phone" ng-model="phNum" required>
-                    </div>
-
-
-                    <div class="row3 col-xs-5">
-                        <input type="text" class="form-control" placeholder="Favorite food" ng-model="food" required>
-                    </div>
-                </div>
-
-           
-            <div class="row">
-                    <div class="row4 col-xs-10 col-xs-offset-1">
-                          <textarea rows="8" class="form-control" placeholder="Tell us about yourself" ng-model="aboutThem" required></textarea>
-                    </div>
-                </div>
-                
-                
-                 <div class="row">
-                    <div class="row5">
-                          <button type="button" class="complete btn col-xs-2" id="btn">Submit</button>
-                    </div>
-                </div>
-                
-            </form>
-        </div>
-    </div>
-    
-    
-    
-    <div class="container-fluid">
-        <div class="row">
-
-       <div class="page2">
-        <div class="well">
-         <p class="top2 col-xs-12">Badge:</p>
+            <div class="col-sm-6 form-group">
+                <input type="text" class="form-control no" placeholder="First name" ng-model="person.firstName">
             </div>
-    </div>
-            
-            
-          <div class="row">
-                    <div class="row12 col-xs-5 col-xs-offset-1">
-                        <h5 class="nameHere">Name: {{ firstName }} 
-                        {{ lastName }}</h5>
-                    </div>
-                    <div class="row12 col-xs-5 col-xs-offset-1">
-                        <h5 class="phoneHere">Phone:</h5>
-                    </div>
+
+
+            <div class="col-sm-6 form-group">
+                <input type="text" class="form-control" placeholder="Last name" ng-model="person.lastName">
             </div>
-            
-            <div class="row">
-            <div class="row21 col-xs-5 col-xs-offset-1">
-                        <h5 class="birthHere">Place of birth: </h5>
-                    </div>
-            <div class="row22 col-xs-5 col-xs-offset-1">
-                        <h5 class="foodsHere">Favorite food: </h5>
-                    </div>
+
+
+
+            <div class="col-sm-6 form-group">
+                <input type="text" class="form-control" placeholder="Email address" ng-model="person.email">
             </div>
-            
-            <div class="row">
-            <div class="row31 col-xs-5 col-xs-offset-1">
-                        <h5 class="emailHere">Email: </h5>
-                    </div>
+
+
+            <div class="col-sm-6 form-group">
+                <input type="text" class="form-control" placeholder="Place of birth" ng-model="person.place">
             </div>
-            
-                
+
+
+
+            <div class="col-sm-6 form-group">
+                <input type="tel" class="form-control" placeholder="Phone" ng-model="person.phNum">
+            </div>
+
+
+            <div class="col-sm-6 form-group">
+                <input type="text" class="form-control" placeholder="Favorite food" ng-model="person.food">
+            </div>
+
+
+
+            <div class="col-sm-12 form-group">
+                <textarea rows="8" class="form-control" placeholder="Tell us about yourself" ng-model="person.about"></textarea>
+            </div>
+
+
+            <button class="btn col-xs-2 col-xs-offset-5" ng-click="addName()">Submit</button>
+
+
+        </form>
+
+
+        <section class="row">
+
             <div class="row">
-            <div class="row6 col-xs-10 col-xs-offset-1">
-            <p class="textHere"></p>
-        </div>
+                <h3 class="top well">Badge</h3>
+            </div>
+
+            <div class="col-xs-6">
+                <h3> Name: {{ badge.firstName }} {{ badge.lastName }}</h3>
+            </div>
+            <div class="col-xs-6">
+                <h3>Phone: {{ badge.phNum }}</h3>
+            </div>
+
+            <div class="col-xs-6">
+                <h3>Place of birth: {{ badge.place }}</h3>
+            </div>
+            <div class="col-xs-6">
+                <h3>Favorite food: {{ badge.food }}</h3>
+            </div>
+
+            <div class="col-xs-6">
+                <h3>Email: {{ badge.email }}</h3>
+            </div>
+
+            <div class="col-xs-12">
+                <p>{{ badge.about }}</p>
+            </div>
+
+        </section>
+
+
     </div>
-    
-       
-        </div>
-    </div>
-   
-   
-   
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+
+
+
+
     <script src="app.js"></script>
 </body>
 

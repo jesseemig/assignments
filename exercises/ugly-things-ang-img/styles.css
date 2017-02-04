@@ -1,0 +1,58 @@
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 1.3em;
+    }
+}
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 1.3em;
+    }
+}
+
+
+
+form {
+    padding-top: 4%;
+    background-color: skyblue;
+}
+
+.btn {
+    margin-top: 5%;
+    margin-bottom: 2%;
+}

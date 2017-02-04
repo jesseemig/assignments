@@ -1,12 +1,12 @@
-var app = angular.module("MyApp", [])
+var app = angular.module("MyApp", []);
 
-app.controller("MainController", function($scope) {
+app.controller("MainController", ["$scope", function($scope) {
    
-    $scope.firstName = "";
-    $scope.lastName = ""; 
+ $scope.addName = function() {
+        $scope.badge = $scope.person;
+        $scope.person = {};
+    }
     
-});
+}]);
 
 
-
-    
