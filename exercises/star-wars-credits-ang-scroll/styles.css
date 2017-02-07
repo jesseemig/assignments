@@ -22,11 +22,12 @@
     }
 }
 
-.title {
-    text-align: center;
+body {
+    background-color: black;
+    color: yellow;
 }
 
-.add {
-    margin-left: 60%;
-    margin-top: 5%;
+p {
+    text-align: center;
+    font-size: 300%;
 }

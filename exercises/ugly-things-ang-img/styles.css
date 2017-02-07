@@ -46,7 +46,6 @@
 }
 
 
-
 form {
     padding-top: 4%;
     background-color: skyblue;
@@ -64,3 +63,7 @@ form {
     margin: auto;
 }
 
+section {
+    background-color: #FF7300;
+    padding: 5%;
+}

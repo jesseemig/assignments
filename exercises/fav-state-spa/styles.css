@@ -22,11 +22,45 @@
     }
 }
 
-.title {
+.top {
     text-align: center;
 }
 
-.add {
-    margin-left: 60%;
-    margin-top: 5%;
+a {
+    display: inline;
+    font-size: 200%;
+    
 }
+
+nav {
+    margin-top: 11%;
+    padding-bottom: 3%;
+    
+}
+
+ul {
+    list-style-type: none;
+}
+
+p {
+    width: 50%;
+}
+
+.top {
+    background-image: url(headerpic.jpg);
+    background-size: 90%;
+}
+
+li {
+    color: black;
+    font-size: 130%;
+}
+
+.info {
+    padding-top: 5%;
+}
+
+
+
+
+

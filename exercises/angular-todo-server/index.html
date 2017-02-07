@@ -4,20 +4,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Angular</title>
+    <title>To do</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body ng-controller="MainController">
-  
-   <div ng-repeat="todo in todos track by $index">
-           <h2> {{todo.title}}</h2>
-           <button class="btn btn-danger glyphicon glyphicon-trash" ng-click="remove todo">Click Me</button>
+
+    <div class="row">
+
+        <div class="col-sm-10 col-sm-offset-1">
+            <h1 class="title">Todo lists</h1>
+        </div>
+    </div>
+
+    <div class="add">
+       
+       <label>
+            <input type="text" placeholder="Item">
+        </label>
+        <label>
+            <input type="number" placeholder="Price">
+        </label>
+
+        <label>
+            <input type="text" placeholder="Description">
+        </label>
+
+        <button ng-show="editing" class="btn btn-success glyphicon glyphicon-floppy-disk" ng-click="tupdateTodo"> Save </button>
+        
+    </div>
+
+
+    <div class="row">
+        <div class="col-sm-10 col-sm-offset-1">
+
+            <div ng-repeat="todo in todos track by $index">
+
+                <div class="form-group">
+
+                    <h2> {{todo.title}} </h2>
+
+                    <input type="checkbox" ng-change="updateTodo()">
+                    <h2 ng-hide="editing"> {{ todo.title }} </h2>
+                    <p ng-show="editing"> {{ }} </p>
+
+                    <input ng-show="editing" type="text" ng-model="todo.description" class="form-control">
+
+                    <button class="btn btn-warning glyphicon glyphicon-trash" ng-click="deleteItem(todo._id, $index)"></button>
+
+                    <button ng-hide="editing" class="btn btn-warning glyphicon glyphicon-pencil" ng-click="todo.editing"></button>
+
+                    <button ng-show="editing" class="btn btn-success glyphicon glyphicon-floppy-disk" ng-click="tupdateTodo"></button>
+
+                </div>
             </div>
-   
-  
-   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+
+        </div>
+    </div>
+
+    <div class="col-sm-6">
+        <form>
+            <div class="form-group">
+
+            </div>
+        </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
     <script src="app.js"></script>
 </body>
 

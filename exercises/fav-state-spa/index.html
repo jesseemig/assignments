@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="routingApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Favorite State</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+
+<body>
+
+   <div class="row top">
+    <div class="row">
+        <h1 class="top">Nothing Compares To Utah</h1>
+    </div>
+
+    <div class="row">
+
+        <nav>
+           <ul>
+            <a href="#/home"><li class="col-sm-3 col-sm-offset-1">Home</li></a>
+            <a href="#/about"><li class="col-sm-3" >About</li></a>
+            <a href="#/whyilove"><li class="col-sm-3" >Why I love Utah</li></a>
+            </ul>
+        </nav>
+</div>
+    
+    </div>
+
+    <div class="info" ng-view></div>
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="spa/home/home.js"></script>
+    <script src="spa/about/about.js"></script>
+    <script src="spa/love/whyilove.js"></script>
+</body>
+
+</html>
+
+
+
