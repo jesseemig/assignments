@@ -1,11 +1,15 @@
 var app = angular.module("MyApp", []);
 
-app.controller("MainController", function($scope) {
+app.controller("MainController", ["$scope", function ($scope) {
     
-    $scope.car = {
-        make: "Toyota",
-        model: "Prius",
-        color: "Blue",
-        year: 2007
-    };
-});
+$scope.newPoke = []
+
+   
+ $scope.addPoke = function () {
+        $scope.newPoke.push($scope.pokeEntered)
+        $scope.pokeEntered = {};
+    }
+    
+}]);
+
+

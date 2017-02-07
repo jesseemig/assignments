@@ -21,17 +21,24 @@
     <div class="add">
        
        <label>
-            <input type="text" placeholder="Item">
-        </label>
+           <div class="form-group">
+            <input type="text" class="form-control col-sm-4" placeholder="Item" ng-model="adding.item">
+           </div>
+        </label><br>
+        
         <label>
-            <input type="number" placeholder="Price">
-        </label>
+           <div class="form-group">
+            <input type="number" class="form-control col-sm-4" placeholder="Price" ng-model="adding.price">
+            </div>
+        </label><br>
 
         <label>
-            <input type="text" placeholder="Description">
-        </label>
-
-        <button ng-show="editing" class="btn btn-success glyphicon glyphicon-floppy-disk" ng-click="tupdateTodo"> Save </button>
+            <div class="form-group">
+                <input type="url" class="form-control col-sm-4" placeholder="Img URL" ng-model="adding.img">
+            </div>
+        </label><br>
+        
+        <button class="btn btn-success glyphicon glyphicon-floppy-disk" ng-click="updateTodo"> Save </button>
         
     </div>
 
@@ -39,14 +46,21 @@
     <div class="row">
         <div class="col-sm-10 col-sm-offset-1">
 
-            <div ng-repeat="todo in todos track by $index">
+            <div ng-repeat="something in todoList">
 
                 <div class="form-group">
-
-                    <h2> {{todo.title}} </h2>
-
+                    
                     <input type="checkbox" ng-change="updateTodo()">
-                    <h2 ng-hide="editing"> {{ todo.title }} </h2>
+                    <h2 ng-hide="editing"> {{ something.item }} </h2>
+                    
+                    <h2> {{ something.price }} </h2>
+                    
+                    <img ng-src="{{ something.img }}">
+                
+                    
+                     <section ng-repeat="something in uploaded">
+           
+                
                     <p ng-show="editing"> {{ }} </p>
 
                     <input ng-show="editing" type="text" ng-model="todo.description" class="form-control">

@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="MyApp">
+
 <head>
     <meta charset="UTF-8">
-    <title>Angular Beginnings</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Angular</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
 </head>
+
 <body ng-controller="MainController">
   
   
-   <h1>Car year: {{car.year}}</h1>
-   <input type="text" placeholder="object and value in ng-model" ng-model="car.year">   
+   <h1>My Favorite Pokemon</h1>
    
-     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+   <input type="text" placeholder="Pokemon Name" ng-model="pokeEntered.name">
+   
+   <button class="btn" ng-click="addPoke(pokeEntered)">Enter</button> 
+   
+   <section ng-repeat="something in newPoke">
+   <h2> {{ something.name }} </h2>
+  </section>
+  
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <script src="app.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,39 @@
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 1.3em;
+    }
+}
+
+.form-control {
+    margin-top: 4%;
+}
+
+
+form {
+    background-color: white;
+    background-image: none;
+}
+
+.top {
+    margin-top: 5%;
+    background-color: gray;
+    color: white;
+}
