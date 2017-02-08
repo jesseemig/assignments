@@ -1,12 +1,15 @@
-var app = angular.module("MyApp", []);
+angular.module("MyApp")
 
-app.controller("MainController", ["$scope", function($scope) {
-   
- $scope.addName = function() {
-        $scope.badge = $scope.person;
-        $scope.person = {};
-    }
+.service("PokeService", [function (newPokemon, pokeEntered) {
+
+    this.newPokemon = [];
+    this.pokeEntered = {};
     
-}]);
+    this.added = function (pokeEntered, newPokemon) {
+        
+        this.newPokemon.push(pokeEntered)
+        
+    };
 
+}]);
 

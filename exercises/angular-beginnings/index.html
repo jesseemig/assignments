@@ -7,25 +7,27 @@
     <title>Angular</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    
+
 </head>
 
 <body ng-controller="MainController">
-  
-  
-   <h1>My Favorite Pokemon</h1>
-   
-   <input type="text" placeholder="Pokemon Name" ng-model="pokeEntered.name">
-   
-   <button class="btn" ng-click="addPoke(pokeEntered)">Enter</button> 
-   
-   <section ng-repeat="something in newPoke">
-   <h2> {{ something.name }} </h2>
-  </section>
-  
-  
+
+
+    <h1>My Favorite Pokemon</h1>
+
+    <input type="text" placeholder="Pokemon Name" ng-model="pokeEntered.name">
+
+    <button class="btn" ng-click="addPoke(pokeEntered)">Enter</button>
+
+    <section ng-repeat="something in newPokemon">
+        <h2> {{ something.name }} </h2>
+    </section>
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
     <script src="app.js"></script>
+    <script src="services/services.js"></script>
 </body>
 
 </html>
