@@ -1,0 +1,174 @@
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 1.3em;
+    }
+}
+
+@font-face {
+    font-family: ProtestPaint BB;
+    src: url("ProtestPaintBB.ttf");
+}
+
+
+body {
+    text-decoration: none;
+    background-image: url(hike2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.top {
+    background-image: url(hike2.jpg);
+    padding-top:  3.5%;
+    padding-bottom: 3%;;
+    background-size: 100%;
+    background-position: center;
+    font-family: ProtestPaint BB;
+    text-align: center;
+}
+
+.title {
+    font-size: 600%;
+    color: white;
+    margin-top: 6%;
+    letter-spacing: .03em;
+    margin-bottom: 0;
+    line-height: 80%;
+}
+
+.line2 {
+    font-size: 600%;
+    color: white;
+    letter-spacing: .03em;
+    margin-top: 0;
+    line-height: 80%;
+}
+
+.navbar {
+    padding-top: .7%;
+    padding-bottom: .7%;
+    text-align: center;
+    background-color: white;
+    height: 8%;
+    position: absolute;
+    width: 101%;
+}
+
+
+.first {
+    position: fixed;
+    height: 6%;
+    opacity: .;
+    background-color: white;
+}
+
+
+.nav1 {
+     font-size: 250%;
+    position: relative;
+    display: inline-block;
+}
+
+.nav1:after {
+     position: absolute;
+    left: -290%;
+     content: url(blank.jpg);
+     height: 100%;
+    
+    background: #f00;
+    transition: all 1s linear;
+    width: 0;
+
+}
+
+.pic1 {
+    height: 100%;
+    margin-bottom: 1.5%;
+}
+.nav1:hover:after {
+     width: 0%;
+    margin-left: -200%;
+
+}
+
+.nav2 {
+display: none;
+}
+
+
+.nav2:hover: {
+    display: inline;
+}
+
+.nav3 {
+    background-size: 50%;
+    padding-bottom: 1%;
+    display: inline-block;
+    background-image: url(tracks2.png);
+    background-repeat: no-repeat;
+    font-size: 250%;
+    background-position: bottom;
+    text-align: left;
+    line-height: 100%;
+    width: 9%;
+    -webkit-transform: rotate(8deg);
+
+}
+
+.feet {
+   height: 62%;
+    margin-bottom: 0%;
+    margin-left: -0.61%;
+}
+
+.comb {
+    margin-left: -0.52%;
+    margin-bottom: 0.7%;
+}
+
+.fixedContent {
+    image-rendering: auto;
+    width: 100%;
+    height: 80%;
+}
+
+
+footer {
+    font-size: 100%;
+    padding-left: 2%;
+    margin-top: 21%;
+    color: #337ab7;
+}
+
+.credit {
+    display: inline;
+    font-size: 100%;
+    display: inline;
+}
+
+.credit2 {
+    font-size: 100%;
+    display: inline;
+}
+
+
+

@@ -33,7 +33,19 @@ form {
 }
 
 .top {
-    margin-top: 5%;
-    background-color: gray;
-    color: white;
+    text-align: center;
+    padding-bottom: 4%;
+}
+
+
+.addfield {
+    margin-left: 25%;
+}
+
+.deletebox {
+    margin-left: 20%;
+}
+
+.deletebtn {
+    color: red;
 }

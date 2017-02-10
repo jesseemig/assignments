@@ -15,11 +15,19 @@
 
     <h1>My Favorite Pokemon</h1>
 
+   
     <input type="text" placeholder="Pokemon Name" ng-model="pokeEntered.name">
-
+    
+    <div class="row">
+    
     <button class="btn" ng-click="addPoke(pokeEntered)">Enter</button>
-
-    <section ng-repeat="something in newPokemon">
+    
+    <button class="btn dbtn" ng-click="delete($index)">Remove</button>
+    
+    </div>
+    
+    
+    <section ng-repeat="something in newPokemon track by $index">
         <h2> {{ something.name }} </h2>
     </section>
 
