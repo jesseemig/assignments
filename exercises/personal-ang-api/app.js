@@ -1,6 +1,6 @@
 angular.module("routingApp", ["ngRoute"])
 
-.config(["$routeProvider", function($routeProvider) {
+.config(["$routeProvider", function ($routeProvider) {
     
     $routeProvider
         .when("/home", {
@@ -23,3 +23,7 @@ angular.module("routingApp", ["ngRoute"])
     });
 
 }])
+
+         
+
+       

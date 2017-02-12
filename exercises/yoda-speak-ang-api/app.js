@@ -8,7 +8,7 @@ app.controller("MainController", ["$scope", "$http", function ($scope, $http) {
             }
     };
     
-    $scope.translation = function(location) {  
+    $scope.translation = function(phrase) {  
         
         $http.get("https://yoda.p.mashape.com/yoda?sentence=" + phrase, config).then(function(response) {
             

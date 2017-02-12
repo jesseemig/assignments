@@ -1,6 +1,6 @@
-angular.module("routingApp")
+var involved = angular.module("routingApp")
 
-.controller("InvolvedController", ["$scope", function($scope) {
+involved.controller("InvolvedController", ["$scope", function($scope) {
     console.log("involved")
 }]);
       
