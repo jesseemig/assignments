@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="MyApp">
+<html lang="en" ng-app="routingApp">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Angular</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
-     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 </head>
 
-<body ng-controller="MainController" class="container-fluid">
+<body class="container-fluid">
   
   <div class="row">
       
@@ -18,43 +17,44 @@
           <h1 class="title1">All good things are</h1><br>
      <h1 class="title2"> wild and free</h1>
       </div>
-    
-      
       
     <div class="row">
         <nav class="navbar">
-           
-          
-         <span class="navSpan a1">
-           <img class="pic1" src="reveal.jpeg">
-           <img class="blank" src="blank.jpg">
-            <a class="nav1" href="#/home">Home</a>
-            </span>
-          
+         
             
-            
+                <a href="#/home" class="homeLink">Home</a>
+          
+                <a href="#/involved" class="helpLink">Get Involved</a>
+                
+              <a href="#/tips" class="tipsLink">Tips</a>
         </nav>
-        
     </div>
   </div>
    
    
-   <div class="container fixedContent">
+   
+   
+  
+       <div class="info" ng-view></div>
+  
    
    
    <div class="row">
    <footer>
    
-       <div> <div class="credit">Icons made by:</div> <a class="credit2" href="http://www.flaticon.com/authors/scott-de-jonge" title="Scott de Jonge"><div class="credit">Scott de Jonge</a> from <a class="credit2" href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a><div class="credit2"> is licensed by</div> <a class="credit2" href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-       
-       <div class="credit3">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
     </footer>
      </div>
      
-     </div>
+    
      
-      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+      
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
     <script src="app.js"></script>
+    <script src="spa/home/home.js"></script>
+    <script src="spa/tips/tips.js"></script>
+    <script src="spa/involved/involved.js"></script>
 </body>
 
 </html>

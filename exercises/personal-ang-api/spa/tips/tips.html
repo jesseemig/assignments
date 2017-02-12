@@ -1,33 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" ng-app="MyApp">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Angular</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-</head>
-
-<body ng-controller="MainController" class="container-fluid">
-  
-  <div class="row">
-      
-      <div class="row top">
-      <h1 class="title">Live Wild</h1>
-      </div>
-      
-  </div>
-   
-   
-   <input type="text" placeholder="Pokemon Name" ng-model="pokeEntered">
+<h3>Tips</h3>
+<input type="text" placeholder="Pokemon Name" ng-model="pokeEntered">
    <button class="btn" ng-click="addName()">Enter</button> 
-   
-   
-  
-      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-    <script src="app.js"></script>
-</body>
-
-</html>
+   <h2> {{ pokeEntered }} </h2>

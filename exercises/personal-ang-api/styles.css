@@ -25,32 +25,33 @@
 
 @font-face {
     font-family: ProtestPaint BB;
-    src: url("ProtestPaintBB.ttf");
+    src: url("ProtestPaintBB_ital.ttf");
 }
-
+ 
 
 body {
     text-decoration: none;
     background-image: url(hike2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: bottom bottom;
 }
 
 .top {
     background-image: url(hike2.jpg);
-    padding-top:  3.5%;
+    padding-top:  0%;
     padding-bottom: 3%;;
     background-size: 100%;
-    background-position: center;
+    background-position: center center;
     font-family: ProtestPaint BB;
     text-align: center;
+    margin: auto;
 }
 
 .title1 {
     font-size: 600%;
     color: white;
-    margin-top: 10%;
+    margin-top: 6%;
     letter-spacing: .03em;
     margin-bottom: 0;
     line-height: 80%;
@@ -61,134 +62,20 @@ body {
     color: white;
     letter-spacing: .03em;
     line-height: 80%;
-    margin-top: 3%;
-    padding-bottom: 2%;
+    margin-top: 0%;
+    margin-bottom: 0%;
 }
+
 
 .navbar {
-    padding-top: .7%;
-    padding-bottom: 2%;
     background-color: white;
-    height: 11%;
-    position: absolute;
-    width: 101%;
+    text-align: center;
 }
 
-
-
-
-.nav1 {
-     font-size: 250%;
-    position: relative;
-    display: inline-block;
-    left: 22.8%;
-    content: none;
-    align-content: center;
-     
-     height: 100%;
-}
-
-
-.blank {
-    position: absolute;
-   left: 12.2%;
-    width: 11%;
-    height: 81%;
-    transition: right 1.5s ease-in-out;
-}
-
-
-.blank:after {
-     position: absolute;
-    margin-right: -280%;
-    align-content: center;
-
-     height: 100%;
-    transition: all 1.5s linear;
+.info {
+    background-color: white;
     width: 50%;
-    font-size: 250%
-
+    height: auto;
+    margin-left: 48%;
 }
-
-.blank:hover:after {
-    display: inline-block;
-     width: 0%;
-    margin-right: -200%;
-transition: all 1.5s linear;
-}
-
-
-.pic1 {
-    position: absolute;
-    height: 83%;
-    margin-left: 15%;
-    
-    margin-bottom: 1.5%;
-}
-
-
-
-
-.nav2 {
-    margin-left: 50%;
-display: none;
-}
-
-
-.nav2:hover: {
-    display: inline;
-}
-
-.nav3 {
-    background-size: 50%;
-    padding-bottom: 1%;
-    display: inline-block;
-    background-image: url(tracks2.png);
-    background-repeat: no-repeat;
-    font-size: 250%;
-    background-position: bottom;
-    text-align: left;
-    line-height: 100%;
-    width: 9%;
-    -webkit-transform: rotate(8deg);
-
-}
-
-.feet {
-   height: 62%;
-    margin-bottom: 0%;
-    margin-left: -0.61%;
-}
-
-.comb {
-    margin-left: -0.52%;
-    margin-bottom: 0.7%;
-}
-
-.fixedContent {
-    image-rendering: auto;
-    width: 100%;
-    height: 80%;
-}
-
-
-footer {
-    font-size: 100%;
-    padding-left: 2%;
-    margin-top: 21%;
-    color: #337ab7;
-}
-
-.credit {
-    display: inline;
-    font-size: 100%;
-    display: inline;
-}
-
-.credit2 {
-    font-size: 100%;
-    display: inline;
-}
-
-
 
