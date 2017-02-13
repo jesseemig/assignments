@@ -28,54 +28,82 @@
     src: url("ProtestPaintBB_ital.ttf");
 }
  
-
-body {
-    text-decoration: none;
-    background-image: url(hike2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom bottom;
-}
-
 .top {
-    background-image: url(hike2.jpg);
-    padding-top:  0%;
-    padding-bottom: 3%;;
-    background-size: 100%;
-    background-position: center center;
-    font-family: ProtestPaint BB;
-    text-align: center;
-    margin: auto;
+    margin-left: 2%;
 }
-
-.title1 {
-    font-size: 600%;
-    color: white;
-    margin-top: 6%;
-    letter-spacing: .03em;
-    margin-bottom: 0;
-    line-height: 80%;
-}
-
-.title2 {
-    font-size: 600%;
-    color: white;
-    letter-spacing: .03em;
-    line-height: 80%;
-    margin-top: 0%;
-    margin-bottom: 0%;
+body {
+    
+    
 }
 
 
 .navbar {
-    background-color: white;
-    text-align: center;
+    background-image: url(bluePhone.jpg);
+    background-size: contain;
+    font-size: 200%;
+    padding-top: .4%;
+    padding-bottom: .4%;
+}
+
+.homeLink {
+    margin-left: 30%;
+    background-color: #FFD30D;
+    padding: .66%;
+}
+
+.tipsLink {
+    margin-left: 6%;
+    background-color: #FFD30D;
+    padding: .66%;
+}
+
+.helpLink {
+    margin-left: 6%;
+    background-color: #FFD30D;
+    padding: .66%;
+}
+
+.lower {
+    background-image: url(redphone.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .info {
     background-color: white;
-    width: 50%;
+    width: 40%;
     height: auto;
-    margin-left: 48%;
+    margin-left: 55%;
 }
 
+.tipsHeader {
+    text-align: center;
+}
+
+.homeBody {
+    margin-bottom: 15%;
+}
+.homeHeader {
+    text-align: center;
+    font-size: 230%;
+    margin-top: 3%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.numInfo {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 8%;
+    padding-bottom: 5%;
+
+}
+.input {
+    text-align: center;
+    
+}
+
+.line {
+    font-size: 120%;
+    margin-bottom: 2%;
+}
