@@ -24,21 +24,30 @@
 }
 
 @font-face {
-    font-family: ProtestPaint BB;
-    src: url("ProtestPaintBB_ital.ttf");
+    font-family: 'spyAgency';
+    src: url('spyagencyv3half.ttf');
 }
  
 .top {
     margin-left: 2%;
+    text-align: center;
+    background-image: url(headerPic.jpg);
+    background-repeat: no-repeat;
+    height: 185px;
+}
+.title {
+    font-family: 'spyAgency';
+    text-align: center;
+    font-size: 450%;
+    
 }
 body {
-    
     
 }
 
 
 .navbar {
-    background-image: url(bluePhone.jpg);
+    background-image: url(navbarPic.jpg);
     background-size: contain;
     font-size: 200%;
     padding-top: .4%;
@@ -66,14 +75,16 @@ body {
 .lower {
     background-image: url(redphone.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100%;
+    position: absolute;
 }
 
 .info {
     background-color: white;
-    width: 40%;
-    height: auto;
-    margin-left: 55%;
+    width: 570px;
+    height: 500px;
+    margin-left: 140%;
+    position: relative;
 }
 
 .tipsHeader {
@@ -107,3 +118,30 @@ body {
     font-size: 120%;
     margin-bottom: 2%;
 }
+
+.reporting {
+    background-image: url(oldpic.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+.reportH {
+    text-align: center;
+    padding-bottom: 3%;
+    color: red;
+    padding-top: 2%;
+}
+
+.reportInfo {
+    margin-left: 3%;
+    color: red;
+    margin-bottom: 1%;
+}
+
+.reportInfo2 {
+    margin-top: 35%;
+    text-align: center;
+}
+
+
+

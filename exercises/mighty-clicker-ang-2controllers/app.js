@@ -1,46 +1,47 @@
-
-function Person(name) {
-    this.name = name;
-}
-
-Person.prototype.speak = function() {
-    console.log(`my name is ${this.name}`);
-}
-
-
-
-
-var myArray = [true, false, true, 1, 2, 3, 4, 5, 6,];
-
-var filtered = myArray.filter(function(thing, index, array) {
+.controller("MainController", ["$scope", "RedService", "BlueService", function ($scope, RedService, BlueService) {
    
-    return thing > 3;
+    $scope.redCount = RedService.count;
+    scope.blueCount = BlueService.count;
     
-})
+    
+    $scope.redClicked = function() {
+        
+        $scope.redCount = RedService.increment();
+        scope.blueCount = BlueService.count;
+    }
+    
+    
+    $scope.blueClicked = function() {
+        
+        $scope.blueCount = BlueService.increment();
+        scope.redCount = RedService.count;
+    
+}
+}]);
 
-console.log(filtered)
 
-// -----------------------------------------------------------------
+angular.module("myApp", [])
 
-Array.prototype.myFilter = function(callback) {
-    var array = this;
-    var filteredItems = [];
-    for (var i = 0; i < array.length; i++) {
-        var iWantThisItemInMyFilteredArray = (callback[i], i, array)
-        if (iWantThisItemInMyFilteredArray) {
-            filteredItems.push(array[i]);
+.service("BlueService", [function () {
+    this.count = 100;
+    
+    this.increment = function() {
+        this.count++;
+        return this.count;
+    };
+    
+    this.decrement = function() {
+        this.count--;
+        return this.count;
+    };
+    
+    this.reset = function() {
+        if (this.count === 0) {
+            this.reset();
+            this.count === 100;
         }
     }
-    return filteredItems;
-}
+}])
 
-var myArray = [true, false, true, 1, 2, 3, 4, 5, 6,];
 
-var filteredArray = myArray.myFilter(function(item) {
-    if (item > 3) {
-        return true;
-    } else {
-        return false;
-    }
-});
-console.log(filteredArray);
+

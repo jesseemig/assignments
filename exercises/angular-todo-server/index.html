@@ -1,92 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="MyApp">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>To do</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   
+    <head>
+    <meta charset=UTF-8>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body ng-controller="MainController">
-
+    
+    <h1>Kills</h1>
+    
     <div class="row">
-
-        <div class="col-sm-10 col-sm-offset-1">
-            <h1 class="title">Todo lists</h1>
-        </div>
-    </div>
-
-    <div class="add">
-       
-       <label>
-           <div class="form-group">
-            <input type="text" class="form-control col-sm-4" placeholder="Item" ng-model="adding.item">
-           </div>
-        </label><br>
         
-        <label>
-           <div class="form-group">
-            <input type="number" class="form-control col-sm-4" placeholder="Price" ng-model="adding.price">
-            </div>
-        </label><br>
-
-        <label>
-            <div class="form-group">
-                <input type="url" class="form-control col-sm-4" placeholder="Img URL" ng-model="adding.img">
-            </div>
-        </label><br>
-        
-        <button class="btn btn-success glyphicon glyphicon-floppy-disk" ng-click="updateTodo"> Save </button>
-        
+        <p ng-repeat="killed in record">
+            <li> {{ record.handle }} </li>
+            <li> {{ record.clan }} </li>
+        </p>
     </div>
-
-
-    <div class="row">
-        <div class="col-sm-10 col-sm-offset-1">
-
-            <div ng-repeat="something in todoList">
-
-                <div class="form-group">
-                    
-                    <input type="checkbox" ng-change="updateTodo()">
-                    <h2 ng-hide="editing"> {{ something.item }} </h2>
-                    
-                    <h2> {{ something.price }} </h2>
-                    
-                    <img ng-src="{{ something.img }}">
-                
-                    
-                     <section ng-repeat="something in uploaded">
-           
-                
-                    <p ng-show="editing"> {{ }} </p>
-
-                    <input ng-show="editing" type="text" ng-model="todo.description" class="form-control">
-
-                    <button class="btn btn-warning glyphicon glyphicon-trash" ng-click="deleteItem(todo._id, $index)"></button>
-
-                    <button ng-hide="editing" class="btn btn-warning glyphicon glyphicon-pencil" ng-click="todo.editing"></button>
-
-                    <button ng-show="editing" class="btn btn-success glyphicon glyphicon-floppy-disk" ng-click="tupdateTodo"></button>
-
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="col-sm-6">
-        <form>
-            <div class="form-group">
-
-            </div>
-        </form>
-    </div>
-
+    
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
     <script src="app.js"></script>
 </body>
 
 </html>
+
+

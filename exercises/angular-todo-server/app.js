@@ -1,40 +1,38 @@
-var app = angular.module("MyApp", [])
+var MyApp = angular.module("MyApp", [])
 
-app.controller("MainController", ["$scope", "$http", function ($scope, $http) {
+MyApp.controller("MainController", ["$scope", function ($scope) {
     
-     //  $http.get("http://api.vschool.io/jesseemig/todo/[xxxxxxx]n").then(f//   unction(response) {
-      //      $scope.todos = response.data;
-   //    });
+    var player = {
+    kills: [
+        {
+            handle: "jk400",
+            rank: 14932,
+            clan: ["hpburner200", "sputnik", "sololobo21"]
+        },
+        {
+            handle: "dragonbobz",
+            rank: 83655,
+            clan: ["asdf", "sputnik", "peoplesrepublic"]
+        },
+        {
+            handle: "joeschmoe",
+            rank: 9274,
+            clan: ["hpburner200", "sputnik", "sololobo21"]
+        },
+        {
+            handle: "sarz",
+            rank: 10,
+            clan: ["peoplesrepublic", "asdf", "sololobo21"]
+        },
+        {
+            handle: "zikamademethisway",
+            rank: 9580,
+            clan: ["hpburner200", "peoplesrepublic", "asdf"]
+        }
+    ]
+}
+    $scope.record = player.kills;
     
-    $scope.todoList = []
-    
-     $scope.updateTodo = function() {
-     //   $http.post( api url dsfjdfdsj).then(function() {
-            $scope.todoList.push($scope.adding)
-            
-            $scope.adding = {};
-            
-        };
-     }])
-    
-    
-    
- //   $scope.removeItem = function(todo, index) {
- //       $http.delete( api url dsfjdfdsj).then(function() {
- //           $scope.todoList.splice(index, 1);
- //       });
- //   };
-    
-        
- //     $scope.updateTodo = function(todoObj) {
- //         $http.put("http://api.vschool.io/jesseemig/todo/[xxxxxxx]n" + //        todoObj._id, todoObj)
- //       };
-    
-    
-    
-//    $scope.toggleEdititng = function() {
-//        
-//    }
- 
-    
-//  }])
+}]);
+
+
