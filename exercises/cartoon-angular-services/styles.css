@@ -1,0 +1,23 @@
+.top {
+    background-color: black;
+}
+
+.formVals {
+    background-color: black;
+    text-align: center;
+    margin-top: 7%;
+    margin-bottom: 5%;
+}
+
+.btn {
+    margin-top: 3%;
+}
+
+.input {
+    margin-bottom: 3%;
+}
+
+.bottom {
+    background-color: #0D5FFF;
+    min-height: 700px;
+}

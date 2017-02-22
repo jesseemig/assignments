@@ -1,9 +1,4 @@
-
-
-
-// DID NOT FIGURE OUT
-
-var people = [  
+var people = [
     {
         name: "Jim",
         email: "jim@gmail.com",
@@ -24,15 +19,17 @@ var people = [
 function combine(people) {
     
     for (var i = 0; i < people.length; i++) {
+
         for (var j = 0; j < people.length; j++) {
-        if (i != j) && people[i].email === people[j].email) {
+
+        if ((i != j) && people[i].email === people[j].email) {
             people[i].numFriends += people[j].numFriends;
             people.splice(j, 1);
-            j1;
+            j--;
         }
         } 
         
     }
-    return j1
+    return people;
 }
 console.log(combine(people));

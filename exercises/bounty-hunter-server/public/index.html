@@ -6,28 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Angular</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    
-    
+    <link rel="stylesheet" type="text/css" href="styles.css"s>
 </head>
+
 
 <body ng-controller="MainController">
 
- 
- <div class="row calc">
-  <h6>Enter opperation: <input class="input" type="text" placeholder=" add, subtract, multiply, divide, or exponentiation" ng-model="person"> </h6>
- <input type="number" ng-model="number1">
-   <input type="number" ng-model="number2">
-   <button class="btn" ng-click="run(number1, number2)">Calc</button>
-  
-     <p>Total: {{ total }} </p>
+<div class="row col-sm-offset-1 bounties">
+
+    <div class="row">
+        <h2>Bounties</h2>
+    </div>
+    <section ng-repeat="thing in bounties" class="row">
+
+            <div class="col-xs-6">
+                <h3> Name: {{ thing.firstName }} {{ thing.lastName }}</h3>
+            </div>
+            <div class="col-xs-6">
+                <h3>Living: {{ thing.living }}</h3>
+            </div>
+
+            <div class="col-xs-6">
+                <h3>Amount: {{ thing.amount }}</h3>
+            </div>
+            <div class="col-xs-6">
+                <h3>Type: {{ thing.type }}</h3>
+            </div>
+
+            <div class="col-xs-6">
+                <h3>ID: {{ thing.id }}</h3>
+            </div>
+
+        </section>
+
+
+</div>
+
+<form class="form-group">
+    <h2 class="row title">Add A Bounty</h2>
+<div class="row row1">
+<div class="col-sm-3 form-group">
+   <input class="input form-control" type="text" placeholder="First name: " ng-model="person.firstName">
+</div>
+
+    <div class="col-sm-3 form-group">
+        <input class="input form-control" type="text" placeholder="Last name: " ng-model="person.lastName">
+    </div>
+</div>
+
+    <div class="row row2">
+    <div class="col-sm-3 form-group">
+        <input class="input form-control" type="text" placeholder="Alive: " ng-model="person.living">
+    </div>
+
+    <div class="col-sm-3 form-group">
+        <input class="input form-control" type="number" placeholder="Amount: " ng-model="person.amount">
+    </div>
+    </div>
+
+    <div class="row row3">
+    <div class="col-sm-3 form-group">
+        <input class="input form-control" type="text" placeholder="Type: " ng-model="person.type">
+    </div>
+    </div>
+   <button class="btn" ng-click="addPerson()">Submit</button>
+
+
+</form>
      
-     </div>
      
-     
-     
-       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
-    
-    <script src="app.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+<script src="app.js"></script>
+<script src="../service.js"></script>
+
 </body>
 
 </html>

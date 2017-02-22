@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+    
+    <body class="container-fluid" ng-controller="MainController">
+        
+          
+          
+           <div class="row top">
+            
+            <form class="col-sm-10 col-sm-offset-1 formVals">
+            
+            <div class="col-sm-2 col-sm-offset-5">
+            
+            <input type="url" ng-model="upload.picture" placeholder="Image URL " class="form-control input">
+            
+            <input type="text" ng-model="upload.title" placeholder="Title " class="form-control input">
+            
+            <input type="text" ng-model="upload.desc" placeholder="Description " class="form-control input">
+            
+            <button class="btn" ng-click="addCartoon()">Submit</button>
+            </div>
+            </form>
+            
+            </div>
+            
+            
+            <div class="row bottom">
+            
+            <section ng-repeat="something in newCartoon">
+            
+            <div class="row display col-sm-10 col-sm-offset-1">
+            <p> {{something.title}}  </p>
+            <img ng-src="{{something.picture}}">
+            <p>  {{something.desc}} </p>
+                </div>
+            </section>
+            
+        </div>    
+        
+        
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="service.js"></script>
+    </body>
+    
+</html>

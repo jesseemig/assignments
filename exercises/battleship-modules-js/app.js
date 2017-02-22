@@ -13,7 +13,7 @@ angular.module("myApp", [])
         
     }]);
 
-. service("TodoDervice", ["$http", function($http) {
+.service("TodoDervice", ["$http", function($http) {
     
     this.getTodos = function() {
         return $http.get("URL")
