@@ -2,11 +2,12 @@
 <html lang="en" ng-app="MyApp">
 <head>
     <meta charset="UTF-8">
+    <title>Angular Services</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
     
-    <body class="container-fluid" ng-controller="MainController">
+<body ng-controller="MainController">
         
           
           
@@ -22,7 +23,7 @@
             
             <input type="text" ng-model="upload.desc" placeholder="Description " class="form-control input">
             
-            <button class="btn" ng-click="addCartoon()">Submit</button>
+            <button class="btn" ng-click="addCartoon(upload)">Submit</button>
             </div>
             </form>
             
@@ -34,9 +35,9 @@
             <section ng-repeat="something in newCartoon">
             
             <div class="row display col-sm-10 col-sm-offset-1">
-            <p> {{something.title}}  </p>
-            <img ng-src="{{something.picture}}">
-            <p>  {{something.desc}} </p>
+            <p> {{ something.title }}  </p>
+            <img ng-src="{{ something.picture }}">
+            <p>  {{ something.desc }} </p>
                 </div>
             </section>
             
@@ -48,6 +49,6 @@
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
     <script src="app.js"></script>
     <script src="service.js"></script>
-    </body>
+</body>
     
 </html>

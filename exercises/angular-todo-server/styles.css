@@ -1,60 +1,7 @@
-var app = angular.module("MyApp", [])
+.done-true {
+    text-decoration: line-through;
+}
 
-app.controller("MainController", ["$scope", "$http", function ($scope, $http) {
-    
-     //  $http.get("http://api.vschool.io/jesseemig/todo/[xxxxxxx]n").then(f//   unction(response) {
-      //      $scope.todos = response.data;
-   //    });
-    
-    $scope.todoList = []
-    
-     $scope.updateTodo = function() {
-     //   $http.post( api url dsfjdfdsj).then(function() {
-            $scope.todoList.push($scope.adding)
-            
-            $scope.adding = {};
-            
-        };
-     }])
-    
-    
-    
- //   $scope.removeItem = function(todo, index) {
- //       $http.delete( api url dsfjdfdsj).then(function() {
- //           $scope.todoList.splice(index, 1);
- //       });
- //   };
-    
-        
- //     $scope.updateTodo = function(todoObj) {
- //         $http.put("http://api.vschool.io/jesseemig/todo/[xxxxxxx]n" + //        todoObj._id, todoObj)
- //       };
-    
-    
-    
-//    $scope.toggleEdititng = function() {
-//        
-//    }
- 
-    
-//  }])
-
-
-
-
-<!DOCTYPE html>
-<html lang="en" ng-app="MyApp">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>To do</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-
-<body ng-controller="MainController">
-
-    <div class="row">
-
-        <div c
+section {
+    margin-left: 20%;
+}

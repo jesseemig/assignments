@@ -1,38 +1,18 @@
-var MyApp = angular.module("MyApp", [])
+var app = angular.module("MyApp", [])
 
-MyApp.controller("MainController", ["$scope", function ($scope) {
+app.controller("MainController", ["$scope", "$http", function ($scope, $http) {
+
+    $scope.todos = []
+
+    $scope.upload = function () {
+        $scope.todos.push($scope.add)
+        $scope.add = {};
+    }
     
-    var player = {
-    kills: [
-        {
-            handle: "jk400",
-            rank: 14932,
-            clan: ["hpburner200", "sputnik", "sololobo21"]
-        },
-        {
-            handle: "dragonbobz",
-            rank: 83655,
-            clan: ["asdf", "sputnik", "peoplesrepublic"]
-        },
-        {
-            handle: "joeschmoe",
-            rank: 9274,
-            clan: ["hpburner200", "sputnik", "sololobo21"]
-        },
-        {
-            handle: "sarz",
-            rank: 10,
-            clan: ["peoplesrepublic", "asdf", "sololobo21"]
-        },
-        {
-            handle: "zikamademethisway",
-            rank: 9580,
-            clan: ["hpburner200", "peoplesrepublic", "asdf"]
-        }
-    ]
-}
-    $scope.record = player.kills;
-    
-}]);
+
+
+
+
+  }]);
 
 

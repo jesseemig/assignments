@@ -1,17 +1,14 @@
 var app = angular.module("MyApp", []);
 
-app.controller("MainController", ["$scope", "cartoonService", function ($scope, cartoonService) {
+app.controller("MainController", ["$scope", "CartoonService", function ($scope, CartoonService) {
     
     $scope.newCartoon = [];
     
-    $scope.upload = {};
-    
     $scope.addCartoon = function (upload, newCartoon) {
         
-        cartoonService.displayCartoon(upload);
-        $scope.newCartoon = cartoonService.newCartoon;
+        CartoonService.displayCartoon(upload);
+        $scope.newCartoon.push($scope.upload)
         $scope.upload = {};
-        
     };
  
     

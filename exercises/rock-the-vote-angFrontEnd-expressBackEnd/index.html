@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jesse's Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body class="container-fluid" ng-controller="MainController">
+
+
+    <div class="row top">
+            <h1 class="siteName">The People's Press</h1>
+    </div>
+
+    <div class="row">
+
+        <nav>
+            <ul>
+                <li class="col-xs-3 col-xs-offset-3"><a href="#/home">Home</a></li>
+                <li class="col-xs-3" ><a href="#/submitPost">About</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div class="info" ng-view></div>
+
+<div class="row col-xs-7 col-xs-offset-2">
+    <div class="row examples col-xs-9">
+        <h4 class="exampleIssue">Veterans heading to Dakota Access Pipeline to protect protesters</h4>
+        <p class="exampleDesc">Thousands of military veterans are descending on North Dakota to take
+            part in the Standing Rock protest against the planned oil pipeline. One of the veterans we
+            spoke with said, "We fought to defend our countrymen's rights- we wont stand idly by while
+            those rights are infringed upon". This is expected to have a serious impact on the year long
+            protest and occupation because it will be career suicide to be seen using force against
+            America's veterans.</p>
+    </div>
+        <div class="exbuttons">
+            <button class="upvote col-xs-2 btn-success" ng-click="upvoteFunction()"> Upvote </button><br><br>
+            <button class="downvote col-xs-2 btn-danger" ng-click="downvoteFunction()">Downvote</button>
+        </div>
+</div>
+
+    <div class="row col-xs-12 col-xs-offset-2 exComm">
+        <div class="row comment">
+        <textarea class="col-xs-5 well exTexAr" rows="3" placeholder="Add a comment">This is an example</textarea>
+        </div>
+            <div class="row exSubBtn">
+        <button class="btn-primary col-xs-1 col-xs-offset-2" ng-click="submitComment()">Submit</button>
+            </div>
+    </div>
+
+
+
+    <div class="row userAdded">
+
+        <section ng-repeat="something in XXXXXXX">
+
+            <div class="row col-xs-7">
+                <div class="row examples col-xs-9">
+                    <h4 class="exampleIssue"> {{ thing.title }} </h4>
+                    <p class="exampleDesc"> {{ thing.description }} </p>
+                    <textarea rows="5" placeholder="Comments"> {{ XXX.COMMENT XXX }} </textarea>
+                </div>
+                <div class="exbuttons">
+                    <button class="upvote col-xs-2 btn-success" ng-click="upvoteFunction()"> Upvote </button><br><br>
+                    <button class="downvote col-xs-2 btn-danger" ng-click="downvoteFunction()">Downvote</button>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+<script src="app.js"></script>
+</body>
+
+</html>
