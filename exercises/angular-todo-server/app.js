@@ -10,6 +10,9 @@ app.controller("MainController", ["$scope", "$http", function ($scope, $http) {
     }
     
 
+    $scope.remove = function (thing) {
+        $scope.add.splice($scope.todos.indexOf(thing), 1) ;
+    }
 
 
 

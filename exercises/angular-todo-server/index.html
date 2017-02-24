@@ -54,18 +54,20 @@
     <div ng-repeat="thing in todos">
     <section>
 
+        <h2 for="{{$index}}" class="done-{{thing.done}}"> {{thing.title}} </h2>
 
-        <h5 for="{{$index}}" class="done-{{thing.done}}"> {{thing.desc}} </h5>
+        <h2 for="{{$index}}" class="done-{{thing.done}}"> {{thing.desc}} </h2>
 
-        <h5 for="{{$index}}" class="done-{{thing.done}}"> {{thing.price}} </h5>
+        <h2 for="{{$index}}" class="done-{{thing.done}}">$ {{thing.price}} </h2>
 
-        <img ng-src="{{ thing.img }}">
+        <img class="done-{{thing.done}}" ng-src="{{ thing.img }}">
 
         <div class="checkbox">
             <label>
         <input type="checkbox" ng-model="thing.done" id="{{$index}}">
                 Done
             </label>
+            <button type="button" class="deleteBtn btn-danger" ng-click="remove($index)">Remove</button>
         </div>
 
         </section>
