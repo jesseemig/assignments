@@ -1,23 +1,26 @@
+<div ng-controller="HomeController" class="homeBody">
+    <h3 class="homeHeader">Look-up a number</h3>
 
-  <div ng-controller="HomeController" class="homeBody">
-   <h3 class="homeHeader">Look-up a number</h3>
-   
-   <div class="input">
-<input type="text" placeholder="Phone number " ng-model="lookUp">
-   
-   <button class="btn" ng-click="findPh(lookUp)">Search</button>
-   </div>
-   
-  
-  <section class="here" >
-            <div class="row">
-                 
-    <p class="line" ng-repeat="song in output.data">Title: {{ song.title }}
-    </p>
-    <a class="line" ng-repeat="song in output.data" href="{{song.preview}}">Title: {{ song.preview }}</a>
+    <div class="input">
+        <input type="text" placeholder="Artist " ng-model="lookUp">
 
-                </div>
-      </div>
-      </section>
+        <button class="btn" ng-click="findPh(lookUp)">Search</button>
+    </div>
+
+
+    <section class="here">
+        <div class="row">
+            <h5 class="clickSave">Click save to add to your playlist</h5>
+            <ol class="repeatStart">
+                <li ng-repeat="song in output.data" class="line">
+                    <h4>Song: {{ song.title }}  </h4>
+                    <h4>Album: {{ song.album.title }}</h4>
+                    <a href="{{song.preview}}"><h4>Click here to preview</h4> </a>
+                    <button type="button" class="btn btn-primary saveBtn">Save</button>
+                </li>
+
+            </ol>
+        </div>
+
+</section>
 </div>
-

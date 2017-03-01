@@ -129,10 +129,14 @@
 
 .info {
     background-color: white;
-    margin-left: 55%; 
+    margin-left: 63%; 
     background-color: rgba(255, 255, 255, 0.6);
     color: black;
     margin-right: 4%;
+}
+
+.repeatStart {
+    padding-top: 3%;
 }
 
 .tipsHeader {
@@ -142,6 +146,14 @@
 .homeBody {
     margin-bottom: 15%;
     opacity: 1.5;
+}
+
+.clickSave {
+    text-align: center;
+}
+
+.saveBtn {
+    margin-left: 25%;
 }
 .homeHeader {
     text-align: center;
@@ -165,7 +177,7 @@
 
 .line {
     font-size: 120%;
-    margin-bottom: 2%;
+    padding-bottom: 3%;
 }
 
 
