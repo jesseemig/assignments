@@ -13,63 +13,97 @@
 
 
     <div class="row top">
-            <h1 class="siteName">The People's Press</h1>
-    </div>
-
-    <div class="row">
-
-        <nav>
-            <ul>
-                <li class="col-xs-3 col-xs-offset-3"><a href="#/home">Home</a></li>
-                <li class="col-xs-3" ><a href="#/submitPost">About</a></li>
-            </ul>
-        </nav>
+        <h1 class="siteName">The People's Press</h1>
     </div>
 
 
-    <div class="info" ng-view></div>
 
-<div class="row col-xs-7 col-xs-offset-2">
-    <div class="row examples col-xs-9">
-        <h4 class="exampleIssue">Veterans heading to Dakota Access Pipeline to protect protesters</h4>
-        <p class="exampleDesc">Thousands of military veterans are descending on North Dakota to take
-            part in the Standing Rock protest against the planned oil pipeline. One of the veterans we
-            spoke with said, "We fought to defend our countrymen's rights- we wont stand idly by while
-            those rights are infringed upon". This is expected to have a serious impact on the year long
-            protest and occupation because it will be career suicide to be seen using force against
-            America's veterans.</p>
-    </div>
-        <div class="exbuttons">
-            <button class="upvote col-xs-2 btn-success" ng-click="upvoteFunction()"> Upvote </button><br><br>
-            <button class="downvote col-xs-2 btn-danger" ng-click="downvoteFunction()">Downvote</button>
-        </div>
-</div>
 
-    <div class="row col-xs-12 col-xs-offset-2 exComm">
-        <div class="row comment">
-        <textarea class="col-xs-5 well exTexAr" rows="3" placeholder="Add a comment">This is an example</textarea>
-        </div>
-            <div class="row exSubBtn">
-        <button class="btn-primary col-xs-1 col-xs-offset-2" ng-click="submitComment()">Submit</button>
+    <div class="row submit">
+
+        <div class="row col-xs-7 col-xs-offset-2">
+            <div class="row col-xs-9">
+                <div class="row newTitleRow">
+                    <label class="newTitleLabel">Submit a post</label>
+                    <br>
+                    <input type="text" class="newTitle" placeholder="Title" ng-model="submit.title">
+                </div>
+                <div class="row newDescRow">
+                    <textarea class="newDesc col-sm-12" placeholder="Description" rows="5" ng-model="submit.desc"></textarea>
+                </div>
+                <div class="row subBtn">
+                    <button class="btn-primary col-xs-3 col-xs-offset-2" ng-click="submitPost()">Submit</button>
+                </div>
             </div>
+
+        </div>
+
     </div>
 
+    <div class="row example">
 
-
-    <div class="row userAdded">
-
-        <section ng-repeat="something in XXXXXXX">
-
-            <div class="row col-xs-7">
-                <div class="row examples col-xs-9">
-                    <h4 class="exampleIssue"> {{ thing.title }} </h4>
-                    <p class="exampleDesc"> {{ thing.description }} </p>
-                    <textarea rows="5" placeholder="Comments"> {{ XXX.COMMENT XXX }} </textarea>
+        <div class="row col-xs-8 col-xs-offset-2">
+            <div class="row examples col-xs-9">
+                <h4 class="exampleIssue">Veterans heading to Dakota Access Pipeline to protect protesters</h4>
+                <p class="exampleDesc">Thousands of military veterans are descending on North Dakota to take part in the Standing Rock protest against the planned oil pipeline. One of the veterans we spoke with said, "We fought to defend our countrymen's rights- we wont stand idly by while those rights are infringed upon". This is expected to have a serious impact on the year long protest and occupation because it will be career suicide to be seen using force against America's veterans.</p>
+            </div>
+            <div class="exbuttons">
+                <h2 class="upvotesEx"><span class="glyphicon glyphicon-arrow-up uparrow" aria-hidden="true"></span> 22</h2>
+                <h2 class="downvotesEx"><span class="glyphicon glyphicon-arrow-down downarrow" aria-hidden="true"></span> 8</h2>
+                <div class="buttons">
+                    <button class="upvoteEx col-xs-12 btn-success" ng-click="upvoteFunction()"> Upvote </button>
+                    <br>
+                    <br>
+                    <button class="downvoteEx col-xs-12 btn-danger" ng-click="downvoteFunction()">Downvote</button>
                 </div>
-                <div class="exbuttons">
-                    <button class="upvote col-xs-2 btn-success" ng-click="upvoteFunction()"> Upvote </button><br><br>
-                    <button class="downvote col-xs-2 btn-danger" ng-click="downvoteFunction()">Downvote</button>
+            </div>
+        </div>
+
+        <div class="row col-xs-12 col-xs-offset-2 exComm">
+            <div class="row comment">
+                <p class="comm"><b>Post a comment</b></p>
+                <textarea class="col-xs-5 well exTexAr" rows="3" placeholder="Add a comment">This is an example</textarea>
+            </div>
+            <div class="row exSubBtn">
+                <button class="btn-primary col-xs-1 col-xs-offset-2">Submit</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row userAdded" ng-repeat="thing in postToAdd">
+
+        <section>
+
+            <div class="row newPostRow col-sm-10">
+                <div class="row newAdded col-xs-8">
+                    <h4 class="newIssue"> {{ thing.title }} </h4>
+                    <p class="newDesc"> {{ thing.desc }} </p>
                 </div>
+
+                <div class="newbuttons col-sm-3">
+                    <div class="display">
+                        <h2 class="upvotesEx"><span class="glyphicon glyphicon-arrow-up uparrow" aria-hidden="true"></span> {{upCount}} </h2>
+                        <h2><span class="glyphicon glyphicon-arrow-down downarrow downvotes" aria-hidden="true"></span> {{downCount}} </h2>
+                    </div>
+                    <div class="newVotes">
+                        <button class="newUpvote col-xs-6 btn-success" ng-click="upvoted()"> Upvote </button>
+                        <br>
+                        <br>
+                        <button class="newDownvote col-xs-6 btn-danger" ng-click="downvoted()">Downvote</button>
+                    </div>
+                </div>
+
+                <div class="row col-xs-8 newComm">
+                    <div class="row newComment">
+                        <b class="newCommTitle">Post a comment</b>
+                        <textarea class="col-xs-10 well newTA" rows="3" placeholder="Add a comment">{{XXXXX}}</textarea>
+                    </div>
+                    <div class="row newSubBtn">
+                        <button class="btn-primary col-xs-4" ng-click="submitComment()">Submit</button>
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -78,11 +112,11 @@
 
 
 
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
-<script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="service.js"></script>
 </body>
 
 </html>

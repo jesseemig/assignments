@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Angular</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body ng-controller="MainController">
+    
+    <h1>Todo List</h1>
+    
+    
+     <div class="getBtn">
+        <button type="button" class="btn btn-primary" ng-click="getLists()">Show lists</button>
+    </div>
+    
+    
+
+    <div class="row form-group empty">
+
+
+        <div class="col-sm-6">
+
+            <form name="todoForm">
+
+                <div class="row">
+
+                <div class="form-group"}>
+
+                    <label>Title</label><br>
+                    <input type="text" placeholder="Title" ng-model="add.title" required>
+
+                    <br>
+
+                    <label>Description</label><br>
+                    <input type="text" placeholder="Description" ng-model="add.desc" required>
+
+                <br>
+
+                    <label>price</label><br>
+                    <input type="number" placeholder="Price" ng-model="add.price">
+
+                    <br>
+
+                    <label>Image</label><br>
+                    <input type="url" placeholder="Img URL" ng-model="add.img">
+
+                    <br>
+                    <br>
+
+                <button type="button" class="btn btn-primary" ng-click="upload(add)">Submit</button>
+
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+
+    </div>
+
+   
+   
+    <div ng-repeat="thing in todos" class="list">
+    <section>
+
+        <h4 for="{{$index}}" class="done-{{thing.done}}"> {{thing.title}} </h4>
+
+        <h4 for="{{$index}}" class="done-{{thing.done}}"> {{thing.desc}} </h4>
+
+        <h4 for="{{$index}}" class="done-{{thing.done}}">$ {{thing.price}} </h4>
+
+        <img class="done-{{thing.done}}" ng-src="{{ thing.img }}">
+
+        <div class="checkbox">
+            <label>
+        <input type="checkbox" ng-model="thing.done" id="{{$index}}">
+                Done
+            </label>
+            <button type="button" class="deleteBtn btn-danger" ng-click="remove($index)">Remove</button>
+        </div>
+
+        </section>
+    </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+<script src="app.js"></script>
+
+</body>
+
+</html>
+
+

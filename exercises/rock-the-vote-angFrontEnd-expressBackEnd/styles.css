@@ -10,34 +10,74 @@
     text-align: center;
 }
 
-a {
-    display: inline;
-    font-size: 200%;
-
+.submit {
+    margin-top: 3%;
+    margin-left: 15%
 }
 
-nav {
-    margin-top: 1%;
-    margin-bottom: 4.5%;
-    text-align: center;
-
+.newTitleLabel {
+    margin-left: 40%;
+    font-size: 130%;
 }
 
-ul {
-    list-style-type: none;
+.newTitle {
+    margin-top: 4%;
+    margin-left: 38%;
+}
+
+.newDescRow {
+    margin-top: 3%;
+}
+
+.subBtn {
+    margin-top: 3%;
+    margin-left: 30%;
+}
+.newDescLabel {
+    margin-left: 40%;
+}
+
+.example {
+    margin-left: -15%;
+    margin-top: 5%;
+    display: inline-block;
+}
+
+.buttons {
+    margin-top: 30%;
 }
 
 .exbuttons {
-    margin-top: 10%;
-    display: block;
+    margin-top: 1%;
+    display: inline-block;
+    float: left;
+    margin-left: 3%;
 }
 
-.upvote {
-    margin-left: 8%;
+.uparrow {
+    color: green;
 }
 
-.downvote {
-    margin-left: 8%;
+.downarrow {
+    color: red;
+}
+
+.upvotesEx {
+    margin-top: 0;
+    margin-left: 18%;
+}
+
+.downvotesEx {
+    margin-left: 16%;
+}
+
+.upvoteEx {
+    margin-left: 20%;
+    margin-top: 1%
+}
+
+.downvoteEx {
+    margin-left: 20%;
 }
 .examples {
     border-style: solid;
@@ -49,6 +89,7 @@ ul {
 
 .exampleIssue {
     padding: 2%;
+    text-align: center;
 }
 
 .exampleDesc {
@@ -58,7 +99,8 @@ ul {
 }
 
 .exComm {
-    margin-top: 2%;
+    margin-top: 1%;
+    margin-left: 19%;
 }
 .exTexAr {
     background-color: lavender;
@@ -67,4 +109,75 @@ ul {
 .input {
     display: block;
     float: left;
+}
+
+.comm {
+    display: block;
+    margin-left: 17.5%;
+}
+
+.userAdded {
+    margin-top: 2%;
+    padding-bottom: 2%;
+}
+
+.newPostRow {
+    float: left;
+    margin-left: 5%;
+    margin-top: 7%;
+}
+
+.newIssue {
+    text-align: center;
+}
+
+.newbuttons {
+    float: left;
+    display: inline-block;
+    margin-left: 1%;
+}
+
+.newVotes {
+    margin-left: 15%;
+    margin-top: 10%;
+}
+
+.newSubBtn {
+    margin-left: 36%;
+}
+.newComm {
+    margin-left: 0%;
+    margin-top: 0;
+    float: left;
+}
+
+.newCommTitle {
+    margin-left: 40%;
+}
+
+.newTA {
+    margin-top: 2%;
+    position: relative;
+    word-wrap: break-word;
+    margin-left: 4%;
+}
+
+.newDesc {
+    word-wrap: break-word;
+}
+
+.newAdded {
+    border-style: solid;
+    border-color: black;
+    border-width: medium;
+    float: left;
+    display: block;
+}
+
+.newUpvote {
+    margin-top: 0;
+}
+
+.downvotes {
+    margin-left: 18%;
 }

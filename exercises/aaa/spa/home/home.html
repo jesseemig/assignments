@@ -1,0 +1,23 @@
+
+  <div ng-controller="HomeController" class="homeBody">
+   <h3 class="homeHeader">Look-up a number</h3>
+   
+   <div class="input">
+<input type="text" placeholder="Phone number " ng-model="lookUp">
+   
+   <button class="btn" ng-click="findPh(lookUp)">Search</button>
+   </div>
+   
+  
+  <section class="here" >
+            <div class="row">
+                 
+    <p class="line" ng-repeat="song in output.data">Title: {{ song.title }}
+    </p>
+    <a class="line" ng-repeat="song in output.data" href="{{song.preview}}">Title: {{ song.preview }}</a>
+
+                </div>
+      </div>
+      </section>
+</div>
+

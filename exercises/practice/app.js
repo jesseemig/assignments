@@ -1,16 +1,9 @@
-//  app.js
-
-var app = angular.module('battleArena', ['ngRoute', 'battleArena.dashboard', 'battleArena.leaderboard']);
-
-app.config(function ($routeProvider) {
-    $routeProvider
-        .when('/', {
-            redirectTo: '/dashboard'
-        })
-        .otherwise({
-            redirectTo: '/dashboard'
-        })
+.directive("wishList", function () {
+    return {
+        restrict: "E",
+        scope: {
+            wants: "="
+        },
+        templateUrl: "directives/directives.html"
+    };
 });
-
-// IN PUBLIC FOLDER
-
