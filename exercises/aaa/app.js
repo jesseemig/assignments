@@ -9,13 +9,8 @@ angular.module("routingApp", ["ngRoute"])
         })
 
     .when("/tips", {
-        templateUrl: "spa/tips/tips.html",
-        controller: "TipsController"
-    })
-
-    .when("/involved", {
-        templateUrl: "spa/involved/involved.html",
-        controller: "InvolvedController"
+        templateUrl: "spa/playlist/playlist.html",
+        controller: "playlistController"
     })
 
     .otherwise({
