@@ -64,6 +64,15 @@
     
 }
 
+.mainBody {
+    display: inline-block;
+    float: left;
+}
+
+.here {
+    display: inline-block;
+    float: left;
+}
 .playlistList {
     text-align: left;
 }
@@ -73,7 +82,6 @@ li {
 }
 
 .homeLink {
-    
     flex-grow: 0;
     flex-shrink: 3;
     flex-basis: auto;
@@ -106,33 +114,25 @@ li {
     padding-bottom: 15%;
 }
 
-.playlistArea {
-    display: inline-block;
-    float: left;
-    padding-top: 3%;
-    margin-left: 10%;
-}
-
 .playlistHeader {
-    margin-left: 10%;
+    margin-left: 15%;
     margin-top: 9%;
+    display: inline-block
 }
 .listItems {
-    margin-left: -30%;
     padding-top: 2%;
+    margin-left: -15%;
 }
 
 .info {
     background-color: white;
-    margin-left: 63%; 
     background-color: rgba(255, 255, 255, 0.6);
     color: black;
-    margin-right: 4%;
     padding-top: 3%;
 }
 
 .repeatStart {
-    padding-top: 3%;
+    padding-top: 5%;
 }
 
 .homeBody {
@@ -141,6 +141,7 @@ li {
 }
 
 .clickSave {
+    margin-top: 3%;
     text-align: center;
     text-decoration: underline;
 }
@@ -154,7 +155,7 @@ li {
 }
 
 .saveBtn {
-    margin-left: 25%;
+    margin-left: 21%;
 }
 
 .homeHeader {
@@ -181,3 +182,13 @@ li {
     padding-right: 3%;
 }
 
+.row1 {
+    display: inline;
+}
+.row2 {
+    display: inline;
+}
+
+.row3 {
+    display: inline;
+}

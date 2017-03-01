@@ -17,8 +17,6 @@
             <h1 class="title col-xs-10 col-sm-12 col-xs-offset-1 col-sm-offset-0">VIBE</h1>
         </div>
 
-
-
         <div class="row navRow">
             <b> <nav class="navbar col-xs-12">
          
@@ -33,20 +31,10 @@
 
         <div class="row lower">
 
-            <p class="mainBody">
-            <div class="playlistArea col-sm-4 col-sm-offset-1">
-                <a href="" ng-click="showPlaylist = ! showPlaylist"><h1 class="playlistHeader">My Playlist</h1></a>
-                   <ul class="playlistList" ng-show="showPlaylist">
-                   <li class="listItems">
-                    <h4>Song: {{ song.title }} </h4>
-                    <h4>Artist: {{ song.name }}</h4>
-                    <h4>Album: {{ song.album.title }}</h4>
-                    </li>
-                    </ul>
-                </div>
-            </p>
 
-                <div class="info" ng-view></div>
+
+
+            <div class="info" ng-view></div>
 
         </div>
 
@@ -60,7 +48,7 @@
     <script src="app.js"></script>
     <script src="spa/home/home.js"></script>
     <script src="spa/playlist/playlist.js"></script>
-    <script src="directives/directives.html"></script>
+
 </body>
 
 </html>

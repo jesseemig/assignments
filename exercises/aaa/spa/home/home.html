@@ -1,30 +1,48 @@
 <div ng-controller="HomeController" class="homeBody">
-    <h3 class="homeHeader">Find Songs By Artist</h3>
+    
+
+<div class="row">
+   
+   
+   <section class="mainBody col-sm-5 col-sm-offset-1">
+            <div class="playlistArea">
+                <a href="" ng-click="showPlaylist =! showPlaylist"><h1 ng-click="findArtist()" class="playlistHeader">My Playlist</h1></a>
+                   <ol ng-show="showPlaylist">
+                   <li class="listItems" ng-repeat="song in output.data">
+                    <h4>Song: {{ song.title }}  </h4>
+                    <h4>Artist: {{ song.artist.name }}  </h4>
+                    <h4>Album: {{ song.album.title }}</h4>
+                    </li>
+                    </ol>
+                </div>
+            </section>
+   
+   
+    <section class="here col-sm-5">
+<h3 class="homeHeader">Find Songs By Artist</h3>
 
     <div class="input">
         <input type="text" placeholder="Artist " ng-model="lookUp">
 
-        <button class="btn btn-primary" ng-click="findPh(lookUp)">Search</button>
+        <button class="btn btn-primary" ng-click="findArtist(lookUp)">Search</button>
     </div>
-
-
-    <section class="here">
-        <div class="row">
             <h4 class="clickSave"><b>Click save to add to your playlist</b></h4>
             <ol class="repeatStart">
                 <li ng-repeat="song in output.data" class="line">
-                    <h4>Song: {{ song.title }}  </h4>
-                    <h4>Artist: {{ song.artist.name }}  </h4>
-                    <h4>Album: {{ song.album.title }}</h4>
+                    <h4 class="row1">Song: &nbsp;</h4><h4 class="row1"> {{ song.title }}  </h4><br><br>
+                    <h4 class="row2">Artist: &nbsp;</h4><h4 class="row2"> {{ song.artist.name }}  </h4><br><br>
+                    <h4 class="row2">Album: &nbsp;</h4><h4 class="row3">{{ song.album.title }}</h4><br><br>
                     <img src="{{song.album.cover_medium}}" class="cover">
                     <a href="{{song.preview}}"><h4 class="preview">Click here to preview</h4> </a>
-                    <button type="button" class="btn btn-primary saveBtn col-sm-3" ng-click="addSong()">Save</button>
+                    <button type="button" class="btn btn-primary saveBtn col-sm-3" ng-click="addsong()">Save</button>
                     <br>
                     <br>
                 </li>
-
             </ol>
-        </div>
-
+        
 </section>
+
+
+ 
+        </div>
 </div>
