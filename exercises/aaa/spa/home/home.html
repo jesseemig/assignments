@@ -6,11 +6,11 @@
    
    <section class="mainBody col-sm-5 col-sm-offset-1">
             <div class="playlistArea">
-                <a href="" ng-click="showPlaylist =! showPlaylist"><h1 ng-click="findArtist()" class="playlistHeader">My Playlist</h1></a>
-                   <ol ng-show="showPlaylist">
-                   <li class="listItems" ng-repeat="song in output.data">
-                    <h4>Song: {{ song.title }}  </h4>
+               <h1> <a href="" ng-click="showPlaylist = !showPlaylist"  class="playlistHeader">My Playlist</a></h1>
+                   <ol ng-show="showPlaylist" class="playListWhole">
+                   <li class="listItems" ng-repeat="song in newSong">
                     <h4>Artist: {{ song.artist.name }}  </h4>
+                    <h4>Song: {{ song.title }}  </h4>
                     <h4>Album: {{ song.album.title }}</h4>
                     </li>
                     </ol>
@@ -28,13 +28,15 @@
     </div>
             <h4 class="clickSave"><b>Click save to add to your playlist</b></h4>
             <ol class="repeatStart">
-                <li ng-repeat="song in output.data" class="line">
-                    <h4 class="row1">Song: &nbsp;</h4><h4 class="row1"> {{ song.title }}  </h4><br><br>
-                    <h4 class="row2">Artist: &nbsp;</h4><h4 class="row2"> {{ song.artist.name }}  </h4><br><br>
-                    <h4 class="row2">Album: &nbsp;</h4><h4 class="row3">{{ song.album.title }}</h4><br><br>
-                    <img src="{{song.album.cover_medium}}" class="cover">
+                <li ng-repeat="song in output.data track by $index" class="line">
+                    <h4>Song: {{ song.title }}  </h4>
+                    <h4>Artist: {{ song.artist.name }}  </h4>
+                    <h4>Album: {{ song.album.title }}</h4><br>
+                    <div class="picBtn">
+                    <img src="{{song.album.cover_small}}" class="cover">
                     <a href="{{song.preview}}"><h4 class="preview">Click here to preview</h4> </a>
-                    <button type="button" class="btn btn-primary saveBtn col-sm-3" ng-click="addsong()">Save</button>
+                    <button type="button" class="btn btn-primary saveBtn col-sm-3" ng-click="addSong($index)">Save</button>
+                    </div>
                     <br>
                     <br>
                 </li>

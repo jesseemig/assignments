@@ -7,14 +7,11 @@ var mongoose = require("mongoose");
                        
 app.use(bodyParser.json());
 app.use(morgan("dev"));
-
-
-
   
 app.use("/playlist", require("./routes/playlistRoutes"));
 
 
-mongoose.connect("mongodb://localhost/playlists", function (err) {
+mongoose.connect("mongodb://localhost/playlist", function (err) {
     if (err) throw err;
     console.log("Connected to the database");
 });
