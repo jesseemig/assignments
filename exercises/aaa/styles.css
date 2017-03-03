@@ -143,7 +143,7 @@ li {
 }
 
 .clickSave {
-    margin-top: 3%;
+    margin-top: 10%;
     text-align: center;
     text-decoration: underline;
     color: black;
@@ -155,12 +155,12 @@ li {
 }
 
 .preview {
-    margin-left: 17%;
+    margin-left: 18.2%;
     margin-top: 0;
 }
 
 .saveBtn {
-    margin-left: 10%;
+    margin-left: 12.7%;
 }
 
 .homeHeader {
@@ -182,12 +182,21 @@ li {
     color: black;
     padding-bottom: 2%;
 }
+.tipsHeader {
+    text-align: center;
+    font-size: 400%;
+    padding-top: 9%;
+}
 
 .tipsBody {
-    margin-left: 3%;
+    padding-left: 5%;
     font-size: 120%;
-    padding-bottom: 3%;
-    padding-right: 3%;
+    background-image: url(freddie.jpg);
+    margin-top: -2%;
+    background-position: center;
+    min-height: 800px;
+    background-repeat: no-repeat;
+    margin-bottom: -5%;
 }
 
 .row1 {
@@ -203,4 +212,10 @@ li {
 
 .picBtn {
     margin-top: -3%;
+    
+}
+
+
+.rulesList {
+    color: white;
 }

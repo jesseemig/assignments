@@ -8,9 +8,9 @@ angular.module("routingApp", ["ngRoute"])
             controller: "HomeController"
         })
 
-    .when("/tips", {
-        templateUrl: "spa/playlist/playlist.html",
-        controller: "playlistController"
+    .when("/otherMusic", {
+        templateUrl: "spa/otherMusic/otherMusic.html",
+        controller: "otherMuiscController"
     })
 
     .otherwise({

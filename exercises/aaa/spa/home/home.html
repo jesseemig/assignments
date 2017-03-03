@@ -4,38 +4,38 @@
 <div class="row">
    
    
-   <section class="mainBody col-sm-4 col-sm-offset-1">
+   <section class="mainBody col-xs-12 col-sm-5 col-sm-offset-1">
             <div class="playlistArea">
-               <h1> <a href="" ng-click="showPlaylist = !showPlaylist"  class="playlistHeader">My Playlist</a></h1>
-                   <ol ng-show="showPlaylist" class="playListWhole">
-                   <li class="listItems" ng-repeat="song in playlist">
-                    <h4>Artist: {{ song.artist.name }}  </h4>
-                    <h4>Song: {{ song.title }}  </h4>
-                    <h4>Album: {{ song.album.title }}</h4>
+               <h1 class=playlistTitle xs-offset-3> <a href="" ng-click="displayList()" class="playlistHeader">My Playlist</a></h1>
+                   <ol  class="playListWhole">
+                   <li class="listItems" ng-repeat="song in beingAdded">
+                    <h4>Artist:   &nbsp;  &emsp; &emsp;{{ song.artist.name }}  </h4>
+                    <h4>Song: &emsp; &nbsp; &emsp;{{ song.title }}  </h4>
+                    <h4>Album: &emsp; &emsp;{{ song.album.title }}</h4>
                     </li>
                     </ol>
                 </div>
             </section>
    
    
-    <section class="here col-sm-5 col-sm-offset-1 ">
-<h3 class="homeHeader">Find Songs By Artist</h3>
+    <section class="here col-xs-12 col-sm-5">
+<h3 class="homeHeader"col-xs-12>Find Songs By Artist</h3>
 
-    <div class="input">
+    <div class="input col-xs-12">
         <input type="text" placeholder="Artist " ng-model="lookUp">
 
         <button class="btn btn-primary" ng-click="findArtist(lookUp)">Search</button>
     </div>
             <h4 class="clickSave"><b>Click save to add to your playlist</b></h4>
-            <ol class="repeatStart">
+            <ol class="repeatStart col-sm-offset-1">
                 <li ng-repeat="song in output.data track by $index" class="line">
-                    <h4>Song: {{ song.title }}  </h4>
-                    <h4>Artist: {{ song.artist.name }}  </h4>
-                    <h4>Album: {{ song.album.title }}</h4><br>
+                    <h4>Song:  &emsp; &nbsp; &emsp;{{ song.title }}  </h4>
+                    <h4>Artist: &nbsp;  &emsp; &emsp;{{ song.artist.name }}  </h4>
+                    <h4>Album: &emsp; &emsp;{{ song.album.title }}</h4><br>
                     <div class="picBtn">
                     <img src="{{song.album.cover_small}}" class="cover">
                     <a href="{{song.preview}}"><h4 class="preview">Click here to preview</h4> </a>
-                    <button type="button" class="btn btn-primary saveBtn col-sm-3" ng-click="addSong($index)">Save</button>
+                    <button type="button" class="btn btn-primary saveBtn col-sm-3" ng-click="addSong($index)">click to save</button>
                     </div>
                     <br>
                     <br>
