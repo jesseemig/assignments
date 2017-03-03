@@ -10,7 +10,7 @@ angular.module("routingApp", ["ngRoute"])
 
     .when("/otherMusic", {
         templateUrl: "spa/otherMusic/otherMusic.html",
-        controller: "otherMuiscController"
+        controller: "otherMusicController"
     })
 
     .otherwise({

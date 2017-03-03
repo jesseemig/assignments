@@ -1,7 +1,7 @@
 var express = require("express");
 var app = express();
 var bodyParser = require("body-parser");
-var port = process.env.PORT || 8600;
+var port = process.env.PORT || 8100;
 var morgan = require("morgan");
 var mongoose = require("mongoose");
 var path = require('path');

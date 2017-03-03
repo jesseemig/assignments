@@ -43,7 +43,10 @@ home.controller("HomeController", ["$scope", "$http",  function ($scope, $http) 
     $scope.displayList = function (song, album, title, newList) {
         $http.get("/playlist").then(function (response) {
             $scope.beingAdded = response.data;
-       
+            $scope.addingSong = response.data;
+            console.log($scope.addingSong, "New song")
+         $scope.newlyAdded.push(response.data);
+                console.log(response.data)
         })
     }
 

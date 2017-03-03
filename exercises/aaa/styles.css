@@ -185,7 +185,7 @@ li {
 .tipsHeader {
     text-align: center;
     font-size: 400%;
-    padding-top: 9%;
+    padding-top: 5%;
 }
 
 .tipsBody {
@@ -193,7 +193,7 @@ li {
     font-size: 120%;
     background-image: url(freddie.jpg);
     margin-top: -2%;
-    background-position: center;
+    background-position: right;
     min-height: 800px;
     background-repeat: no-repeat;
     margin-bottom: -5%;
@@ -211,11 +211,36 @@ li {
 }
 
 .picBtn {
-    margin-top: -3%;
+    margin-top: 1.2%;
     
 }
 
-
 .rulesList {
     color: white;
+}
+
+.searchG {
+    color: white;
+    font-size: 170%;
+    margin-top: 3%;
+}
+
+.findRepeatStart {
+    color: white;
+}
+.findheader {
+    text-align: center;
+    color: #053683;
+}
+.findRow1 {
+    text-align: center;
+    margin-top: 4%;
+}
+.line2 {
+    float: left;
+    display: inline-block;
+}
+.albCov {
+    float: left;
+    margin-top: 1%;
 }

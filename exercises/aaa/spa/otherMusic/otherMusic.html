@@ -1,14 +1,19 @@
-<div class="row tipsBody">
+<div ng-controller="otherMusicController" class="row tipsBody">
 
-<h1 class="tipsHeader">Billboard's Top 40</h1> 
-<p class="rulesList">
-Calls are restricted to between 8 A.M. and 9 P.M.<br>
-Telemarketers must tell you it is a sales call, the name of the seller, and what they are selling.<br>
-It is illegal for telemarketers to lie about their products or services.<br>
-Telemarketers must tell you the total cost of whatever they are selling, any restrictions, and if a sale is non-refundable.<br>
-Callers promoting prizes must tell you the odds of winning, that no purchase or payment is necessary to win, and any restrictions on receiving the prize.<br>
-It is illegal for telemarketers to withdraw money from your bank account without your express, verifiable authorization.<br>
-You do not have to pay for credit services until those services are delivered.<br>
-It is illegal for a telemarketer to call you if you have asked not to be called.
-</p>
+    <div class="row findRow1">
+        <h1 class="findheader">Discover new music</h1>
+        <p class="otherBody">
+            <label class="searchG">Search by genre &nbsp;</label>
+            <input type="text" ng-model="find" placeholder="Genre">&nbsp;
+            <button type="button" class="btn btn-primary" ng-click="findNew(find)">Search</button>
+    </div>
+
+    <ol class="findRepeatStart col-sm-offset-1">
+        <li ng-repeat="thing in genreFound" class="line2">
+            <h4>Name:  &emsp; &nbsp; &emsp;{{ thing.name }}</h4>
+            <br>
+                <img src="{{thing.picture}" class="cover">
+           
+        </li>
+    </ol>
 </div>
