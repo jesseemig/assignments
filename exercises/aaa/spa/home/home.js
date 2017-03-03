@@ -22,21 +22,24 @@ home.controller("HomeController", ["$scope", "$http", function ($scope, $http) {
 
 
 
-    var playlist = [];
+    $scope.playlist = [];
 
 
 
 
     $scope.addSong = function (index, artist, name, albumn, title, playlist, newSong) {
- 
-        $http.post("localhost:8000/playlist", $scope.output.data[index].artist.name, $scope.output.data[index].title, $scope.output.data[index].album.title).then(function (response) {
-            console.log(response.data)
-            // playlist = (response.data)
-          //  $scope.newSong = playlist;
-        })
-       // $scope.playlist.push($scope.output.data[index]);
-        //    playlist = ($scope.output.data[index].artist.name) + ($scope.output.data[index].title) + ($scope.output.data[index].album.title);
-        //    console.log(playlist).then
+        console.log($scope.output.data[index]);
+        $http.post("/playlist", $scope.output.data[index]).then(function (response) {
+            $scope.newSongs = response.data;
+            console.log($scope.newSong, "New song")
+         $scope.playlist.push(response.data);
+                console.log(response.data)
+                // playlist = (response.data)
+                //  $scope.newSong = playlist;
+            })
+            // $scope.playlist.push($scope.output.data[index]);
+            //    playlist = ($scope.output.data[index].artist.name) + ($scope.output.data[index].title) + ($scope.output.data[index].album.title);
+            //    console.log(playlist).then
     }
 
 

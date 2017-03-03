@@ -8,7 +8,7 @@
             <div class="playlistArea">
                <h1> <a href="" ng-click="showPlaylist = !showPlaylist"  class="playlistHeader">My Playlist</a></h1>
                    <ol ng-show="showPlaylist" class="playListWhole">
-                   <li class="listItems" ng-repeat="song in newSong">
+                   <li class="listItems" ng-repeat="song in playlist">
                     <h4>Artist: {{ song.artist.name }}  </h4>
                     <h4>Song: {{ song.title }}  </h4>
                     <h4>Album: {{ song.album.title }}</h4>

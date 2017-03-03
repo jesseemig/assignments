@@ -90,9 +90,7 @@ li {
     flex-grow: 0;
     flex-shrink: 3;
     flex-basis: auto;
-    color: black;
-    border-color: rgba(255, 255, 255, 0.1);
-    background-color: rgba(255, 255, 255, 0.5);
+    color: #ED9800;
     font-size: 240%;
     padding-left: 1%;
     padding-right: 1%;
@@ -102,9 +100,7 @@ li {
     flex-grow: 0;
     flex-shrink: 3;
     flex-basis: auto;
-    color: black;
-    border-color: rgba(255, 255, 255, 0.1);
-    background-color: rgba(255, 255, 255, 0.5);
+    color: #ED9800;
     font-size: 240%;
     padding-left: 1%;
     padding-right: 1%;
