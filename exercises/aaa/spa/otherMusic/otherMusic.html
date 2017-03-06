@@ -3,17 +3,19 @@
     <div class="row findRow1">
         <h1 class="findheader">Discover new music</h1>
         <p class="otherBody">
-            <label class="searchG">Search by genre &nbsp;</label>
+            <label class="searchG">Search by artist &nbsp;</label>
             <input type="text" ng-model="find" placeholder="Genre">&nbsp;
             <button type="button" class="btn btn-primary" ng-click="findNew(find)">Search</button>
     </div>
 
     <ol class="findRepeatStart col-sm-offset-1">
-        <li ng-repeat="thing in genreFound" class="line2">
-            <h4>Name:  &emsp; &nbsp; &emsp;{{ thing.name }}</h4>
+        <li ng-repeat="thing in artistFound track by $index" class="line2">
+            <h1>Top Tracks</h1>
             <br>
-                <img src="{{thing.picture}" class="cover">
-           
+              <div class="songNames" ng-repeat="song in thing.track">
+               <h4 class="artist1">{{song.name}}</h4>
+                <img src="{{song.image[1]['#text']}} " class="artist1">
+           </div>
         </li>
     </ol>
 </div>

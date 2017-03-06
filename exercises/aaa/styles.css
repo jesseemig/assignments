@@ -196,7 +196,6 @@ li {
     background-position: right;
     min-height: 800px;
     background-repeat: no-repeat;
-    margin-bottom: -5%;
 }
 
 .row1 {
@@ -227,6 +226,8 @@ li {
 
 .findRepeatStart {
     color: white;
+   display: inline-block;
+    float: left;
 }
 .findheader {
     text-align: center;
@@ -239,8 +240,19 @@ li {
 .line2 {
     float: left;
     display: inline-block;
+    color: white;
 }
 .albCov {
     float: left;
     margin-top: 1%;
+}
+
+.artist1 {
+    display: inline-block;
+    margin-right: 8%;
+    float: left;
+    background-color: black;
+}
+.songNames {
+    display: inline-block;
 }

@@ -2,21 +2,15 @@ var otherMusic = angular.module("routingApp")
 
 otherMusic.controller("otherMusicController", ["$scope", "$http",  function ($scope, $http) {
 
-    var config = {
-        headers: {
-            "X-Mashape-Key": "Yx3ZIrcwZimshJB0uwTc7hb0VcUWp1DclwljsnudTovyVpzPe0"
-        }
-    };
-
     var discover = [];
 
     $scope.findNew = function (input) {
 
-        $http.get("https://sridurgayadav-chart-lyrics-v1.p.mashape.com/apiv1.asmx/SearchLyricDirect?artist=" + input, config).then(function (response) {
-            console.log(response.body);
+        $http.get("http://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=" + input + "&api_key=f791d04f1c27bb4d53ffa4f72495f539&format=json").then(function (response) {
+            console.log(response.data);
             discover = (response.data);
             console.log(discover);
-            $scope.genreFound = discover;
+            $scope.artistFound = discover;
 
         });
     };
