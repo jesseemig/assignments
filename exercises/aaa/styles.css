@@ -108,6 +108,7 @@ li {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+    min-height: 650px;
     padding-bottom: 5%;
 }
 
@@ -189,13 +190,15 @@ li {
 }
 
 .tipsBody {
-    padding-left: 3%;
+    padding-left: 2%;
     font-size: 120%;
     background-image: url(freddie.jpg);
     margin-top: -2%;
     background-position: right;
     min-height: 800px;
+    max-width: 1537px;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .row1 {
@@ -228,6 +231,7 @@ li {
     color: white;
    display: inline-block;
     float: left;
+    margin-top: 4%;
 }
 .findheader {
     text-align: center;
@@ -248,11 +252,15 @@ li {
 }
 
 .artist1 {
-    display: inline-block;
-    margin-right: 8%;
+  text-align: center;
     float: left;
     background-color: black;
 }
+.artistPic2 {
+    padding-bottom: 7%;
+}
+
 .songNames {
     display: inline-block;
+    text-align: center;
 }
