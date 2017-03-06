@@ -12,9 +12,9 @@
         <li ng-repeat="thing in artistFound track by $index" class="line2">
             <h1>Top Tracks</h1>
             <br>
-              <div class="songNames" ng-repeat="song in thing.track">
+              <div class="songNames" ng-repeat="song in thing.artist">
                <h4 class="artist1">{{song.name}}</h4>
-                <img src="{{song.image[1]['#text']}} " class="artist1">
+                <img src="{{song.image[2]['#text']}} " class="img-responsive artist1 artistPic2">
            </div>
         </li>
     </ol>
