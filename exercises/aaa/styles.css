@@ -108,8 +108,7 @@ li {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-    min-height: 650px;
-    padding-bottom: 5%;
+    min-height: 800px;
 }
 
 .playlistHeader {
@@ -161,7 +160,7 @@ li {
 }
 
 .saveBtn {
-    margin-left: 12.7%;
+    margin-left: 10.1%;
 }
 
 .homeHeader {
@@ -193,12 +192,13 @@ li {
     padding-left: 2%;
     font-size: 120%;
     background-image: url(freddie.jpg);
-    margin-top: -2%;
-    background-position: right;
-    min-height: 800px;
-    max-width: 1537px;
+    background-color: black;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 900px;
+    max-width: 100%;
     background-repeat: no-repeat;
-    background-size: cover;
+    
 }
 
 .row1 {
@@ -257,7 +257,7 @@ li {
     background-color: black;
 }
 .artistPic2 {
-    padding-bottom: 7%;
+    margin-bottom: 7%;
 }
 
 .songNames {

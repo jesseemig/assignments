@@ -2,22 +2,18 @@ var home = angular.module("routingApp")
 
 home.controller("HomeController", ["$scope", "$http",  function ($scope, $http) {
 
-    var config = {
-        headers: {
-            "X-Mashape-Key": "Yx3ZIrcwZimshJB0uwTc7hb0VcUWp1DclwljsnudTovyVpzPe0"
-        }
-    };
 
     var songs = [];
 
     $scope.findArtist = function (input) {
 
-        $http.get("https://deezerdevs-deezer.p.mashape.com/search?q=" + input, config).then(function (response) {
-            console.log(response.data)
-            songs = (response.data)
+        $http.get("http://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=" + input + "&api_key=f791d04f1c27bb4d53ffa4f72495f539&format=json").then(function (response) {
+            console.log(response.data);
+            songs = (response.data);
             $scope.output = songs;
+            console.log($scope.output.toptracks);
 
-        })
+        });
     };
 
 
@@ -27,12 +23,13 @@ home.controller("HomeController", ["$scope", "$http",  function ($scope, $http) 
 
 
 
-    $scope.addSong = function (index, artist, name, albumn, title, playlist, newSong) {
-        console.log($scope.output.data[index]);
-        $http.post("/playlist", $scope.output.data[index]).then(function (response) {
+    $scope.addSong = function (index, artist, name, albumn, title, playlist, newSongs) {
+        console.log($scope.output.toptracks.track[index]);
+        $http.post("/playlist", $scope.output.toptracks.track[index]).then(function (response) {
+            console.log(response.data);
             $scope.newSongs = response.data;
             console.log($scope.newSongs, "old song")
-         $scope.playlist.push(response.data);
+         $scope.playlist.push($scope.newSongs);
                console.log($scope.playlist);
             })
             
