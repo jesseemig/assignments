@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="TodoApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div ng-include="'components/navbar/navbar.html'"></div>
+
+    <div class="container">
+        <div ng-view></div>
+    </div>
+
+    <!-- Third-party -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js"></script>
+    <script src="http://code.angularjs.org/1.4.7/angular-route.js"></script>
+
+    <!-- Main App -->
+     
+    <script src="app.js"></script>
+    <script src="componenets/todos/todos.js"></script>  
+    <script src="components/navbar/navbar.js"></script>
+    
+    <script src="componenets/auth/login/login.js"></script>  
+    <script src="componenets/auth/signup/signup.js"></script>  
+    <script src="componenets/auth/logout/logout.js"></script> 
+    <script src="componenets/auth/auth.js"></script> 
+
+</body>
+
+</html>

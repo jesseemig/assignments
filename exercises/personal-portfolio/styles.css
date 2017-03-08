@@ -48,8 +48,10 @@ body {
 .name {
     font-family: type;
     font-size: 500%;
-    margin-top: 6%;
+    margin-top: 8%;
     margin-bottom: 6%;
+    position: absolute;
+    width: 100%;
 }
 
 .navbar {
@@ -62,7 +64,6 @@ body {
 }
 
 .navItem {
-    
     color: #22333e;
 }
 
@@ -83,6 +84,8 @@ li {
 
 .nav2 {
     text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .main {
@@ -95,5 +98,15 @@ li {
 
 .temp {
     font-size: 900%;
+}
+
+.photo {
+    width: 10%;
+    height: 10%;
+    display: inline-block;
+    float: left;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 3%;
 }
 

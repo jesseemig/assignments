@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="routingApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Music</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body class="container-fluid">
+
+    <div class="row">
+
+        <div class="row top">
+            <h1 class="title col-xs-10 col-sm-12 col-xs-offset-1 col-sm-offset-0">VIBE<span class="glyphicons glyphicons-volume-up"></span></h1>
+        </div>
+
+        <div class="row navRow">
+            <b> <nav class="navbar col-xs-12">
+            
+               <a href="#/home" class="homeLink">Home</a>
+              
+                <a href="#/otherMusic" class="hot">Find Similar Artists</a>
+          
+                
+        </nav> </b>
+        </div>
+
+        <div class="row lower">
+
+
+
+
+            <div class="info" ng-view></div>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="spa/home/home.js"></script>
+    <script src="spa/otherMusic/otherMusic.js"></script>
+
+</body>
+
+</html>

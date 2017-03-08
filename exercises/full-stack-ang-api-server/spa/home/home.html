@@ -1,0 +1,54 @@
+<div ng-controller="HomeController" class="homeBody">
+    
+
+<div class="row">
+   
+   
+   <section class="mainBody col-xs-12 col-sm-5 col-sm-offset-1">
+            <div class="playlistArea">
+               <h1 class=playlistTitle xs-offset-3> <a href="" ng-click="displayList()" class="playlistHeader">My Playlist</a></h1>
+                   <ol  class="playListWhole">
+                   <li class="listItems" ng-repeat="song in beingAdded">
+                    <h4>Artist:   &nbsp;  &emsp; &emsp;{{song.artist.name }}  </h4>
+                    <h4>Song: &emsp; &nbsp; &emsp;{{ song.name }} </h4>
+                    <a href="{{song.url}}" class="listenLink"><h4 class="listenLink"><span class="glyphicon glyphicon-play"></span> &nbsp;Click to listen</h4></a>
+                    </li>
+                    </ol>
+                </div>
+            </section>
+   
+   
+    <section class="here col-xs-12 col-sm-5">
+<h3 class="homeHeader"col-xs-12>Find Songs By Artist</h3>
+
+    <div class="input col-xs-12">
+        <input type="text" placeholder="Artist " ng-model="lookUp">
+
+        <button class="btn btn-primary" ng-click="findArtist(lookUp)">Search</button>
+    </div>
+            <h4 class="clickSave"><b>Click <i>save</i> to add to your playlist</b></h4>
+            
+            <ol class="repeatStart col-sm-offset-1">
+               
+                <li ng-repeat="song in output.toptracks.track track by $index" class="line">
+                  
+                    <h4>Song:  &emsp; &nbsp; &emsp;{{ song.name }}  </h4>
+                    <h4>Artist: &nbsp;  &emsp; &emsp;{{ song.artist.name }}  </h4>
+                    <h4>Plays: &nbsp;  &emsp; &emsp;{{ song.playcount }}</h4>
+                    <div class="picBtn">
+                    <img class="albCov" src="{{song.image[1]['#text']}}"  class="cover">
+                    <a href="{{song.url}}"><h4 class="preview">Click here to preview</h4> </a>
+                    <button type="button" class="btn btn-primary saveBtn col-sm-3" ng-click="addSong($index)">Save</button>
+                    </div>
+                    <br>
+                    <br>
+               
+                </li>
+            </ol>
+       
+</section>
+
+
+ 
+        </div>
+</div>
