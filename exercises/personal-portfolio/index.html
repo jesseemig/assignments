@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="MyApp">
+<html lang="en" ng-app="routingApp">
 
 <head>
     <meta charset="UTF-8">
@@ -10,33 +10,41 @@
 
 </head>
 
-<body class="container-fluid" ng-controller="MainController">
-  
+<body class="container-fluid">
+
+
+
+
   <div class="row header">
-        <img src="headshot.jpg" class="photo">
-          <h1 class="name">Jesse Emig</h1>
+
+
+          <h1 class="name col-xs-4">Jesse Emig</h1>
   </div>
-  
-  
+
+
   <div class="row navbar">
   
   <ul>
    
-  <li> <a href="#" class="navItem nav1"><b>Projects</b></a></li>
+  <li> <a href="#/about" class="navItem nav1"><b>Home</b></a></li>
    
-      <li> <a href="#" class="navItem nav2"><b>Resume</b></a></li>
+      <li> <a href="#/projects" class="navItem nav2"><b>Projects</b></a></li>
    
-      <li> <a href="#" class="navItem nav3"><b>Contact</b></a></li>
+      <li> <a href="#/resume" class="navItem nav3"><b>Resume</b></a></li>
+
+      <li> <a href="#/contact" class="navItem nav3"><b>Contact</b></a></li>
    
    </ul>
    
     </div>
-    
+
+
     
    <div class="row main">
 
-   
-   <h1 class="temp">y</h1>
+       <div class="spaDisplay" ng-view></div>
+
+
     </div>
     
     
@@ -50,7 +58,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
     <script src="app.js"></script>
-    <script src="app.js"></script>
+  <script src="spas/about/about.js"></script>
 </body>
 
 </html>

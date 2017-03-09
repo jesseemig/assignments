@@ -33,80 +33,111 @@
     src: url(type.ttf)
 }
 
+@font-face {
+    font-family: paint;
+    src: url(ProtestPaintBB_ital.ttf);
+}
+
 body {
     background: white;
+    width: 104%;
 }
+
 .header {
     background-image: url(books2.jpg);
     background-size: cover;
     color: white;
     font-family: type;
     text-align: center;
-    background-position: center;
+    background-position: center top 17%;
+    height: 100%;
+    width: 100%;
+
 }
 
 .name {
     font-family: type;
     font-size: 500%;
-    margin-top: 8%;
-    margin-bottom: 6%;
-    position: absolute;
+    margin-top: 4%;
+    margin-bottom: 4%;
     width: 100%;
+    text-align: center;
 }
 
 .navbar {
     background-image: url(paper.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    margin-bottom: 0;
-    font-size: 290%;
+    font-size: 200%;
     font-family: typewriter;
+    text-align: center;
+    position: absolute;
+    width: 103%;
+    max-height: 50px;
+    min-height: inherit;
+    margin-left: -3%;
 }
 
 .navItem {
     color: #22333e;
+    height: inherit;
 }
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    text-align: center
-    
+    height: inherit;
 }
 
 li {
     display: inline-block;
     margin: 2%;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: auto;
+    margin-bottom: -1%;
 }
 
-.nav2 {
-    text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;
-}
 
 .main {
-   background-image: url(hike.jpg);
-    background-size: contain;
-    background-position: bottom;
     font-size: 500%;
-    margin-top: 0;
+    background: url(hike.jpg) no-repeat bottom;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 800px;
+    width: 100%;
 }
 
-.temp {
-    font-size: 900%;
+
+.spaDisplay {
+    margin-top: 6%;
+}
+
+.aboutMe {
+    color: white;
+    font-family: "ProtestPaint BB";
+    font-size: 200%;
+    margin-top: 3%;
+    margin-left: 15%;
 }
 
 .photo {
-    width: 10%;
-    height: 10%;
+    height: 18%;
+    width: 18%;
     display: inline-block;
     float: left;
-    margin-top: 5%;
-    margin-bottom: 2%;
-    margin-left: 3%;
+    margin-top: 6%;
+    margin-bottom: 5%;
+    margin-left: 20%;
 }
 
+.aboutLeft {
+    width: 40%;
+    float: left;
+    margin-left: 7%;
+    color: white;
+}
+.para {
+    font-size: 40%;
+}
