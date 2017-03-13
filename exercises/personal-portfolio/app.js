@@ -8,8 +8,8 @@ angular.module("routingApp", ["ngRoute"])
                 controler: "AboutController"
             })
 
-            .when("/whyilove", {
-                templateUrl: "spa/love/whyilove.html",
+            .when("/resume", {
+                templateUrl: "spas/resume/resume.html",
                 controller: "WhyILoveController"
             })
 

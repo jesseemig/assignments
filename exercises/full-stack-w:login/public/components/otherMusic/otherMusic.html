@@ -1,0 +1,28 @@
+<div ng-controller="otherMusicController" class="tipsBody">
+
+    <div class="row findRow1">
+        <h1 class="findheader">Discover new music</h1>
+        <p class="otherBody">
+            <label class="searchG">Find Similar Artists &nbsp;</label>
+            <input type="text" ng-model="find" placeholder="Genre">&nbsp;
+            <button type="button" class="btn btn-primary" ng-click="findNew(find)">Search</button>
+    </div>
+
+    <div class="row col-sm-offset-1">
+        <ol class="findRepeatStart">
+            <li ng-repeat="thing in artistFound track by $index" class="line2">
+                <h1>Artists similar to {{find}}</h1>
+                <br>
+                <div class="row songNames col-sm-4" ng-repeat="song in thing.artist">
+                    <div class="row">
+                        <h4 class="artist1 col-sm-4">{{song.name}}</h4>
+                        <br>
+                    </div>
+                    <div class="row">
+                        <img src="{{song.image[2]['#text']}}" class="img-responsive artist1 artistPic2">
+                    </div>
+                </div>
+            </li>
+        </ol>
+    </div>
+</div>

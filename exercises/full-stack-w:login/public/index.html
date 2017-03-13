@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="routingApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Music</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+   
+           <div class="container-fluid">
+        <div class="row top">
+            <h1 class="title col-xs-10 col-sm-12 col-xs-offset-1 col-sm-offset-0">VIBE</h1>
+        </div>
+   </div>
+    
+    <navbar></navbar>
+
+
+        <div class="container">
+
+            <div class="info" ng-view></div>
+
+        </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js"></script>
+    <script src="http://code.angularjs.org/1.4.7/angular-route.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.6/ngStorage.min.js"></script>
+
+    <script src="app.js"></script>
+    <script src="components/profile/profile.js"></script>
+    <script src="components/otherMusic/otherMusic.js"></script>
+    <script src="components/navbar/navbar.js"></script>
+
+    <script src="components/auth/auth.js"></script>
+    <script src="components/auth/login/login.js"></script>
+    <script src="components/auth/logout/logout.js"></script>
+    <script src="components/auth/signup/signup.js"></script>
+
+</body>
+
+</html>

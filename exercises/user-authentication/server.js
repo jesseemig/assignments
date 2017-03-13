@@ -4,7 +4,7 @@ var mongoose    = require("mongoose");
 var morgan      = require("morgan");
 var bodyParser  = require("body-parser");
 var expressJwt  = require("express-jwt");
-var port        = process.env.PORT || 8000;
+var port        = process.env.PORT || 8100;
 var config      = require("./config");
 var path        = require("path");
 

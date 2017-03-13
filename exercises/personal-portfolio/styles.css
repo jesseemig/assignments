@@ -22,7 +22,6 @@
     }
 }
 
-
 @font-face {
     font-family: typewriter;
     src: url(typewriter.ttf)
@@ -40,63 +39,89 @@
 
 body {
     background: white;
-    width: 104%;
+    width: 108%;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .header {
     background-image: url(books2.jpg);
-    background-size: cover;
+    background-size: 100%;
     color: white;
     font-family: type;
     text-align: center;
-    background-position: center top 17%;
+    background-position: top 17%;
     height: 100%;
-    width: 100%;
+}
 
+.style {
+    color: white;
+    text-shadow: 3px 3px 5px black;
+    font-size: 150%;
+}
+
+
+.styleBtn {
+    margin-top: 1%;
+    float: left;
+    display: inline-block;
+    color: white;
+}
+
+.btn {
+    color: white;
+    font-family: sans-serif;
+    font-weight: 100;
+    position: relative;
+    background-color: #22333e;
+    width: auto;
+    margin-top: 1%;
+}
+.btn:hover {
+    background-color: #5e0000;
+    color: white;
 }
 
 .name {
     font-family: type;
     font-size: 500%;
-    margin-top: 4%;
-    margin-bottom: 4%;
-    width: 100%;
+    margin-top: 4.5%;
+    margin-bottom: 4.5%;
+    display: inline-block;
     text-align: center;
+}
+
+.invis {
+    font-size: 1px;
+}
+
+.navbarDiv {
+    max-height: 38px;
+    background-image: url(paper.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 .navbar {
-    background-image: url(paper.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
     font-size: 200%;
     font-family: typewriter;
     text-align: center;
-    position: absolute;
-    width: 103%;
-    max-height: 50px;
-    min-height: inherit;
-    margin-left: -3%;
+    width: 100%;
+    min-height: 30px;
+    list-style-type: none;
+
+    max-height: 10%;
+}
+
+.navNames {
+    color: #22333e;
 }
 
 .navItem {
-    color: #22333e;
-    height: inherit;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    height: inherit;
-}
-
-li {
     display: inline-block;
-    margin: 2%;
-    margin-top: auto;
-    margin-bottom: -1%;
 }
-
 
 .main {
     font-size: 500%;
@@ -106,38 +131,44 @@ li {
     -o-background-size: cover;
     background-size: cover;
     min-height: 800px;
-    width: 100%;
+    width: 104%;
+    margin-left: -4%;
 }
 
-
 .spaDisplay {
-    margin-top: 6%;
+
+    float: left;
+    display: inline-block;
 }
 
 .aboutMe {
     color: white;
     font-family: "ProtestPaint BB";
     font-size: 200%;
-    margin-top: 3%;
-    margin-left: 15%;
+    margin-top: 12%;
+    margin-left: 5%;
 }
 
 .photo {
-    height: 18%;
-    width: 18%;
+    height: 20%;
+    width: 20%;
     display: inline-block;
     float: left;
-    margin-top: 6%;
+    margin-top: 11%;
     margin-bottom: 5%;
-    margin-left: 20%;
+    margin-left: 17%;
 }
 
 .aboutLeft {
-    width: 40%;
+    width: 50%;
     float: left;
-    margin-left: 7%;
+    padding-left: 3%;
     color: white;
 }
 .para {
     font-size: 40%;
+}
+
+.resume {
+    color: white;
 }

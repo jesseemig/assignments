@@ -1,4 +1,4 @@
-angular.module("TodoApp.Auth", ["ngRoute", "ngStorage"])
+angular.module("routingApp.Auth", ["ngRoute", "ngStorage"])
 
 .config(["$routeProvider", function ($routeProvider) {
     $routeProvider
