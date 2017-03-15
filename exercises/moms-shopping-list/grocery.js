@@ -10,5 +10,8 @@ app.controller("UploadController", ["$scope", function ($scope) {
         $scope.list = {};
     };
 
+    $scope.remove = function (index) {
+        $scope.groceries.splice(index, 1);
+    }
 }]);
 
