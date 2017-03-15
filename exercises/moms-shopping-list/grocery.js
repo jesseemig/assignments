@@ -1,13 +1,14 @@
-var app = angular.module("MyApp", []);
+var app = angular.module("MyApp", [])
 
 app.controller("UploadController", ["$scope", function ($scope) {
 
-    $scope.listArray = []
+    $scope.groceries = [];
 
     $scope.adding = function () {
-        $scope.listArray.push($scope.item)
-        $scope.item = {};
-    }
+        console.log("yo");
+        $scope.groceries.push($scope.item);
+        $scope.list = {};
+    };
 
 }]);
-;
+
