@@ -1,10 +1,12 @@
 var express = require("express");
 var app = express();
 var bodyParser = require("body-parser");
-var port = process.env.PORT || 8800;
+var port = process.env.PORT || 8700;
 var morgan = require("morgan");
 var mongoose = require("mongoose");
 var path = require('path');
+var expressJwt = require("express-jwt");
+var config = require("./config");
                      
 app.use(express.static(path.join(__dirname)));
 

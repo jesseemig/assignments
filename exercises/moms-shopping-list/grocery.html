@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+
+<head>
+    <meta charset="utf-8">
+    <title>Grocery Store</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body ng-controller="UploadController">
+
+
+<section class="here">
+    <div class="row">
+        <h1>Mom's shopping list</h1>
+
+        <input type="text" ng-model="item.food">
+        <button type="button" class="btn addBtn" ng-click="adding(item)">Add</button>
+
+        <section ng-repeat="list in lists">
+        <ul>
+            <li>
+                <button type="button" class="btn" ng-click="remove(index)">X</button>
+                <h3 class="item">{{list.food}}</h3>
+            </li>
+            </ul>
+        </section>
+
+    </div>
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+ <script src="grocery.js"></script>
+</body>
+
+</html>
