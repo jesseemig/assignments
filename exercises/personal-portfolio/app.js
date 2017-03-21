@@ -10,7 +10,12 @@ angular.module("routingApp", ["ngRoute"])
 
             .when("/resume", {
                 templateUrl: "spas/resume/resume.html",
-                controller: "WhyILoveController"
+                controller: "ResumeController"
+            })
+
+            .when("/contact", {
+                templateUrl: "spas/contact/contact.html",
+                controller: "ContactController"
             })
 
             .otherwise({

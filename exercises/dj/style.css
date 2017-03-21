@@ -1,0 +1,19 @@
+.square {
+    margin-left: 50%;
+    margin-top: 20%;
+    border-style: solid;
+    border-width: medium;
+    border-color: black;
+    display: inline-block;
+    width: 10%;
+    height: 10%;
+    color: white;
+}
+.square:hover {
+     background-color: blue;
+    color: blue;
+}
+.square:active {
+    background-color: red;
+    color: red;
+}

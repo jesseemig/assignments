@@ -165,10 +165,23 @@ body {
     padding-left: 3%;
     color: white;
 }
+
 .para {
     font-size: 40%;
 }
 
 .resume {
     color: white;
+}
+
+.phone {
+    color: white;
+}
+
+.email {
+    color: white;
+}
+
+.contactHeader {
+    margin-top: 10%;
 }
