@@ -1,0 +1,23 @@
+body {
+    background-image: url("darkSteel.jpg");
+    background-repeat: no-repeat;
+}
+.title {
+    background: url("red.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    font-size: 1100%;
+    text-transform: uppercase;
+    text-align: center;
+    color: transparent;
+    -webkit-font-smoothing: antialiased;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: -2px -7px 2.5px black;
+    border-bottom: solid #053683;
+    padding-bottom: 2%;
+}
+

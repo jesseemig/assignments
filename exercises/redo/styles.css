@@ -1,0 +1,109 @@
+.titles {
+    margin-top: 5%;
+    margin-bottom: -170px;
+}
+
+.js {
+    display: inline-block;
+    margin-left: 55px;
+}
+
+.ang {
+    display: inline-block;
+    margin-left: 60px;
+}
+
+.ht {
+    display: inline-block;
+    margin-left: 78px;
+}
+
+.cs {
+    display: inline-block;
+    margin-left: 93px;
+}
+
+.bs {
+    display: inline-block;
+    margin-left: 81px;
+}
+
+.mon {
+    display: inline-block;
+    margin-left: 39px;
+}
+
+.no {
+    display: inline-block;
+    margin-left: 47px;
+}
+
+.gi {
+    display: inline-block;
+    margin-left: 138px;
+}
+
+.jqu {
+    display: inline-block;
+    margin-left: 121px;
+}
+
+.logo {
+    display: inline-block;
+    max-height: 100px;
+    margin-left: 35px;
+}
+
+.all {
+    margin-top: 10%;
+}
+
+.javascript {
+    margin-left: 11px;
+}
+
+.angular {
+    max-height: 115px;
+    margin-left: -10px;
+    margin-top: -4px;
+}
+
+.htmlPic {
+    max-height: 90px;
+    margin-left: 35px;
+}
+
+.cssPic {
+    max-height: 90px;
+    margin-left: 47px;
+}
+
+.bootstrap {
+    max-height: 92px;
+    margin-left: 24px;
+}
+
+.mongo {
+    margin-left: -1px;
+}
+
+.node {
+    margin-left: 21px;
+    max-height: 92px;
+    margin-top: 1px;
+}
+
+.git {
+    margin-left: 46px;
+    max-height: 150px;
+}
+
+.jquery {
+    max-height: 95px;
+    margin-left: 36px;
+}
+
+p {
+    margin-top: 10%;
+}
+
