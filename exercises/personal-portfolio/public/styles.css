@@ -56,14 +56,14 @@ body {
 
 
 .navbar-header {
-    margin-top: 1%;
-    width: 50%;
-    margin-bottom: -0.5%;
+    margin-top: 2%;
+    width: 100%;
+    ;
 }
 
 
 .github {
-    margin-left: 7%;
+    margin-left: 5%;
     display: inline-block;
     position: relative;
     width: auto;
@@ -111,7 +111,7 @@ body {
 
 
 .linked {
-    margin-left: 7%;
+    margin-left: 5%;
     display: inline-block;
     position: relative;
     width: auto;
@@ -136,11 +136,6 @@ body {
 }
 
 
-.linkedLink {
-
-}
-
-
 .linkedWord {
     font-size: 80%;
     color: white;
@@ -159,7 +154,7 @@ body {
 
 
 .email {
-    margin-left: 7%;
+    margin-left: 5%;
     display: inline-block;
     position: relative;
     width: auto;
@@ -206,26 +201,61 @@ body {
 }
 
 .navbar-right {
-    margin-top: .5%;
     margin-right: 1%;
+    margin-top: -0.7%;
+    list-style-type: none;
+    padding: 0;
 }
+
+.homeH {
+    display: inline-block;
+}
+
+
+.homeA {
+    color: #B09F10;
+    font-size: 180%;
+}
+
 
 .homeLink {
+    padding-right: 15%;
+}
+
+
+.projectH {
+    display: inline-block;
+}
+
+
+.projectsA {
     font-size: 180%;
     color: #B09F10;
 }
 
-.home {
-    color: #B09F10;
-}
 
 .projectsLink {
-    font-size: 180%;
+    padding-right: 11%;
+    padding-left: 11%;
 }
 
-.resumeLink {
+
+.resumeA {
     font-size: 180%;
+    color: #B09F10;
 }
+
+
+.resumeH {
+    display: inline-block;
+}
+
+
+.resumeLink {
+    padding-right: 11%;
+    padding-left: 11%;
+}
+
 
 .aboutHeader {
     background-image: url(../books2.jpg);
@@ -261,8 +291,8 @@ body {
 .aboutMe {
     color: white;
     font-family: "ProtestPaint BB";
-    font-size: 200%;
-    margin-top: 12%;
+    font-size: 800%;
+    margin-top: 10%;
     margin-left: 15%;
 }
 

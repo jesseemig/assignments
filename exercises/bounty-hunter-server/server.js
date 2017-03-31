@@ -1,47 +1,24 @@
 var express = require("express");
 var app = express();
 var bodyParser = require("body-parser");
-var uuid = require("uuid");
+var port = process.env.PORT || 8150;
+var morgan = require(“morgan”);
+var mongoose = require("mongoose");
+var path = require("path");
+var Bounty = require("./models/bounty");
+
+app.use(express.static(path.join(__dirname)));
+
 app.use(bodyParser.json());
-var path = require('path');
-var port = 8150;
+app.use(morgan("dev"));
 
-app.use(express.static(path.join(__dirname, "public")));
+app.use("/bounty", require("./routes/bountyRoutes"));
 
-var bounties = [
-    {
-    firstName: "Jesse",
-    lastName: "Emig",
-    living: true,
-    amount: 10000,
-    type: "sith",
-    id: "808485485"
-    },
-    {
-    firstName: "John",
-    lastName: "Smith",
-    living: false,
-    amount: 8000,
-    type: "Jedi",
-    id: "4384723847"
-    }
-];
-
-app.get("/bounty", function (req, res) {
-    res.send(bounties);
-})
-
-app.post("/bounty", function (req, res) {
-    console.log(req.body);
-    var newBounty = req.body;
-    newBounty.id = uuid.v4();
-    bounties.push(newBounty);
-    res.send(newBounty);
+mongoose.connect("mongodb://localhost/bounties", function (err) {
+    if (err) throw err;
+    console.log("Connected to the database");
 });
-
 
 app.listen(8150, function () {
-    console.log("Server listening on port 8150");
+    console.log("Server listening on port: " + port);
 });
-
-    
