@@ -1,0 +1,17 @@
+<div ng-controller="AddController" class="row adding">
+
+    <h1>Add Pony</h1><br>
+    <h3>Pony's Name</h3>
+    <input type="text" placeholder="Name" ng-model="upload.name" class="col-xs-3">
+
+    <br>
+    <h3>Username</h3>
+    <input type="text" placeholder="Username" ng-model="upload.username" class="col-xs-3">
+
+    <br>
+
+    <h3>Picture</h3>
+    <input type="url" placeholder="Image Url" ng-model="upload.pic" class="col-xs-3">
+
+    <button type="button" class="btn btn-primary" ng-click="addPony(upload)">Add</button>
+</div>

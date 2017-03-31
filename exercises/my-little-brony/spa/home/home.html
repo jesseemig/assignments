@@ -1,0 +1,14 @@
+
+<div ng-controller="HomeController" class="row favorites">
+
+    <h1>Test</h1>
+
+    <ul>
+        <li ng-repeat="pony in newPony">
+            <h1 class="ponyName">{{pony.name}}</h1>
+            <img ng-src="{{pony.pic}}">
+            <button type="button"  class="btn" ng-click="remove($index)">Delete</button>
+        </li>
+    </ul>
+
+</div>

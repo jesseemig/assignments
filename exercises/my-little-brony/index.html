@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="routingApp" xmlns="http://www.w3.org/1999/html">
+<html lang="en" ng-app="routingApp">
 
 <head>
     <meta charset="UTF-8">
     <title>My Little Brony</title>
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body class="container-fluid">
     
-    <div class="row headerRow"> <!-- Latest compiled and minified CSS -->
+    <div class="row headerRow">
 
         
                 <h1 class="title">Pony Heaven</h1>
@@ -19,14 +19,23 @@
 
     <div class="row navRow">
 
+        <a href="#/home">Home</a>
 
+        <a href="#/add">Upload</a>
 
     </div>
     
     
-    <div class="viewDiv" ng-view></div>
-    
-    
+    <div ng-view></div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="spa/home/home.js"></script>
+    <script src="spa/add/add.js"></script>
+
 </body>
 
 </html>

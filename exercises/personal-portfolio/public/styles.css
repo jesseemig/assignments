@@ -23,8 +23,8 @@
 }
 
 @font-face {
-    font-family: typewriter;
-    src: url(typewriter.ttf)
+    font-family: type;
+    src: url(typewriter.ttf);
 }
 
 
@@ -58,15 +58,16 @@ body {
 .navbar-header {
     margin-top: 2%;
     width: 100%;
-    ;
 }
 
 
+
 .github {
-    margin-left: 5%;
+    margin-left: 4%;
     display: inline-block;
     position: relative;
     width: auto;
+    margin-top: -0.3%;
 }
 
 
@@ -111,10 +112,11 @@ body {
 
 
 .linked {
-    margin-left: 5%;
+    margin-left: 3%;
     display: inline-block;
     position: relative;
     width: auto;
+    margin-top: -0.3%;
 }
 
 
@@ -154,10 +156,11 @@ body {
 
 
 .email {
-    margin-left: 5%;
+    margin-left: 3%;
     display: inline-block;
     position: relative;
     width: auto;
+    margin-top: -0.3%;
 }
 
 
@@ -200,49 +203,49 @@ body {
     margin-left: 29%;
 }
 
-.navbar-right {
-    margin-right: 1%;
-    margin-top: -0.7%;
+.navbarRight {
     list-style-type: none;
     padding: 0;
+    margin-right: 3%;
+    margin-top: -0.75%;
 }
 
 .homeH {
     display: inline-block;
+    margin-left: -25%;
+}
+
+
+.homeLink {
+    float: left;
 }
 
 
 .homeA {
     color: #B09F10;
     font-size: 180%;
+    text-align: center;
+    display: block;
 }
 
 
-.homeLink {
-    padding-right: 15%;
-}
-
-
-.projectH {
+.projectsH {
     display: inline-block;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+
+.projectsLink {
+    float: left;
 }
 
 
 .projectsA {
     font-size: 180%;
     color: #B09F10;
-}
-
-
-.projectsLink {
-    padding-right: 11%;
-    padding-left: 11%;
-}
-
-
-.resumeA {
-    font-size: 180%;
-    color: #B09F10;
+    text-align: center;
+    display: block;
 }
 
 
@@ -252,8 +255,15 @@ body {
 
 
 .resumeLink {
-    padding-right: 11%;
-    padding-left: 11%;
+    float: left;
+}
+
+
+.resumeA {
+    font-size: 180%;
+    color: #B09F10;
+    text-align: center;
+    display: block;
 }
 
 

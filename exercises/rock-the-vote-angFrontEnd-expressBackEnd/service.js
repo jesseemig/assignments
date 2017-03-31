@@ -1,4 +1,4 @@
-angular.module("MyApp")
+ponyangular.module("MyApp")
 
 .service("voteService", [function () {
     
