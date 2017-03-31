@@ -324,10 +324,45 @@ body {
 }
 
 
-.contactHeader {
-    margin-top: 10%;
+
+
+
+
+.resAll {
+    width: 90%;
 }
 
-.skills {
-    width: 100%;
+.section {
+    margin-left: 5%;
+}
+
+.uls {
+    list-style-type: none;
+    margin-top: 2%;
+}
+
+.lis {
+    margin-left: 12%;
+}
+
+.work {
+    margin-top: 7%;
+}
+
+.job {
+    text-align: center;
+}
+
+
+.date{
+    margin-top: -1%;
+}
+
+.responsibilities {
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.title {
+    margin-top: 5%;
 }
