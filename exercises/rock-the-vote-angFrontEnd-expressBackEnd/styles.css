@@ -1,8 +1,6 @@
 .top {
-    background-color: cornflowerblue;
-    color: goldenrod;
-    padding-bottom: 4%;
-    padding-top: 4%;
+    color: black;
+
 }
 
 .siteName {
@@ -12,7 +10,7 @@
 
 .submit {
     margin-top: 3%;
-    margin-left: 15%
+    
 }
 
 .newTitleLabel {
@@ -38,7 +36,6 @@
 }
 
 .example {
-    margin-left: -15%;
     margin-top: 5%;
     display: inline-block;
 }
@@ -113,7 +110,11 @@
 
 .comm {
     display: block;
-    margin-left: 17.5%;
+    margin-left: 37%;
+}
+
+.commBtn {
+    margin-left: 35%;
 }
 
 .userAdded {
@@ -180,4 +181,9 @@
 
 .downvotes {
     margin-left: 18%;
+}
+
+
+.btn-md {
+    width: 30%;
 }
