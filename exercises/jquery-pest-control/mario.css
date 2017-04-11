@@ -23,7 +23,7 @@ p {
     
 .g {
     display: inline-block;
-    padding-left: 25%;
+    margin-left: 10%;
     position: static;
     margin-top: 0%;
     font-size: 150%; 
@@ -38,23 +38,6 @@ p {
     padding-right: 10%;
     position: static;
     font-size: 150%;
-     border-style: solid;
-    border-color: rebeccapurple;
-    border-width: 0px;
-}
-.bimg {
-    border-style: solid;
-    border-color: rebeccapurple;
-    border-width: 0px;
-    transition: width 2s, height 4s;
-}
-
-.bimg:hover {
-    width: 300px;
-    border-style: solid;
-    border-color: rebeccapurple;
-    border-width: 50px;
-    transition-timing-function: ease-in;
 }
 
 
@@ -64,11 +47,6 @@ p {
     font-size: 150%;
 }
 
-.cimg:hover {
-    border: 1px solid #333;
-    box-shadow: 20px 20px 10px 0 #999;
-    border-radius: 20%;
-}
 
 footer {
     font-family:sans-serif;

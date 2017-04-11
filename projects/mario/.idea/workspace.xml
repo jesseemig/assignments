@@ -37,7 +37,7 @@
           <file leaf-file-name="mario.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/mario.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="354">
+                <state relative-caret-position="1500">
                   <caret line="100" column="8" lean-forward="false" selection-start-line="100" selection-start-column="8" selection-end-line="100" selection-end-column="8" />
                   <folding />
                 </state>
@@ -63,9 +63,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="147" />
+    <option name="y" value="205" />
     <option name="width" value="1440" />
-    <option name="height" value="689" />
+    <option name="height" value="631" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -178,7 +178,7 @@
     <option name="totallyTimeSpent" value="3286000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="147" width="1440" height="689" extended-state="0" />
+    <frame x="0" y="205" width="1440" height="631" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -212,7 +212,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/mario.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
+        <state relative-caret-position="1500">
           <caret line="100" column="8" lean-forward="false" selection-start-line="100" selection-start-column="8" selection-end-line="100" selection-end-column="8" />
           <folding />
         </state>
