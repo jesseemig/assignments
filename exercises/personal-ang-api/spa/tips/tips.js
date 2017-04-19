@@ -1,7 +1,6 @@
 var tips = angular.module("routingApp")
 
-tips.controller("TipsController", ["$scope", function($scope) {
-    
+tips.controller("TipsController", ["$scope", function ($scope) {
+
     console.log("tips")
 }]);
-      

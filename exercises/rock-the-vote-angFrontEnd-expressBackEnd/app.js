@@ -9,7 +9,7 @@ angular.module("MyApp", [])
     $scope.downCount = voteService.downvotes;
 
     $scope.comments = [];
-    
+
 
     $scope.submitPost = function () {
         $scope.postToAdd.push($scope.submit)
@@ -30,9 +30,9 @@ angular.module("MyApp", [])
         $scope.downCount = voteService.decrement();
     }
 
-    
+
     $scope.submitComment = function () {
         $scope.userComment.push(comments);
     }
-    
+
 }]);

@@ -1,6 +1,5 @@
 .top {
     color: black;
-
 }
 
 .siteName {
@@ -10,7 +9,6 @@
 
 .submit {
     margin-top: 3%;
-    
 }
 
 .newTitleLabel {
@@ -31,6 +29,7 @@
     margin-top: 3%;
     margin-left: 30%;
 }
+
 .newDescLabel {
     margin-left: 40%;
 }
@@ -76,6 +75,7 @@
 .downvoteEx {
     margin-left: 20%;
 }
+
 .examples {
     border-style: solid;
     border-color: black;
@@ -99,6 +99,7 @@
     margin-top: 1%;
     margin-left: 19%;
 }
+
 .exTexAr {
     background-color: lavender;
 }
@@ -146,6 +147,7 @@
 .newSubBtn {
     margin-left: 36%;
 }
+
 .newComm {
     margin-left: 0%;
     margin-top: 0;
@@ -182,7 +184,6 @@
 .downvotes {
     margin-left: 18%;
 }
-
 
 .btn-md {
     width: 30%;

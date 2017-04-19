@@ -1,4 +1,3 @@
-
 @media screen and (max-width: 767px) {
     body {
         font-size: 0.9em;
@@ -28,7 +27,6 @@
     src: url('spyagencyv3half.ttf');
 }
 
- 
 .top {
     text-align: center;
     background-image: url(skyline.jpg);
@@ -37,6 +35,7 @@
     background-size: cover;
     height: 150%;
 }
+
 .title {
     font-family: 'spyAgency';
     text-align: center;
@@ -61,11 +60,9 @@
     display: inline-flex;
     justify-content: space-around;
     margin: auto;
-    
 }
 
 .homeLink {
-    
     flex-grow: 0;
     flex-shrink: 3;
     flex-basis: auto;
@@ -78,7 +75,6 @@
 }
 
 .tipsLink {
-   
     flex-grow: 0;
     flex-shrink: 3;
     flex-basis: auto;
@@ -91,7 +87,6 @@
 }
 
 .helpLink {
-    
     flex-grow: 0;
     flex-shrink: 3;
     flex-basis: auto;
@@ -102,7 +97,6 @@
     padding-left: 1%;
     padding-right: 1%;
 }
-
 
 .mainBody {
     width: 45%;
@@ -124,13 +118,11 @@
     height: 100%;
     background-position: center;
     padding-bottom: 15%;
-    
-
 }
 
 .info {
     background-color: white;
-    margin-left: 55%; 
+    margin-left: 55%;
     background-color: rgba(255, 255, 255, 0.6);
     color: black;
     margin-right: 4%;
@@ -144,10 +136,10 @@
     margin-bottom: 15%;
     opacity: 1.5;
 }
+
 .homeHeader {
     text-align: center;
     font-size: 230%;
-   
     padding-top: 4%;
     padding-bottom: 4%;
 }
@@ -155,20 +147,17 @@
 .numInfo {
     margin-left: 5%;
     margin-right: 5%;
-    
     padding-bottom: 5%;
-
 }
+
 .input {
     text-align: center;
-    
 }
 
 .line {
     font-size: 120%;
     margin-bottom: 2%;
 }
-
 
 .reportH {
     text-align: center;
@@ -182,6 +171,7 @@
     color: red;
     margin-bottom: 1%;
 }
+
 .reportInf {
     color: red;
 }
@@ -192,6 +182,7 @@
     padding-bottom: 5%;
     color: red;
 }
+
 .tipsHeader {
     padding-top: 2%
 }
@@ -202,4 +193,3 @@
     padding-bottom: 3%;
     padding-right: 3%;
 }
-

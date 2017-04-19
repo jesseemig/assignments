@@ -12,7 +12,6 @@ header {
 body {
     background-image: url(mario.jpg);
     background-size: 100%;
-
 }
 
 p {
@@ -29,19 +28,18 @@ p {
 .inputs {
     width: 35%;
 }
-    
+
 .g {
     display: inline-block;
     padding-left: 2%;
     position: static;
     margin-top: 0%;
-    font-size: 150%; 
+    font-size: 150%;
 }
 
 .gimg {
     margin-left: 25%;
 }
-
 
 .b {
     display: inline-block;
@@ -84,19 +82,16 @@ p {
 }
 
 footer {
-    font-family:sans-serif;
-    
+    font-family: sans-serif;
 }
 
-button{
+button {
     margin-left: 50%;
 }
-
 
 ul {
     width: 100%;
 }
-
 
 .total {
     color: black;

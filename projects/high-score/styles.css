@@ -1,9 +1,9 @@
 body {
-      background: url(background.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: 100%;
+    background: url(background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100%;
     color: white;
     font-family: "Arcade Interlaced";
     background-attachment: fixed;
@@ -14,18 +14,18 @@ header {
     margin-top: 2%;
     font-size: 500%;
     text-align: center;
-     -webkit-text-fill-color: #FFEB8E; 
-   -webkit-text-stroke-width: 3.5px;
-   -webkit-text-stroke-color: #FF6C0B;
+    -webkit-text-fill-color: #FFEB8E;
+    -webkit-text-stroke-width: 3.5px;
+    -webkit-text-stroke-color: #FF6C0B;
     background-color: black;
 }
 
-form{
+form {
     margin-top: 8%;
     text-align: center;
     display: inline-block;
     margin-left: 5%;
-    font-size:60%;
+    font-size: 60%;
     color: #FFEB8E;
 }
 
@@ -60,6 +60,7 @@ button {
     background-color: white;
     color: black;
 }
+
 .pc {
     display: inline;
     margin-top: 50%;
@@ -75,8 +76,6 @@ table {
     font-size: 100%;
     text-align: center;
     margin-right: 5%;
-    
-   
 }
 
 th {
@@ -90,9 +89,3 @@ tr {
     color: black;
     background-color: white;
 }
-
-
-
-
-
-

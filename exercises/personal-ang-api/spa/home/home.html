@@ -1,19 +1,18 @@
+<div ng-controller="HomeController" class="homeBody">
+    <h3 class="homeHeader">Look-up a number</h3>
 
-  <div ng-controller="HomeController" class="homeBody">
-   <h3 class="homeHeader">Look-up a number</h3>
-   
-   <div class="input">
-<input type="number" placeholder="Phone number " ng-model="lookUp">
-   
-   <button class="btn" ng-click="findPh(lookUp)">Search</button>
-   </div>
-   
-   <div class="numInfo">
-   <p class="line">Type: {{ output.type }}</p>
-   <p class="line">City: {{ output.city }}</p>
-   <p class="line">State: {{ output.state }}</p>
-   <p class="line">Time zone: {{ output.time_zone }}</p>
-   <p class="line">Carrier: {{ output.carrier }}</p>
-</div>
+    <div class="input">
+        <input type="number" placeholder="Phone number " ng-model="lookUp">
+
+        <button class="btn" ng-click="findPh(lookUp)">Search</button>
+    </div>
+
+    <div class="numInfo">
+        <p class="line">Type: {{ output.type }}</p>
+        <p class="line">City: {{ output.city }}</p>
+        <p class="line">State: {{ output.state }}</p>
+        <p class="line">Time zone: {{ output.time_zone }}</p>
+        <p class="line">Carrier: {{ output.carrier }}</p>
+    </div>
 
 </div>
