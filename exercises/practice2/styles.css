@@ -1,0 +1,9 @@
+.banner {
+    color: red;
+    text-align: center;
+    font-size: 300%;
+}
+
+li {
+    list-style-type: none;
+}

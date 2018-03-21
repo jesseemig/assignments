@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<!-- ng-app initializes Angular for the element it's inserted in- in this case the entire page ***add Angular with Script tag at bottom of Body-->
+<html lang="en" ng-app="MyApp">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- size responsive meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Practice</title>
+    
+    <!-- adds Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <!-- connects CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+</head>
+
+<!-- ng-controller ............ -->
+<body ng-controller="MainController">
+    
+    <header class="banner">Reviewing</header>
+    
+    
+    <h3>Add</h3>
+    
+    <li class="addPara addPara1">
+        <input id="addId1" type="text" placeholder="Number">
+    </li>
+    
+    <li class="addPara addPara2">
+        <input id="addId2" type="text" placeholder="Number">
+    </li>
+    
+    <button type="button" id="addBtnId" class="addBtnClass">Calculate</button>
+    <li class="addedTotal">Total= <span id="addTotal"></span></li>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+    <script src="app.js"></script>
+</body>
+
+</html>

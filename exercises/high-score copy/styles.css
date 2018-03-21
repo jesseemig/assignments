@@ -1,0 +1,91 @@
+body {
+    background: url(background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100%;
+    color: white;
+    font-family: "Arcade Interlaced";
+    background-attachment: fixed;
+    background-position: bottom 100% center;
+}
+
+header {
+    margin-top: 2%;
+    font-size: 500%;
+    text-align: center;
+    -webkit-text-fill-color: #FFEB8E;
+    -webkit-text-stroke-width: 3.5px;
+    -webkit-text-stroke-color: #FF6C0B;
+    background-color: black;
+}
+
+form {
+    margin-top: 8%;
+    text-align: center;
+    display: inline-block;
+    margin-left: 5%;
+    font-size: 60%;
+    color: #FFEB8E;
+}
+
+button {
+    border: 6px solid #FF6C0B;
+    color: #7A3D07;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: #FFEB8E;
+    margin-top: 13%;
+}
+
+.nm {
+    display: inline;
+    background-color: white;
+    color: black;
+}
+
+.g {
+    display: inline;
+    margin-top: 50%;
+    background-color: white;
+    color: black;
+}
+
+.date {
+    display: inline;
+    margin-top: 50%;
+    background-color: white;
+    color: black;
+}
+
+.pc {
+    display: inline;
+    margin-top: 50%;
+    background-color: white;
+    color: black;
+}
+
+table {
+    display: inline-block;
+    float: right;
+    margin-top: 4%;
+    color: red;
+    font-size: 100%;
+    text-align: center;
+    margin-right: 5%;
+}
+
+th {
+    height: 100px;
+    color: #FFEB8E;
+    background-color: black;
+}
+
+tr {
+    height: 50px;
+    color: black;
+    background-color: white;
+}
