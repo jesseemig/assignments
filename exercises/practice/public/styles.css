@@ -7,3 +7,16 @@
 li {
     list-style-type: none;
 }
+
+.addDiv {
+    width: auto;
+    float: left;
+    margin-left: 1%;
+    margin-right: 10%;
+}
+
+.calcDiv {
+    margin-left: 5%;
+    width: auto;
+    float: left;
+}

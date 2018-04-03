@@ -20,11 +20,11 @@
 </head>
 
 <!-- ng-controller .............. -->
-<body ng-controller="MainController">
+<body>
     
     <header class="banner">Reviewing</header>
     
-    <!-- Below is done with plain JS -->
+    <!-- Below is done with plain JS -
     <div class="addDiv">
     <h3>Add</h3>
     
@@ -38,13 +38,48 @@
     
     <button type="button" id="addBtnId" class="addBtnClass">Calculate</button>
     <li class="addedTotal">Total= <span id="addTotal"></span></li>
+    
     </div>
+    ->
     
     
-    <!-- Below is done with Angular -->
+    
+    <!-- Below is done with Angular without button
     <div class="subDiv">
+        <h3>Subtract</h3>
+        
+        <li class="subPara subPara1">
+            <input type="number" placeholder="Number" ng-model="first">
+        </li>
+        
+        <li class="subPara subPara1">
+            <input type="number" placeholder="Number" ng-model="second">
+        </li>
+        
+        <li class="calcSub">Total= {{subTotal()}}</li>
         
     </div>
+    -->
+    
+    
+    <!-- BELOW is easiest way for simple calculator -->
+  
+ 
+<div ng-controller="CalculatorController" class="calcDiv">
+  
+  
+  <h3 class="calcTitle">Calculator</h3>
+  
+  <p>Select operation: <select ng-model="operator">
+        <option>+ Add</option>
+        <option>- Subtract</option>
+        <option>* Multiply</option>
+        <option>/ Divide</option>
+     </select></p>
+     <p><input type="number" ng-model="a" placeholder="Number"></p>
+  <p><input type="number" ng-model="b" placeholder="Number"></p>
+  <h4>Total {{ result() }}</h4>
+ </div>
     
     
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
