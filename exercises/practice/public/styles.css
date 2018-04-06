@@ -4,6 +4,10 @@
     font-size: 300%;
 }
 
+.calcTitle {
+    text-align: center;
+}
+
 li {
     list-style-type: none;
 }
@@ -19,4 +23,43 @@ li {
     margin-left: 5%;
     width: auto;
     float: left;
+}
+
+.calculatorDiv {
+    margin-left: 2%;
+}
+
+.num {
+    background-color: #323232;
+    margin-top: 3px;
+}
+
+#display{
+	background-color:white;
+	text-align: right;
+	border: 2px solid;
+	border-radius: 5px;
+	margin-bottom: 1px;
+	padding: 4px;
+}
+
+.display {
+    font-size: 200%
+}
+
+.display-acum {
+    font-size: 130%;
+}
+
+.clear {
+    background-color: #9E190D;
+}
+
+.equals {
+    background-color: #47B206;
+    margin-top: 3px;
+}
+
+.function {
+    margin-top: 3px
 }

@@ -13,7 +13,7 @@
     
     <!-- adds Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    
+
     <!-- connects CSS -->
     <link rel="stylesheet" type="text/css" href="styles.css">
     
@@ -64,7 +64,7 @@
     
     <!-- BELOW is easiest way for simple calculator -->
   
- 
+ <!-- 
 <div ng-controller="CalculatorController" class="calcDiv">
   
   
@@ -80,6 +80,69 @@
   <p><input type="number" ng-model="b" placeholder="Number"></p>
   <h4>Total {{ result() }}</h4>
  </div>
+    -->
+    
+    <div class="containter-fluid">
+    <div class="calculatorDiv col-md-3">
+       
+        <h3 class="calcTitle">Calculator</h3>
+        
+        <div  class="row col-md-12" id="display">
+            <span class="display">0</span><br/>
+            <span class="display-acum">0</span>
+        </div>
+        
+        
+        <div class="row col-md-12 numpad">
+        
+        <div class="row numbers">
+        <button type="button" class="btn btn-primary num btn-lg col-md-3"> 7 </button>
+        
+        <button type="button" class="btn btn-primary num btn-lg col-md-3"> 8  </button>
+        
+        <button type="button" class="btn btn-primary num btn-lg col-md-3"> 9 </button>
+        
+        <button type="button" class="btn btn-primary function btn-lg col-md-3"> + </button>
+        </div>
+        
+        <div class="row numbers">
+        <button type="button" class="btn btn-primary num btn-lg col-md-3"> 4 </button>
+        
+        <button type="button" class="btn btn-primary num btn-lg col-md-3"> 5 </button>
+        
+        <button type="button" class="btn btn-primary num btn-lg col-md-3"> 6 </button>
+        
+        <button type="button" class="btn btn-primary btn-lg col-md-3 function"> - </button>
+        </div>
+        
+        <div class="row numbers">
+        <button type="button" class="btn btn-primary num btn-lg col-md-3"> 1 </button>
+        
+        <button type="button" class="btn btn-primary num btn-lg col-md-3"> 2 </button>
+        
+        <button type="button" class="btn btn-primary num btn-lg col-md-3"> 3 </button>
+        
+        <button type="button" class="btn btn-primary btn-lg col-md-3 function"> &times; </button>
+        </div>
+        
+        <div class="row numbers">
+        <button type="button" class="btn btn-primary num btn-lg col-md-3"> 0 </button>
+        
+        <button type="button" class="btn btn-primary num btn-lg col-md-3"> . </button>
+        
+        <button type="button" class="btn num btn-primary btn-lg col-md-3 clear"> C  </button>
+        
+        <button type="button" class="btn btn-primary btn-lg col-md-3 function"> &divide; </button>
+        </div>
+        
+        
+        <div class="row equals">
+        <button type="button" class="btn btn-primary btn-lg col-md-12 equals"> =  </button>
+        </div>
+        
+        </div>
+    </div>
+    </div>
     
     
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
