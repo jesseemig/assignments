@@ -52,11 +52,71 @@
    //   });
 
 
-var app = angular.module("MyApp", [])
+angular.module("MyApp", [])
 
-app.controller("CalculatorController", ["$scope", function ($scope) {
+.controller("CalculatorController", ["$scope", function ($scope) {
 
     var equation = [];
+    
+    var viewTotal = $("#total");
+    
+    var currentNumber = "";
+    
+    var previousNumber = "";
+    
+    var operator = "";
+    
+    viewTotal.text("0");
+    
+    // tells page that num and item IDs are buttons, and to run the function when clicked
+   $(".number.item").click(function() {
+		var amount = $(this).text();
+		currentNumber += amount;
+		if(viewTotal.text() === "0") {
+			viewTotal.text(amount);
+		} else {
+			viewTotal.append(amount);
+		}
+	});
+	
+	$(".operator.item").click(function() {
+		var symbol = $(this).text();
+		operator = symbol;
+		viewTotal.append(" " + symbol + " ");
+		previousNumber = currentNumber;
+		currentNumber = "";
+	});
+	
+	$("#plusMinus").click(function() {
+		currentNumber = -(currentNumber);
+		viewTotal.text(currentNumber);
+	});
+	
+	$("#percent").click(function() {
+		currentNumber = (currentNumber/100);
+		viewTotal.text(currentNumber);
+	});
+	
+	$("#equals").click(function() {
+		if (operator === "+"){
+			currentNumber = (parseFloat(previousNumber) + parseFloat(currentNumber)).toString();
+		} else if (operator === "-"){
+			currentNumber = (parseFloat(previousNumber) - parseFloat(currentNumber)).toString();
+		} else if (operator === "/"){
+			currentNumber = (parseFloat(previousNumber) / parseFloat(currentNumber)).toString();
+		} else if (operator === "*"){
+			currentNumber = (parseFloat(previousNumber) * parseFloat(currentNumber)).toString();
+		}
+		viewTotal.append(" = " + currentNumber);
+	});
+	
+	$("#clear,#clearall").click(function() {
+		viewTotal.text("0");
+		currentNumber = "";
+		if ($(this).attr("id") === "clearall") {
+			previousNumber = "";
+		}
+	});
     
     
     

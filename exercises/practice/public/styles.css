@@ -29,7 +29,7 @@ li {
     margin-left: 2%;
 }
 
-.num {
+.number {
     background-color: #323232;
     margin-top: 3px;
 }
@@ -60,6 +60,6 @@ li {
     margin-top: 3px;
 }
 
-.function {
+.operator {
     margin-top: 3px
 }
