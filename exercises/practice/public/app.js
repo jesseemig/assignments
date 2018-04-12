@@ -31,27 +31,44 @@
 
 
 
-angular.module('MyApp', [])
-    .controller('CalculatorController', function($scope) {
+//  angular.module('MyApp', [])
+   //   .controller('CalculatorController', function($scope) {
     
     
-        $scope.result = function() {
-            if ($scope.operator == '+ Add') {
-                return $scope.a + $scope.b;
-            }
-            if ($scope.operator == '- Subtract') {
-                return $scope.a - $scope.b;
-            }
-            if ($scope.operator == '* Multiply') {
-                return $scope.a * $scope.b;
-            }
-            if ($scope.operator == '/ Divide') {
-                return $scope.a / $scope.b;
-            }
-        };
-    });
+       //   $scope.result = function() {
+         //     if ($scope.operator == '+ Add') {
+           //       return $scope.a + $scope.b;
+           //   }
+           //   if ($scope.operator == '- Subtract') {
+             //     return $scope.a - $scope.b;
+           //   }
+           //   if ($scope.operator == '* Multiply') {
+            //      return $scope.a * $scope.b;
+            //  }
+            //  if ($scope.operator == '/ Divide') {
+             //     return $scope.a / $scope.b;
+           //   }
+       //   };
+   //   });
 
 
+var app = angular.module("MyApp", [])
 
+app.controller("CalculatorController", ["$scope", function ($scope) {
 
-
+    var equation = [];
+    
+    
+    
+}]);
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
