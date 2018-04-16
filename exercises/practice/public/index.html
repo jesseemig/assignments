@@ -97,7 +97,7 @@
         <div class="row numbers">
         <button type="button" class="btn btn-primary operator item btn-lg col-md-3" id="clearall">AC</button>
         
-        <button type="button" class="btn btn-primary btn-lg col-md-3 operator item" id="plusMinus">+/-</button>
+        <button type="button" class="btn btn-primary operator item btn-lg col-md-3 operator item" id="plusMinus">+/-</button>
         
         <button type="button" class="btn btn-primary btn-lg col-md-3 operator item" id="Percent">%</button>
         
@@ -146,6 +146,22 @@
         
         </div>
     </div>
+    
+    
+    <!-- dictionary API -->
+    
+    <div class="dictionaryDiv">
+       
+        <h3 class="dictionarySearch">Dictionary</h3>
+        
+        <input class="wordFind" type="text" placeholder="Find..." ng-model="word">
+        
+        <button class="btn btn-primary" ng-click="define(word)">Search</button>
+        <h3> Word {{ word }}</h3>
+        <h5> </h5>
+        
+    </div>
+    
     </div>
     
     

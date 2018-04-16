@@ -54,7 +54,7 @@
 
 angular.module("MyApp", [])
 
-.controller("CalculatorController", ["$scope", function ($scope) {
+.controller("CalculatorController", ["$scope", "$http", function ($scope, $http) {
 
     var equation = [];
     
@@ -68,7 +68,7 @@ angular.module("MyApp", [])
     
     viewTotal.text("0");
     
-    // tells page that num and item IDs are buttons, and to run the function when clicked
+    // tells page that number and item IDs are buttons, and to run the function when clicked
    $(".number.item").click(function() {
 		var amount = $(this).text();
 		currentNumber += amount;
@@ -118,6 +118,24 @@ angular.module("MyApp", [])
 		}
 	});
     
+    
+    // ^^^ above is calculator functions ^^^
+    
+    
+    // Below is dictionary API
+    
+    
+    var words = [];
+
+    $scope.define = function (input) {
+        $http.get("https://twinword-word-graph-dictionary.p.mashape.com/definition/" + input + "&api_key=Yx3ZIrcwZimshJB0uwTc7hb0VcUWp1DclwljsnudTovyVpzPe0&format=json").then(function (response) {
+            console.log(response.data);
+            words = console.log(response.data);
+            $scope.output = words;
+            console.log($scope.output.)
+            
+        })
+    }
     
     
 }]);
