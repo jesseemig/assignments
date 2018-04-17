@@ -126,16 +126,24 @@ angular.module("MyApp", [])
     
     
     var words = [];
+    
+    var config = {
+        headers: {
+            "X-Mashape-Key":
+            "Yx3ZIrcwZimshJB0uwTc7hb0VcUWp1DclwljsnudTovyVpzPe0"
+        }
+    };
 
     $scope.define = function (input) {
-        $http.get("https://twinword-word-graph-dictionary.p.mashape.com/definition/" + input + "&api_key=Yx3ZIrcwZimshJB0uwTc7hb0VcUWp1DclwljsnudTovyVpzPe0&format=json").then(function (response) {
+        
+        $http.get("https://twinword-word-graph-dictionary.p.mashape.com/definition/?entry=" + input, config).then(function (response) {
+            
             console.log(response.data);
-            words = console.log(response.data);
-            $scope.output = words;
-            console.log($scope.output.)
+            var definition = response.data;
+            $scope.output = definition;
             
         })
-    }
+    };
     
     
 }]);

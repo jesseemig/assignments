@@ -154,11 +154,15 @@
        
         <h3 class="dictionarySearch">Dictionary</h3>
         
-        <input class="wordFind" type="text" placeholder="Find..." ng-model="word">
+        <input class="wordFind" type="text" placeholder="Find..." ng-model="lookUp">
         
-        <button class="btn btn-primary" ng-click="define(word)">Search</button>
-        <h3> Word {{ word }}</h3>
-        <h5> </h5>
+        <button class="btn btn-primary" ng-click="define(lookUp)">Search</button>
+        
+        <h3> {{ output.response }}:</h3>
+        <h5> {{ output.meaning.noun }} </h5>
+        <h5> {{ output.meaning.verb }} </h5>
+        <h5> {{ output.meaning.adverb }} </h5>
+        <h5> {{ output.meaning.adjective }} </h5>
         
     </div>
     
