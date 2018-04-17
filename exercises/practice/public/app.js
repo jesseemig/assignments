@@ -127,6 +127,7 @@ angular.module("MyApp", [])
     
     var words = [];
     
+    // creates a variable called "config" which contains the API key
     var config = {
         headers: {
             "X-Mashape-Key":
@@ -134,12 +135,19 @@ angular.module("MyApp", [])
         }
     };
 
+    // names function "define" and binds it to the search button because we used ng-click="define(lookUp) in HTML and allows "input" perameter
     $scope.define = function (input) {
         
+        //  sends a GET request to Twin Word- Word Dictionary API URL, with the word entered in the input field. Then it runs a function with a perameter called Response-
         $http.get("https://twinword-word-graph-dictionary.p.mashape.com/definition/?entry=" + input, config).then(function (response) {
             
+            //  console logs the data coming back from the API
             console.log(response.data);
+            
+            // creates variable named definition which is assigned all the response data
             var definition = response.data;
+            
+            //  creates variable named output and binds it (so it can be called in HTML)
             $scope.output = definition;
             
         })

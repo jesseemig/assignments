@@ -154,10 +154,13 @@
        
         <h3 class="dictionarySearch">Dictionary</h3>
         
+        <!-- ng-model binds the value of the input field to the "define" function -->
         <input class="wordFind" type="text" placeholder="Find..." ng-model="lookUp">
         
+        <!-- ng-click makes element clickable and triggers the "define" function when clicked. Since we used ng-model in the function perameter it will use the data (word, number, etc) when the function runs -->
         <button class="btn btn-primary" ng-click="define(lookUp)">Search</button>
         
+        <!-- this is where the API data is shown. Always use output.<apiEndpoint> -->
         <h3> {{ output.response }}:</h3>
         <h5> {{ output.meaning.noun }} </h5>
         <h5> {{ output.meaning.verb }} </h5>
